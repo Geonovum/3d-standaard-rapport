@@ -3,7 +3,7 @@ let respecConfig = {
   useLabel: true,
 
   // TODO: title is verplicht! Neem hieronder de titel van het document op
-  title: "Geonovum template voor ReSpec",
+  title: "Rapport 3D standaard basisregistraties",
   //-- specStatus is verplicht! (activeer 1 van de volgende)
   specStatus: "wv",                 // Werkversie
   //specStatus: "cv",               // Consultatieversie
@@ -16,16 +16,16 @@ let respecConfig = {
   //specType: "ST",                 // Standaard
   //specType: "IM",                 // Informatie Model
   //specType: "PR",                 // Praktijkrichtlijn
-  specType: "HR",                   // HandReiking
+  //specType: "HR",                   // HandReiking
   //specType: "WA",                 // Werkafspraak
   //specType: "BD",                 // Beheer Documentatie
-  //specType: "AL",                 // Algemeen document
+  specType: "AL",                 // Algemeen document
   //specType: "BP",                 // Best Practice
 
   //-- pubDomain is verplicht! (komt in de URL)
   //-- zie: https://geonovum.github.io/handleiding-tooling/ReSpec/#pubdomain
   //-- TODO: vul pubDomain in
-  pubDomain: "3dbv",
+  pubDomain: "3d",
 
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
   //license: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
@@ -33,14 +33,14 @@ let respecConfig = {
   license: "cc-by",                 // Attribution, met bronvermelding
 
   //-- TODO shortName is verplicht! (komt in de URL: kies logische afkorting)
-  shortName: "NL-ReSpec-template",
+  shortName: "3dstrap",
   
   //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden. 
 	//edDraftURI: ["https://geonovum.github.io", "/", "shortName"],
 
   //-- publishDate is verplicht. Als je werkversie gekozen hebt  dan pakt Respec
   //-- de pushdate maar de publishDate is nog steeds verplicht.
-  publishDate: "2025-03-28",
+  publishDate: "2025-11-14",
   
   //-- publishVersion is verplicht. Hij mag wel leeg zijn [], maar niet de lege string zijn "".
   publishVersion: [],
@@ -57,7 +57,7 @@ let respecConfig = {
   editors:
     [
       {
-        name: "voornaam achternaam",
+        name: "Linda van den Brink",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
       }
@@ -68,7 +68,22 @@ let respecConfig = {
   authors:
     [
       {
-        name: "voornaam achternaam",
+        name: "Linda van den Brink",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl",
+      },
+      {
+        name: "Rolf Jonker",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl",
+      },
+      {
+        name: "Daoud Urdu",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl",
+      },
+      {
+        name: "Silvy Horbach",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
       }
@@ -76,7 +91,7 @@ let respecConfig = {
 
   // TODO: Vul de github URL in.
   //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Geonovum/NL-ReSpec-template",
+  github: "https://github.com/Geonovum/3d-standaard-rapport",
 
   // Create PDF and link to file in header (optional):
   // TODO: Change the filename as preferred.
