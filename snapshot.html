@@ -1368,7 +1368,7 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Algemeen<br>
       Werkversie
-      <time class="dt-published" datetime="2025-11-14">24 november 2025</time>
+      <time class="dt-published" datetime="2025-11-14">02 december 2025</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -1418,7 +1418,7 @@ ul.index code{color:inherit}
   </div>
 <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>TODO: vul in abstract.md een abstract in.</p>
 </section>
-<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1. </bdi>Introductie</a></li><li class="tocline"><a class="tocxref" href="#x3d-objecten"><bdi class="secno">2. </bdi>3D objecten</a></li><li class="tocline"><a class="tocxref" href="#inventarisatie-3d-standaarden"><bdi class="secno">3. </bdi>Inventarisatie 3D standaarden</a></li><li class="tocline"><a class="tocxref" href="#afspraken-voor-geo-bim"><bdi class="secno">4. </bdi>Afspraken voor Geo-BIM</a></li><li class="tocline"><a class="tocxref" href="#kader-voor-de-3d-standaard"><bdi class="secno">5. </bdi>Kader voor de 3D standaard</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1. </bdi>Introductie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#focus"><bdi class="secno">1.1 </bdi>Focus</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-objecten"><bdi class="secno">2. </bdi>3D objecten</a></li><li class="tocline"><a class="tocxref" href="#inventarisatie-3d-standaarden"><bdi class="secno">3. </bdi>Inventarisatie 3D standaarden</a></li><li class="tocline"><a class="tocxref" href="#afspraken-voor-geo-bim"><bdi class="secno">4. </bdi>Afspraken voor Geo-BIM</a></li><li class="tocline"><a class="tocxref" href="#kader-voor-de-3d-standaard"><bdi class="secno">5. </bdi>Kader voor de 3D standaard</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">6. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
 
 
 <section id="introductie"><div class="header-wrapper"><h2 id="x1-introductie"><bdi class="secno">1. </bdi>Introductie</h2><a class="self-link" href="#introductie" aria-label="Permalink for Section 1."></a></div>
@@ -1432,8 +1432,37 @@ ul.index code{color:inherit}
 <li>   In welke vorm(en) is implementatieondersteuning nodig voor succesvolle implementatie van deze standaard? (handreikingen, software, etc.);</li>
 <li>   Wordt deze standaard wettelijk verplicht of komt deze op de pas-toe-leg-uit lijst?</li>
 </ol>
-<p>Vraag 1, 2, 3 en 5 worden in dit rapport behandeld. Vraag 4 komt in een later stadium aan bod.</p>
-</section>
+<p>Vraag 1, 2, 3 en 5 worden in dit rapport behandeld. Vraag 4 komt in een later stadium aan bod. </p>
+<section id="focus"><div class="header-wrapper"><h3 id="x1-1-focus"><bdi class="secno">1.1 </bdi>Focus</h3><a class="self-link" href="#focus" aria-label="Permalink for Section 1.1"></a></div>
+<p>Het doel van de nieuwe 3D standaard (of set standaarden) is nog niet goed omschreven. Als werkdoel hanteren we: </p>
+<p><strong>Het doel van de 3D standaard is om te zorgen voor interoperabiliteit van landelijke 3D bestanden, zodat 3D viewers en digitale tweelingen hieruit op gestandaardiseerde wijze kunnen putten voor zowel visualisaties van 3D modellen als het gebruik van 3D modellen voor analyses en berekeningen.</strong></p>
+<p>De volgende illustratie van de VNG helpt ons het werk in beeld te krijgen: </p>
+<figure id="fig-de-3d-keten-in-samenhang-bron-vng">
+    <img src="./media/3d-keten.png">
+    <figcaption><a class="self-link" href="#fig-de-3d-keten-in-samenhang-bron-vng">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">De 3D keten in samenhang - bron VNG</span></figcaption>
+</figure>
+
+<p>Beginnend bij het gebruik, in digitale tweelingen, spelen in deze keten op de volgende plekken standaarden een rol: </p>
+<ul>
+<li>Bij <strong>gebruik</strong>, <strong>ontsluiten</strong>. Het gaat dan om 3D <em>visualisatie</em> en om <em>exporteren</em>.<ul>
+<li>Voor 3D <em>visualisatie</em> hebben we twee goedgekeurde internationale standaarden, 3D Tiles en i3s. </li>
+<li>Onze taak: hier een beargumenteerde keuze in maken zodat we voor Nederland één standaard afspreken.</li>
+<li>De standaard voor <em>exporteren</em> kan dezelfde zijn als voor uitwisseling en opslag (het volgende punt)</li>
+</ul>
+</li>
+<li>Bij <strong>registreren</strong>. Het gaat dan om <em>uitwisseling en opslag</em> van 3D vectordata. <ul>
+<li>Uit de Keuzehulp 3D standaarden blijkt dat CityGML hier de beste kandidaat is. </li>
+<li>Onze taak: deze keuze verder uitwerken met afspraken voor Nederland.</li>
+</ul>
+</li>
+<li>Bij <strong>inwinnen</strong>. Het gaat dan om ruwe data die als basis van 3D modellen dienen, zoals LiDAR data, luchtfoto's, oblieke foto's, maar ook BIM modellen (geen ruwe data maar wel brondata).<ul>
+<li>de Keuzehulp geeft voor de ruwe data al handvaten. Aan GeoBIM standaarden wordt momenteel gewerkt. </li>
+<li>Onze taak: afspreken welke standaard(en) we in Nederland gebruiken voor deze ruwe data, zodat bv gemeenten deze standaarden in hun bestek kunnen opnemen voor inwinopdrachten. </li>
+<li>Daarnaast: de afspraken voor BIM + Geo vastleggen.</li>
+</ul>
+</li>
+</ul>
+</section></section>
 <section id="x3d-objecten"><div class="header-wrapper"><h2 id="x2-3d-objecten"><bdi class="secno">2. </bdi>3D objecten</h2><a class="self-link" href="#x3d-objecten" aria-label="Permalink for Section 2."></a></div>
 <p>Onderzoeksvraag: <em>Voor welke soorten objecten en daarmee samenhangende datasets zou deze standaard moeten gelden?</em></p>
 <p>We kijken naar twee use cases die vooral focussen op de SOLL situatie en antwoord geven op de vraag wat is er nodig aan standaarden om naar die SOLL situatie te komen.</p>
@@ -1476,7 +1505,11 @@ ul.index code{color:inherit}
 
 
 
-<section id="tof"></section>
+<section id="tof"><div class="header-wrapper"><h2 id="x6-lijst-met-figuren"><bdi class="secno">6. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 6."></a></div><ul class="tof">
+        <li class="tofline">
+    <a class="tocxref" href="#fig-de-3d-keten-in-samenhang-bron-vng"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">De 3D keten in samenhang - bron VNG</span></a>
+  </li>
+      </ul></section>
 <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
     <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
     <ul class="index">
