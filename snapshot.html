@@ -1368,7 +1368,7 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Algemeen<br>
       Werkversie
-      <time class="dt-published" datetime="2025-11-14">02 december 2025</time>
+      <time class="dt-published" datetime="2025-11-14">04 december 2025</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -1418,7 +1418,7 @@ ul.index code{color:inherit}
   </div>
 <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>TODO: vul in abstract.md een abstract in.</p>
 </section>
-<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1. </bdi>Introductie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#focus"><bdi class="secno">1.1 </bdi>Focus</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-objecten"><bdi class="secno">2. </bdi>3D objecten</a></li><li class="tocline"><a class="tocxref" href="#inventarisatie-3d-standaarden"><bdi class="secno">3. </bdi>Inventarisatie 3D standaarden</a></li><li class="tocline"><a class="tocxref" href="#afspraken-voor-geo-bim"><bdi class="secno">4. </bdi>Afspraken voor Geo-BIM</a></li><li class="tocline"><a class="tocxref" href="#kader-voor-de-3d-standaard"><bdi class="secno">5. </bdi>Kader voor de 3D standaard</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">6. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1. </bdi>Introductie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#focus"><bdi class="secno">1.1 </bdi>Focus</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-objecten"><bdi class="secno">2. </bdi>3D objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-3d"><bdi class="secno">2.1 </bdi>Wat is 3D</a></li><li class="tocline"><a class="tocxref" href="#geometrie-in-2-5d"><bdi class="secno">2.2 </bdi>Geometrie in 2,5D</a></li><li class="tocline"><a class="tocxref" href="#topologische-relaties"><bdi class="secno">2.3 </bdi>Topologische relaties</a></li></ol></li><li class="tocline"><a class="tocxref" href="#inventarisatie-3d-standaarden"><bdi class="secno">3. </bdi>Inventarisatie 3D standaarden</a></li><li class="tocline"><a class="tocxref" href="#afspraken-voor-geo-bim"><bdi class="secno">4. </bdi>Afspraken voor Geo-BIM</a></li><li class="tocline"><a class="tocxref" href="#kader-voor-de-3d-standaard"><bdi class="secno">5. </bdi>Kader voor de 3D standaard</a></li><li class="tocline"><a class="tocxref" href="#bijlage-1-3d-geometrie-in-de-standaarden"><bdi class="secno">A. </bdi>Bijlage 1: 3D Geometrie in de standaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#annex-b-allignment-of-topology"><bdi class="secno">A.1 </bdi>Annex B: Allignment of Topology</a></li></ol></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">B. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">C. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">C.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">C.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
 
 
 <section id="introductie"><div class="header-wrapper"><h2 id="x1-introductie"><bdi class="secno">1. </bdi>Introductie</h2><a class="self-link" href="#introductie" aria-label="Permalink for Section 1."></a></div>
@@ -1471,7 +1471,78 @@ ul.index code{color:inherit}
 <li>DTaaS: Digital Twin as a Service. In DTaaS komen diverse use cases aan de orde zoals hittestress en overstroming van steden, waarbij een 3D stadsmodel nodig is om simulaties te kunnen doen. DTaaS maakt gebruik van 3D geo-objecten maar schrijft geen standaard voor. Voor een vergroot gebruik van Digital Twins is een 3D standaard aan te bevelen. Door Digital Twin als usecase te gebruiken versterken we ook de relatie tussen het ZoN Datafundament en het ZoN Digital Twin programma.</li>
 <li>Informatiemodel Geluid. Geluid is bij uitstek een 3D “ding” en heeft ook 3D objecten nodig om binnen de geluidsmodellen te kunnen bepalen welk geluid hoe hard ergens aankomt, gegeven de locatie van de geluidsbron en de fysieke objecten die het geluid onderweg tegenkomt.</li>
 </ul>
-</section>
+<section id="wat-is-3d"><div class="header-wrapper"><h3 id="x2-1-wat-is-3d"><bdi class="secno">2.1 </bdi>Wat is 3D</h3><a class="self-link" href="#wat-is-3d" aria-label="Permalink for Section 2.1"></a></div>
+<p>In dit document schrijven wij over 3D-objecten. Er zijn verschillende definities van 3D. </p>
+<p><br>Topologische dimensie:<br> Dit is een nummer dat de orthogonale richtingen beschrijft waar een geometrie zich naar uitstrekt. De topologische dimensie kijkt lokaal naar het object, het beschrijft de hoeveelheid onafhankelijke richtingen die er zijn zonder het object te verlaten. Een punt heeft een topologische dimensie van 0. Een rechte lijn een lengte, maar geen breedte of hoogte. De topologische dimensie van een lijn is 1. Een vlak heeft een topologische dimensie van 2. Een kubus heeft topologische dimensie van 3.   </p>
+<p><br>Coordinaat dimensie:<br> Deze dimensie beschrijft de hoeveelheid onafhankelijke richtingen die de coordinaten hebben waarmee geometrie is opgebouwd. In theorie kan men, door coördinaten uit te breiden, oneindig veel dimensies bereiken. Veel gebruik zijn de dimensies x, y en z. Maar ook de tijdsdimensie (t) en maat (m) dimensie worden vaak gebruikt. </p>
+<p><br>Ruimtelijke dimensie:<br>
+Deze dimensie beschrijft de hoeveelheid onafhankelijke richtingen in de "echte ruimte", die we visueel of fysiek kunnen voorstellen. Dit gaat om de x, y en z dimensie. Dimensies als tijd, maat, druk, temperatuur etc. tellen niet mee.  </p>
+<p>De topologische, coordinaat en ruimtelijke dimensies meten elk een ander aspect van een geometrie. </p>
+<table>
+<thead>
+<tr>
+<th>Geometrie</th>
+<th>Topologische dimensie</th>
+<th>Coördinaat- dimensie</th>
+<th>Ruimtelijke dimensie</th>
+<th>Uitleg</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Punt (x,y)</td>
+<td>0D</td>
+<td>2D</td>
+<td>2D</td>
+<td>Dit punt strekt zich in 0 richtingen, is beschreven door 2 coördinaten en ligt op een 2D vlak of assenstelsel.</td>
+</tr>
+<tr>
+<td>Lijn (x,y)</td>
+<td>1D</td>
+<td>2D</td>
+<td>2D</td>
+<td>Deze lijn strekt zich in 1 richting, is beschreven door 2 coördinaten en ligt op een 2D vlak of assenstelsel.</td>
+</tr>
+<tr>
+<td>Vlak (x,y,z)</td>
+<td>2D</td>
+<td>3D</td>
+<td>3D</td>
+<td>Dit vlak strekt zich in 2 richtingen, is beschreven door 3 coördinaten en ligt op een 3D vlak of assenstelsel.</td>
+</tr>
+<tr>
+<td>Kubus (x,y,z)</td>
+<td>3D</td>
+<td>3D</td>
+<td>3D</td>
+<td>Deze kubus strekt zich in 3 richtingen, is beschreven door 3 coördinaten en ligt op een 3D vlak of assenstelsel.</td>
+</tr>
+<tr>
+<td>Lijn met tijd en maat (x,y,z,t,m)</td>
+<td>1D</td>
+<td>5D</td>
+<td>3D</td>
+<td>Deze lijn strekt zich in 1 richting, is beschreven door 5 coördinaten en ligt op een 3D vlak of assenstelsel.</td>
+</tr>
+<tr>
+<td>Punt met een maat (x,y,z,m)</td>
+<td>0D</td>
+<td>4D</td>
+<td>3D</td>
+<td>Dit punt strekt zich in 0 richting, is beschreven door 4 coördinaten en ligt op een 3D vlak of assenstelsel.</td>
+</tr>
+</tbody></table>
+<p>In dit document focussen wij ons op 3D-objecten waarbij 3D staat voor de ruimtelijke dimensie. </p>
+</section><section id="geometrie-in-2-5d"><div class="header-wrapper"><h3 id="x2-2-geometrie-in-2-5d"><bdi class="secno">2.2 </bdi>Geometrie in 2,5D</h3><a class="self-link" href="#geometrie-in-2-5d" aria-label="Permalink for Section 2.2"></a></div>
+<p>Naast de 1D, 2D en 3D ruimtelijke dimensie bestaat er geometrie die men typeert als 2,5D. Hiermee bedoelt men een geometrie die beschreven is door 2 coördinaten, en daarnaast één waarde heeft waarmee de totale geometrie een extra dimensie krijgt. Bijvoorbeeld een vlak geometrie die beschreven is in twee dimensies (x en y) voor alle punten waaruit dit vlak bestaat, kan één hoogte-element als attribuut krijgen waarmee de totale geometrie op hoogte gebracht wordt. Het is daarmee niet mogelijk om de afzonderlijke punten waaruit de geometrie bestaat naar van elkaar afwijkende hoogte te modelleren. Hierom spreekt men ook wel van 2,5D. Dit principe wordt bijvoorbeeld gebruikt in de BGT, waarbij <a href="https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#geometrietypen">2D-vlak geometrie</a> met het attribuut <a href="https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#relatievehoogteligging">relatieveHoogteligging</a> op hoogte kan worden gebracht. </p>
+<p>
+      </p><figure id="fig-verschil-tussen-de-ruimtelijke-dimensie-2d-2-5d-en-3d">
+        <img src="media/Dimensies.png" alt="Verschil tussen de ruimtelijke dimensie 2D, 2,5D en 3D">
+        <figcaption><a class="self-link" href="#fig-verschil-tussen-de-ruimtelijke-dimensie-2d-2-5d-en-3d">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Verschil tussen de ruimtelijke dimensie 2D, 2,5D en 3D</span></figcaption>
+      </figure>
+    <p></p>
+</section><section id="topologische-relaties"><div class="header-wrapper"><h3 id="x2-3-topologische-relaties"><bdi class="secno">2.3 </bdi>Topologische relaties</h3><a class="self-link" href="#topologische-relaties" aria-label="Permalink for Section 2.3"></a></div>
+<p><mark>De topologische regel in de BGT is dat de vlakken op eenzelfde relatieve hoogteligging niet overlappend mogen zijn. Het moet vlakdekkend zijn. Wat gaat dit in de 3D geometriën betekenen?</mark></p>
+</section></section>
 <section id="inventarisatie-3d-standaarden"><div class="header-wrapper"><h2 id="x3-inventarisatie-3d-standaarden"><bdi class="secno">3. </bdi>Inventarisatie 3D standaarden</h2><a class="self-link" href="#inventarisatie-3d-standaarden" aria-label="Permalink for Section 3."></a></div>
 <p>Onderzoeksvraag: <em>Welke internationale en nationale standaarden vormen de basis voor de eisen aan een 3D object in een basisregistratie? Welke aanvullende afspraken moeten we maken op het gebied van semantiek, geometrie en coördinatenstelsel, inclusief randvoorwaarden zoals inwinning, kwaliteit, detailniveau en afbakening van 3D objecten, hierbij rekening houdend met de aansluiting op geldende standaarden.</em></p>
 <p>In 2024 heeft Geonovum een inventarisatie gedaan van 3D standaarden. Dit heeft de <a href="https://docs.geostandaarden.nl/3d/hr-3d-standaarden/">Wegwijzer 3D standaarden</a> opgeleverd. </p>
@@ -1498,6 +1569,500 @@ ul.index code{color:inherit}
 <section id="kader-voor-de-3d-standaard"><div class="header-wrapper"><h2 id="x5-kader-voor-de-3d-standaard"><bdi class="secno">5. </bdi>Kader voor de 3D standaard</h2><a class="self-link" href="#kader-voor-de-3d-standaard" aria-label="Permalink for Section 5."></a></div>
 <p>Onderzoeksvraag: <em>Wat wordt het kader voor de 3D standaard? Wordt deze standaard wettelijk verplicht of komt deze op de pas-toe-leg-uit lijst?</em></p>
 </section>
+<section class="appendix" id="bijlage-1-3d-geometrie-in-de-standaarden"><div class="header-wrapper"><h2 id="a-bijlage-1-3d-geometrie-in-de-standaarden"><bdi class="secno">A. </bdi>Bijlage 1: 3D Geometrie in de standaarden</h2><a class="self-link" href="#bijlage-1-3d-geometrie-in-de-standaarden" aria-label="Permalink for Appendix A."></a></div>
+<p><mark> Geometrie die gelimiteerd is naar 2 coordinaten en daarbij naar maximaal 2 ruimtelijke dimensies geven we een bepaalde kleur </mark></p>
+<p>CityGML:</p>
+<p>CityJSON:</p>
+<table>
+<caption></caption>
+<thead>
+<tr><th colspan="4">ISO19107</th></tr>
+</thead>
+<tbody>
+<tr>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_point"=""> GM_Point</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td><a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_linestring"="">GM_Linestring</a></td>
+    <td><a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_orientable"="">GM_Curve</a></td>
+    <td><a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_orientablecurve"="">GM_OrientableCurve</a></td>
+    <td>GM_Arc</td>
+</tr>
+<tr>
+    <td>GM_ArcByBulge</td>
+    <td>GM_ArcString</td>
+    <td>GM_ArcStringByBulge</td>
+    <td>GM_Bezier</td>
+</tr>
+<tr>
+    <td>GM_Circle</td>
+    <td> </td>
+    <td> </td>
+    <td> </td> 
+</tr>
+<tr>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_surface"=""> GM_Surface </a></td>
+    <td> GM_PolyhedralSurface</td>
+    <td> GM_TriangulatedSurface</td>
+    <td> GM_Tin</td>
+</tr>
+<tr>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_solid"=""> GM_Solid </a></td>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_orientablecurve"="">GM_OrientableCurve</a></td>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_orientablesurface"="">GM_OrientableSurface</a></td>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_ring"="">GM_Ring</a></td>
+</tr>
+<tr>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_shell"=""> GM_Shell </a></td>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_compositepoint"=""> GM_CompositePoint</a></td>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_compositecurve"=""> GM_CompositeCurve</a></td>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_compositesurface"=""> GM_CompositeSurface</a></td>
+        <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_compositesurface"=""> GM_CompositeSolid</a></td>
+</tr>
+<tr>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_multipoint"=""> GM_MultiPoint</a></td>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_multicurve"="">GM_MultiCurve</a></td>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_multisurface"="">GM_MultiSurface </a></td>
+    <td> <a href="" "http:="" www.opengis.net="" def="" geometry="" iso-19107="" 2003="" gm_multisolid"=""> GM_MultiSolid </a></td>
+</tr>
+
+
+
+</tbody>
+</table>
+
+
+
+<table>
+<caption></caption>
+<thead>
+<tr><th colspan="4">GML (3.2.1.)</th></tr>
+</thead>
+<tbody>
+<tr>
+    <td> <a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometrybasic0d1d.xsd"=""> gml:Point</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometrybasic0d1d.xsd"="">gml:LineString</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometrybasic0d1d.xsd"="">gml:Curve</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:OrientableCurve</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometrycomplexes.xsd"="">gml:CompositeCurve</a></td>
+</tr>
+
+<tr>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometrybasic2d.xsd"="">gml:Polygon</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometrybasic2d.xsd"="">gml:LinearRing</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"=""> gml:Ring</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"=""> gml:Circle</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"=""> gml:CircleByCenterPoint</a></td>
+</tr>
+<tr>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:BSpline</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Bezier</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Knot</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"=""> gml:Arc</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:ArcByBulge</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:ArcString</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"=""> gml:ArcStringByBulge</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"=""> gml:CubicSpline</a></td>
+
+</tr>
+<tr>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Surface</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:PolyhedralSurface</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:TriangulatedSurface</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Tin</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:OrientableSurface</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometrycomplexes.xsd"="">gml:CompositeSurface</a></td>
+</tr>
+<tr>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:PolygonPatch</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Triangle</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Rectangle</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:PointGrid</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Cone</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Cylinder</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Sphere</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Solid</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:Shell</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryprimitives.xsd"="">gml:CompositeSolid</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryaggregates.xsd"="">gml:MultiPoint</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryaggregates.xsd"="">gml:MultiCurve</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryaggregates.xsd"="">gml:MultiSurface</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryaggregates.xsd"="">gml:MultiSolid</a></td>
+</tr>
+
+<tr>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" coverage.xsd"="">gml:RectifiedGridCoverage</a></td>
+    <td><a href="" "https:="" schemas.opengis.net="" gml="" 3.2.1="" geometryaggregates.xsd"="">gml:GridCoverage</a></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+
+
+<p>GM_Solid gml:Solid gml:SolidType gml:SolidPropertyType
+ gml:OrientableCurve gml:OrientableCurveType gml:CurvePropertyType
+ gml:OrientableSurface gml:OrientableSurfaceType gml:SurfacePropertyType
+ gml:Ring gml:RingType —
+gml:Shell gml:ShellType —
+— gml:LineString gml:LineStringType —
+— gml:Polygon gml:PolygonType —
+— gml:LinearRing gml:LinearRingType —
+ gml:Point gml:PointType gml:PointPropertyType
+ gml:CompositeCurve gml:CompositeCurveType anonymous property type
+ gml:CompositeSurface gml:CompositeSurfaceType anonymous property type
+ gml:CompositeSolid gml:CompositeSolidType anonymous property type
+GM_Complex gml:GeometricComplex gml:GeometricComplexType gml:GeometricComplexPropertyType
+GM_Aggregate gml:MultiGeometry gml:MultiGeometryType gml:MultiGeometryPropertyType
+ gml:MultiPoint gml:MultiPointType gml:MultiPointPropertyType
+ gml:MultiCurve gml:MultiCurveType gml:MultiCurvePropertyType
+ gml:MultiSurface gml:MultiSurfaceType gml:MultiSurfacePropertyType
+ gml:MultiSolid gml:MultiSolidType gml:MultiSolidPropertyType
+GM_MultiPrimitive gml:MultiGeometry gml:MultiGeometryType gml:MultiGeometryPropertyType
+GM_CurveSegment gml:AbstractCurveSegment gml:AbstractCurveSegmentType —
+ gml:ArcType —
+ gml:ArcByBulge gml:ArcByBulgeType —
+— gml:ArcByCenterPoint gml:ArcByCenterPointType —
+  gml:ArcStringType —
+  gml:ArcStringByBulgeType —
+ gml:BezierType —
+  gml:BSplineType —</p>
+<table>
+<caption></caption>
+<thead>
+<tr><th colspan="4">WKT</th></tr>
+</thead>
+<tbody>
+<tr><td style="background-color: #FFF0F5"> POINT<small>(x y)</small></td><td>POINT Z<small>(x y z)</small></td><td style="background-color: #FFF0F5">POINT M<small>(x y m)</small></td><td>POINT ZM<small>(x y z m)</small></td></tr>
+<tr><td style="background-color: #FFF0F5"> LINESTRING<small>(x y, x y)</small></td><td>LINESTRING Z<small>(x y z, x y z)</small></td><td style="background-color: #FFF0F5">LINESTRING M<small>(x y m, x y m)</small></td><td>LINESTRING ZM<small>(x y z m, x y z m)</small></td></tr>
+<tr><td style="background-color: #FFF0F5"> POLYGON<small>(x y, x y, x y)</small></td><td>POLYGON Z<small>(x y z, x y z, x y z)</small></td><td style="background-color: #FFF0F5">POLYGON M<small>(x y m, x y m, x y m)</small></td><td>POLYGON ZM<small>(x y z m)</small></td></tr>
+<tr><td style="background-color: #FFF0F5"> POLYHEDRALSURFACE<small>(x y)</small></td><td>POLYHEDRALSURFACE Z<small>(x y z)</small></td><td style="background-color: #FFF0F5">POLYHEDRALSURFACE M<small>(x y m)</small></td><td>POLYHEDRALSURFACE ZM<small>(x y z m)</small></td></tr>
+<tr><td style="background-color: #FFF0F5"> TRIANGLE<small>(x y, x y, x y)</small></td><td>TRIANGLE Z<small>(x y z, x y z, x y z)</small></td><td style="background-color: #FFF0F5">TRIANGLE M<small>(x y m, x y m, x y m)</small></td><td>TRIANGLE ZM<small>(x y z m, x y z m, x y z m)</small></td></tr>
+<tr><td style="background-color: #FFF0F5"> TIN(<small>(x y, x y, x y),(x y, x y, x y))</small></td><td>TIN Z(<small>(x y z, x y z, x y z),(x y z, x y z, x y z)))</small></td><td style="background-color: #FFF0F5">TIN M(<small>(x y m, x y m, x y m),(x y m, x y m, x y m))</small></td><td>TIN ZM(<small>(x y z m, x y z m, x y z m),(x y z m, x y z m, x y z m))</small></td></tr>
+<tr><td style="background-color: #FFF0F5"> MULTIPOINT<small>((x y), (x y))</small></td><td>MULTIPOINT Z<small>((x y z), (x y z))</small></td><td style="background-color: #FFF0F5">MULTIPOINT M<small>((x y m), (x y m))</small></td><td>MULTIPOINT ZM<small>((x y z m),(x y z m))</small></td></tr>
+<tr><td style="background-color: #FFF0F5"> MULTILINESTRING<small>((x y, x y), (x y, x y))</small></td><td>MULTILINESTRING Z<small>((x y z, x y z), (x y z, x y z))</small></td><td style="background-color: #FFF0F5">MULTILINESTRING M<small>((x y m, x y m), (x y m, x y m))</small></td><td>MULTILINESTRING ZM<small>((x y z m, x y z m),(x y z m, x y z m))</small></td></tr>
+<tr><td style="background-color: #FFF0F5"> MULTIPOLYGON<small>((x y, x y, x y),(x y, x y, x y))</small></td><td>MULTIPOLYGON Z<small>((x y z, x y, x y z),(x y z, x y z, x y z))</small></td><td style="background-color: #FFF0F5">MULTIPOLYGON M<small>((x y m, x y m, x y m),(x y m, x y m, x y m))</small></td><td>MULTIPOLYGON ZM<small>((x y z m, x y z m, x y z m),(x y z m, x y z m, x y z m))</small></td></tr>
+</tbody>
+</table>
+
+
+<p>EWKT:</p>
+<table>
+<caption></caption>
+<thead>
+<tr><th colspan="4">WKT</th></tr>
+</thead>
+<tbody>
+<tr><td> <a href="" "https:="" dp.schemas.opengis.net="" 05-029r4="" gml="" 3.2.1="" profiles="" point="" 0.4.0="" gml311pointprofile.xsd"=""> gml:Point</a></td><td>B</td><td>C</td></tr>
+<tr><td>D</td><td>E</td><td>F</td></tr>
+</tbody>
+</table>
+
+
+<p>3D Tiles en I3S: </p>
+<table>
+<caption></caption>
+<thead>
+<tr><th colspan="4">IFC (4x3)</th></tr>
+</thead>
+<tbody>
+<tr><th colspan="4"><small>Points</small></th></tr>
+<tr>
+    <td> <a href="" "https:="" standards.buildingsmart.org="" ifc="" release="" ifc4_3="" html="" lexical="" ifccartesianpoint.htm"=""> IfcCartesianPoint</a></td>
+    <td><a href="" "https:="" ifc43-docs.standards.buildingsmart.org="" ifc="" release="" ifc4x3="" html="" lexical="" ifcpointbydistanceexpression.htm"=""> IfcPointByDistanceExpression</a></td>
+    <td><a href="" "https:="" ifc43-docs.standards.buildingsmart.org="" ifc="" release="" ifc4x3="" html="" lexical="" ifcpointoncurve.htm"="">IfcPointOnCurve</a></td>
+    <td><a href="" "https:="" ifc43-docs.standards.buildingsmart.org="" ifc="" release="" ifc4x3="" html="" lexical="" ifcpointonsurface.htm"="">IfcPointOnSurface </a></td>
+</tr>
+<tr><td>D</td><td>E</td><td>F</td></tr>
+</tbody>
+</table>
+
+
+<table>
+<caption></caption>
+<thead>
+<tr><th colspan="4">Open Cascade</th></tr>
+</thead>
+<tbody>
+<tr><th colspan="4"><small>Points</small></th></tr>
+<tr>
+    <td> <a href="" "https:="" dev.opencascade.org="" doc="" refman="" html="" class_geom2d___cartesian_point.html"=""> Geom2d_CartesianPoint</a></td>
+    <td> <a href="" "https:="" dev.opencascade.org="" doc="" refman="" html="" class_geom___cartesian_point.html"=""> Geom_CartesianPoint</a></td>
+    <td> <a href="" "https:="" dev.opencascade.org="" doc="" refman="" html="" class_geom2d___point.html"=""> Geom2d_Point</a></td>
+    <td> <a href="" "https:="" dev.opencascade.org="" doc="" refman="" html="" class_geom___point.html"=""> Geom_Point</a></td>
+</tr>
+<tr><td>D</td><td>E</td><td>F</td></tr>
+</tbody>
+</table>
+
+
+
+<table>
+<caption></caption>
+<thead>
+<tr><th colspan="4">STEP</th></tr>
+</thead>
+<tbody>
+<tr><th colspan="4"><small>Points</small></th></tr>
+<tr>
+    <td> <a href="" "https:="" www.steptools.com="" stds="" smrl="" data="" resource_docs="" geometric_and_topological_representation="" sys="" 4_schema.htm#geometry_schema.cartesian_point"=""> cartesian_point</a></td>
+    <td>  <a href="" "https:="" www.steptools.com="" stds="" smrl="" data="" resource_docs="" geometric_and_topological_representation="" sys="" 4_schema.htm#geometry_schema.cylindrical_point"=""> cylindrical_point</a></td>
+    <td><a href="" "https:="" www.steptools.com="" stds="" smrl="" data="" resource_docs="" geometric_and_topological_representation="" sys="" 4_schema.htm#geometry_schema.spherical_point"="">spherical_point</a></td>
+    <td><a href="" "https:="" www.steptools.com="" stds="" smrl="" data="" resource_docs="" geometric_and_topological_representation="" sys="" 4_schema.htm#geometry_schema.polar_point"="">polar_point</a></td>
+</tr>
+<tr>
+    <td><a href="" "https:="" www.steptools.com="" stds="" smrl="" data="" resource_docs="" geometric_and_topological_representation="" sys="" 4_schema.htm#geometry_schema.point_on_curve"="">point_on_curve</a></td>
+    <td><a href="" "https:="" www.steptools.com="" stds="" smrl="" data="" resource_docs="" geometric_and_topological_representation="" sys="" 4_schema.htm#geometry_schema.point_on_surface"="">point_on_surface</a></td>
+    <td><a href"https:="" www.steptools.com="" stds="" smrl="" data="" resource_docs="" geometric_and_topological_representation="" sys="" 4_schema.htm#geometry_schema.point_in_volume"="" class="respec-offending-element" title="Linking error: not matching `&lt;dfn&gt;`" id="respec-offender-linking-error-not-matching-dfn">point_in_volume</a></td>
+    <td><a href"https:="" www.steptools.com="" stds="" smrl="" data="" resource_docs="" geometric_and_topological_representation="" sys="" 4_schema.htm#geometry_schema.point_replica"="" class="respec-offending-element" title="Linking error: not matching `&lt;dfn&gt;`" id="respec-offender-linking-error-not-matching-dfn-0">point_replica</a></td>
+</tr>
+<tr>
+    <td><a href"https:="" www.steptools.com="" stds="" smrl="" data="" resource_docs="" geometric_and_topological_representation="" sys="" 4_schema.htm#geometry_schema.degenerate_pcurve"="" class="respec-offending-element" title="Linking error: not matching `&lt;dfn&gt;`" id="respec-offender-linking-error-not-matching-dfn-1">degenerate_pcurve</a></td>
+    <td><a href"https:="" www.steptools.com="" stds="" smrl="" data="" resource_docs="" geometric_and_topological_representation="" sys="" 4_schema.htm#geometry_schema.evaluated_degenerate_pcurve"="" class="respec-offending-element" title="Linking error: not matching `&lt;dfn&gt;`" id="respec-offender-linking-error-not-matching-dfn-2">evaluated_degenerate_pcurve</a></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr><th colspan="4"><small>Lines</small></th></tr>
+<tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+    <td>D</td>
+</tr>
+</tbody>
+</table>
+
+<p>LAZ: </p>
+<p>3D Geovolumes API:</p>
+<p>Lines and Curves:
+|===
+| ISO 19107 | GML | IFC | STEP | OpenCascade | WKT 
+||  |  |  | |
+|| |  |  | |CIRCULARSTRING(x1 y1, ...)
+||  |  | |POLYGON()
+<var>GM_Polygon</var>   |  | |
+| GM_Ring| gml:Ring|  |  |  |
+| | gml:Patches|  |  ||</p>
+<p>|| IfcBSplineCurveWithKnots  | B_spline_curve_with_knots |Geom2d_BSplineCurve +
+Geom_BSplineCurve|
+|| | IfcRationalBSplineCurveWithKnots  | ||
+||  | bezier_curve |Geom2D_BezierCurve +
+Geom_BezierCurve |
+|| |  | rational_b_spline_curve ||
+|| |  | local_b_spline ||
+|| |  | uniform_curve ||
+|| |  | quasi_uniform_curve ||
+|| |  | locally_refined_spline_curve  ||
+|| |  | rational_locally_refined_spline_curve  ||
+|| |  | trimmed_curve   |Geom2d_TrimmedCurve +
+Geom_TrimmedCurve|
+<var>GM_CompositeCurve</var> gml:CompositeCurve | IfcCompositeCurve  | ||COMPOUNDCURVE(...)
+|| | IfcCompositeCurveOnSurface  | ||
+|| | IfcBoundaryCurve | boundary_curve||
+|| | IfcOuterBoundaryCurve|outer_boundary_curve ||
+|| | IfcGradientCurve  | ||
+|| | IfcSegmentedReferenceCurve  | ||
+|| | IfcIndexedPolyCurve  | ||
+<var>GM_LineString</var> gml:LineStringSegment | | ||LINESTRING(x1 y1, x2 y2, ...)
+|| | IfcPolyline  | polyline <var>TopoDS_Wire</var>
+|| | IfcTrimmedCurve  | ||
+||| IfcCircle |circle |Geom2d_Circle +
+Geom_Circle|
+|| | IfcElipse | elipse |Geom2d_Ellipse +
+Geom_Ellipse|
+|| | IfcLine  | line |Geom2d_Line +
+Geom_Line|
+|| |  | hyperbola |Geom2d_Hyperbola +
+Geom_Hyperbola|
+|| |  | parabola |Geom2d_Parabola +
+Geom_Parabola|
+|| gml:OffsetCurve | IfcOffsetCurve2D | offset_curve_2d |Geom2d_OffsetCurve +
+Geom_OffsetCurve|
+|| | IfcOffsetCurve3D | offset_curve_3d ||
+|| | IfcOffsetCurveByDistances | ||
+|| | IfcPcurve | pcurve  ||
+|| |  | bounded_pcurve  ||
+|| | IfcPolynomialCurve | ||
+|| | IfcClothoid <var>clothoid</var>|
+|| |  <var>circular_involute</var>|
+|| | IfcCosineSpiral | ||
+|| | IfcSecondOrderPolynomialSpiral | ||
+|| | IfcThirdOrderPolynomialSpiral | ||
+|| | IfcSeventhOrderPolynomialSpiral | ||
+|| | IfcSineSpiral | ||
+|| | IfcSurfaceCurve | surface_curve ||
+|| |  | intersection_curve ||
+|| |  | seam_curve ||
+|| |  | bounded_surface_curve ||
+|| |  | composite_curve_on_surface ||
+|| |  | curve_replica ||
+|| | IfcSeamCurve| ||
+|| | |Geom2d_VectorWithMagnitude +
+Geom_VectorWithMagnitude  ||
+|===</p>
+<p>Composites:
+|===
+| ISO 19107 | GML | IFC | STEP | OpenCascade | WKT 
+|| | | composite_curve||
+|| | | composite_curve_segment ||
+|| | | reparametrised_composite_curve_segment ||
+|===</p>
+<p>Surface:
+|===
+| ISO 19107 | GML | IFC | STEP | OpenCascade | WKT | X3D
+<var>GM_SurfacePatch</var> |  |  |||
+<var>GM_PointGrid</var>   |  |||
+<var>GM_ParametricCurveSurface</var> |  |  |||
+<var>GM_GriddedSurface</var> |  |  |||
+|| | |plane <var>Geom_Plane</var>|
+|| | |cylindrical_surface <var>Geom_CylindricalSurface</var>|
+|| | |conical_surface <var>Geom_ConicalSurface</var>|
+|| | |spherical_surface <var>Geom_SphericalSurface</var>|
+|| | |toroidal_surface <var>Geom_ToroidalSurface</var>|
+|| | <var>degenerate_toroidal_surface</var>||
+|| | <var>dupin_cyclide_surface</var>||
+|| | |surface_of_linear_extrusion <var>Geom_SurfaceOfLinearExtrusion</var>|
+|| | |surface_of_revolution <var>Geom_SurfaceOfRevolution</var>|
+|| | <var>surface_curve_swept_surface</var>||
+|| | <var>fixed_reference_swept_surface</var>||
+|| | |b_spline_surface  <var>Geom_BSplineSurface</var>|
+|| | <var>b_spline_surface_with_knots</var>||
+|| | <var>uniform_surface</var>||
+|| | <var>uasi_uniform_surface</var>||
+|| | |bezier_surface   <var>Geom_BezierSurface</var>|
+|| | <var>rational_b_spline_surface</var>||
+|| | <var>locally_refined_spline_surface</var>||
+|| | <var>rational_locally_refined_spline_surface</var>||
+|| | <var>curve_bounded_surface</var>||
+|| | <var>rectangular_composite_surface</var>||
+|| | <var>surface_patch</var>||
+|| | |offset_surface <var>Geom_OffsetSurface</var>|
+|| | <var>oriented_surface</var>||
+|| | <var>surface_replica</var>||
+|| | |<var>Geom_Surface</var>|
+|| |  <var>Geom_OsculatingSurface</var>||
+|| |  <var>Geom_RectangularTrimmedSurface</var>||
+|===</p>
+<p>Primitives:
+|===
+| ISO 19107 | GML | IFC | STEP | OpenCascade | WKT | X3D
+| |  | IfcBlock <var>block_volume</var> TopoDS_Solid (BRepPrimAPI_MakeBox) |<var>Box</var>|  | IfcRectangularPyramid <var>pyramid_volume</var>||
+<var>GM_Cone</var> gml:Cone| IfcRightCircularCone| TopoDS_Solid (BRepPrimAPI_MakeCone)  |||Cone
+<var>GM_Cylinder</var> gml:Cylinder| IfcRightCircularCylinder | cylindrical_volume| TopoDS_Solid (BRepPrimAPI_MakeCylinder) |<var>Cylinder</var>| |  | | TopoDS_Solid (BRepPrimAPI_MakeHalfSpace) ||
+|| |  | | TopoDS_Solid (BRepPrimAPI_MakeOneAxis) ||
+|| |  | | TopoDS_Solid (BRepPrimAPI_MakePrism) ||
+|| |  | | TopoDS_Solid (BRepPrimAPI_MakeRevol) ||
+|| |  | | TopoDS_Solid (BRepPrimAPI_MakeRevolution) |||
+<var>GM_Sphere</var> gml:Sphere| IfcSphere | spherical_volume | TopoDS_Solid (BRepPrimAPI_MakeSphere) ||
+|| |  | | TopoDS_Solid (BRepPrimAPI_MakeTorus) ||
+|| |  <var>wedge_volume</var> TopoDS_Solid (BRepPrimAPI_MakeWedge) ||
+|| |  <var>tetrahedron_volume</var>  ||
+|| |  <var>cylindrical_volume</var>  ||
+|| |  <var>eccentric_conical_volume</var>  ||
+|| |  <var>toroidal_volume</var>  ||
+|| |  <var>ellipsoid_volume</var>  ||
+|===</p>
+<p>Solid:
+|===
+| ISO 19107 | GML | IFC | STEP | OpenCascade | WKT | X3D
+|| gml:AbstractSolid |  |  | ||
+<var>GM_Solid</var>  <var>IfcFacetedBrep</var> manifold_solid_brep  | TopoDS_Solid(TopoDS_Face)|<var>IndexedFaceSet</var>| | IfcCsgSolid |Csg_solid <var>TopoDS_Solid</var>|
+|| | IfcAdvancedBrep | |||
+<var>GM_Shell</var> gml:Shell |  |  | ||
+|| |  <var>b_spline_volume</var>  ||
+|| |  <var>b_spline_volume_with_knots</var>  ||
+|| |  <var>bezier_volume</var>  ||
+|| |  <var>uniform_volume</var>  ||
+|| |  <var>quasi_uniform_volume</var>  ||
+|| |  <var>rational_b_spline_volume</var>  ||
+|| |  <var>locally_refined_spline_volume</var>  ||
+|| |  <var>rational_locally_refined_spline_volume</var>  ||
+|===</p>
+<p>Boolean Operators:
+|===
+| ISO 19107 | GML | IFC | OpenCascade | WKT | X3D
+||  | IfcBooleanResult(.INTERSECTION) |boolean_operator(intersection) | BRepAlgoAPI_Common||
+||  | IfcBooleanResult(.DIFFERENCE) |boolean_operator(difference)  | BRepAlgoAPI_Cut ||
+||  | IfcBooleanResult(.UNION) |boolean_operator(union)  | BRepAlgoAPI_Fuse||
+||  |  |  | BRepAlgoAPI_Section||
+|===</p>
+<p>Axis: 
+|===
+| ISO 19107 | GML | IFC | STEP | OpenCascade | WKT 
+|| |  ||Geom2d_AxisPlacement + 
+Geom_AxisPlacement||
+|| | axis1_placement  <var>Geom_Axis1Placement</var>|
+|| | axis2_placement_2d + 
+axis2_placement_3d <var>Geom_Axis2Placement</var>|
+|===</p>
+<p>Operators:
+|===
+| ISO 19107 | GML | IFC | STEP | OpenCascade | WKT 
+|| |  <var>cartesian_transformation_operator</var>|
+|| |IfcCartesianTransformationOperator3D|cartesian_transformation_operator_3d ||
+|| |IfcCartesianTransformationOperator2D +
+IfcCartesianTransformationOperator2DnonUniform|cartesian_transformation_operator_2d||
+|===</p>
+<p>|===
+| ISO 19107 | GML      | STEP | IFC | OpenCascade | WKT 
+|| | IfcCartesianPointList2D  | ||
+|| | IfcCartesianPointList3D  | ||
+|===</p>
+<p>Interface Query3D:
+|===
+| ISO 19107 | GML | IFC | OpenCascade | WKT |
+<var data-type="Geometry">3Dboundary</var>  |  |  | |
+<var data-type="Geometry">3DconvexHull</var>  |  |  | |
+<var>3Ddistance</var>  |  |  | |
+<var>3Dbuffer</var>  |  |  | |
+<var>3Dintersection</var>  |  |  | |
+<var>3Ddifference</var>  |  |  | |
+<var>3DsymDifference</var>  |  |  | |
+<var>3Dunion</var>  |  |  | |
+<var>3Dcontains</var>   |  |  | |
+<var>3Dcrosses</var>  |  | ||
+<var>3Ddisjoint</var>  |  | ||
+<var>3Dequals</var>  |  |  | |
+<var>3Dintersects</var>  |  |  | |
+<var>3Doverlaps</var>  |  | ||
+<var>3Dtouches</var>  |  | ||
+<var>3Dwithin</var>  |  | ||
+<var>3DwithinDistance</var>  |  | ||
+<var>3Drelate</var>  |  | ||
+|===</p>
+<p><a href="https://dev.opencascade.org/doc/refman/html/">https://dev.opencascade.org/doc/refman/html/</a>
+<a href="https://old.opencascade.com/doc/occt-7.5.0/overview/html/index.html">https://old.opencascade.com/doc/occt-7.5.0/overview/html/index.html</a>
+<a href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcGeometricRepresentationItem.htm">https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcGeometricRepresentationItem.htm</a>
+<a href="https://steptools.com/stds/smrl/data/modules/basic_geometry/sys/4_info_reqs.htm">https://steptools.com/stds/smrl/data/modules/basic_geometry/sys/4_info_reqs.htm</a>
+<a href="https://www.web3d.org/documents/specifications/19775-1/V4.0/index.html">https://www.web3d.org/documents/specifications/19775-1/V4.0/index.html</a></p>
+<section id="annex-b-allignment-of-topology"><div class="header-wrapper"><h3 id="a-1-annex-b-allignment-of-topology"><bdi class="secno">A.1 </bdi>Annex B: Allignment of Topology</h3><a class="self-link" href="#annex-b-allignment-of-topology" aria-label="Permalink for Appendix A.1"></a></div>
+<p>X3D 
+BOX</p>
+<p>IFC 
+IfcCsgSolid</p>
+<p>IfcAdvancedBrep</p>
+</section></section>
 
 
 
@@ -1505,18 +2070,20 @@ ul.index code{color:inherit}
 
 
 
-<section id="tof"><div class="header-wrapper"><h2 id="x6-lijst-met-figuren"><bdi class="secno">6. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 6."></a></div><ul class="tof">
+<section id="tof"><div class="header-wrapper"><h2 id="b-lijst-met-figuren"><bdi class="secno">B. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section B."></a></div><ul class="tof">
         <li class="tofline">
     <a class="tocxref" href="#fig-de-3d-keten-in-samenhang-bron-vng"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">De 3D keten in samenhang - bron VNG</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-verschil-tussen-de-ruimtelijke-dimensie-2d-2-5d-en-3d"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Verschil tussen de ruimtelijke dimensie 2D, 2,5D en 3D</span></a>
   </li>
       </ul></section>
-<section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
-    <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
+<section id="index" class="appendix"><div class="header-wrapper"><h2 id="c-index"><bdi class="secno">C. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix C."></a></div><section id="index-defined-here">
+    <div class="header-wrapper"><h3 id="c-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">C.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix C.1"></a></div>
     <ul class="index">
     
   </ul>
   </section><section id="index-defined-elsewhere">
-    <div class="header-wrapper"><h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
+    <div class="header-wrapper"><h3 id="c-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">C.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix C.2"></a></div>
     <ul class="index">
     
   </ul>
