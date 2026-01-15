@@ -1368,7 +1368,7 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Algemeen<br>
       Werkversie
-      <time class="dt-published" datetime="2025-11-14">07 januari 2026</time>
+      <time class="dt-published" datetime="2025-11-14">15 januari 2026</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -1543,6 +1543,54 @@ Deze dimensie beschrijft de hoeveelheid onafhankelijke richtingen in de "echte r
       </figure>
     <p></p>
 </section><section id="topologische-relaties"><div class="header-wrapper"><h3 id="x2-3-topologische-relaties"><bdi class="secno">2.3 </bdi>Topologische relaties</h3><a class="self-link" href="#topologische-relaties" aria-label="Permalink for Section 2.3"></a></div>
+<p>Een topologische relatie beschrijft hoe objecten ruimtelijk met elkaar verbonden zijn. Ligt iets in, op, naast of over elkaar? Raken objecten elkaar? Of zijn deze gescheiden? </p>
+<p>Om dit geformaliseerd te kunnen duiden en wiskundig te kunnen berekenen zijn standaard topologische modellen beschikbaar. Een belangrijk topologische model dat formeel erkend is door het OGC in de <a href="https://www.ogc.org/standards/sfa/">Simple Feature Access</a> is het Dimensionally Extended 9–Intersection Model (DE-9IM). </p>
+<p>Het DE-9IM splitst geometrie op in binnen (interior), grens (boundary) en buiten (exterior).</p>
+<figure id="Binnen-buiten-grens-van-geometrie">
+      <img src="./media/Grens-Binnen-Buiten-Geometrie.png" alt="Binnen, buiten en grens van geometrie" width="700">
+    <figcaption><a class="self-link" href="#Binnen-buiten-grens-van-geometrie">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Binnen-buiten-grens-van-geometrie"></a><span class="fig-title">Binnen, buiten en grens van geometrie</span></span></figcaption>
+</figure>
+
+<p>De topologische relatie tussen twee geometrieën wordt bepaald door te kijken of en hoe grens, binnen en buiten elkaar snijden. Niet of wel, en als wel met welke dimensie. In het DE-9IM-model wordt de topologische relatie bepaald door de 3×3-matrix van intersecties tussen interieur, grens en exterieur.”</p>
+<figure id="Intersectie_model_2D">
+      <img src="./media/Intersectie_model_2D.png" alt="Intersectie model 2D" width="700">
+    <figcaption><a class="self-link" href="#Intersectie_model_2D">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Topologische_Relaties_in_2D"></a><span class="fig-title">Intersectiemodel van twee 2D vlakken</span></span></figcaption>
+</figure>
+
+<figure id="Intersectie_model_3D">
+      <img src="./media/Intersectie_model_3D.png" alt="Intersectie model in 3D" width="700">
+    <figcaption><a class="self-link" href="#Intersectie_model_3D">Figuur <bdi class="figno">5</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Topologische_Relaties_in_3D"></a><span class="fig-title">Intersectiemodel van 3D volumes</span></span></figcaption>
+</figure>
+
+<p>De patronen van de matrix van de intersecties definiëren onderstaande relaties:  </p>
+<figure id="Topologische_Relaties_2D_vlakken">
+      <img src="./media/Topologische_relaties_2D_vlakken.png" alt="Topologische relaties in 3D" width="700">
+    <figcaption><a class="self-link" href="#Topologische_Relaties_2D_vlakken">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Topologische_Relaties_in_3D"></a><span class="fig-title">Topologische relatie van twee vlakken</span></span></figcaption>
+</figure>
+
+<p>Deze relaties zijn formeel gedefinieerd voor 2D‑geometrieën. De implementaties in software volgen dat ook.</p>
+<p>Wel is het mogelijk om deze intersectie relaties toe te passen in 3D. Dit kan er als volgt uitzien: </p>
+<figure id="Topologische_Relaties_3D_volumes">
+      <img src="./media/Topologische_relaties_3D_volumes.png" alt="Topologische relaties in 3D" width="700">
+    <figcaption><a class="self-link" href="#Topologische_Relaties_3D_volumes">Figuur <bdi class="figno">7</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Topologische_Relaties_in_3D"></a><span class="fig-title">Topologische relatie van twee 3D volumes</span></span></figcaption>
+</figure>
+
+<p>De vraag is of er voldoende betekenis te geven is met deze 3D-topologische relaties. </p>
+<p>Onderstaande voorbeelden kennen allen de topologische relatie "Meet (grenst aan)" </p>
+<figure id="Topologische_Relatie_3D_grenst_aan">
+      <img src="./media/3D_Topologische_relatie_grenst_aan.png" alt="Topologische relaties 3D grenst aan" width="700">
+    <figcaption><a class="self-link" href="#Topologische_Relatie_3D_grenst_aan">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Topologische_Relaties_in_3D"></a><span class="fig-title">Zes voorbeelden van een zelfde topologische relaties "grenst aan"</span></span></figcaption>
+</figure>
+
+<p><mark> In de software is het volgende beschikbaar. Nog onderzoeken </mark></p>
+<p><a href="https://postgis.net/docs/ST_3DIntersects.html">ST_3DIntersects</a>
+Zie <a href="https://postgis.net/workshops/postgis-intro/3d.html">PostGIS 3D Functions</a></p>
+<p>In praktijk wordt het vaak op 3D-gegevens gebruikt door de geometrie in 2D te projecteren, maar dit betekent dat sommige 3D-topologische nuances (zoals “boven/op elkaar” in de Z-richting) niet worden gemodelleerd.</p>
+<figure id="3D_vs_2D_geometrie_disjoint_vs_overlap">
+      <img src="./media/3D_vs_2D_geometrie_disjoint_vs_overlap.png" alt="3D vs 2D project Disjoint vs Overlap" width="700">
+    <figcaption><a class="self-link" href="#3D_vs_2D_geometrie_disjoint_vs_overlap">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-3D_vs_2D_geometrie_disjoint_vs_overlap"></a><span class="fig-title">3D vs 2D project Disjoint vs Overlap"</span></span></figcaption>
+</figure>
+
 <p><mark>De topologische regel in de BGT is dat de vlakken op eenzelfde relatieve hoogteligging niet overlappend mogen zijn. Het moet vlakdekkend zijn. Wat gaat dit in de 3D geometriën betekenen?</mark></p>
 </section></section>
 <section id="inventarisatie-3d-standaarden"><div class="header-wrapper"><h2 id="x3-inventarisatie-3d-standaarden"><bdi class="secno">3. </bdi>Inventarisatie 3D standaarden</h2><a class="self-link" href="#inventarisatie-3d-standaarden" aria-label="Permalink for Section 3."></a></div>
@@ -2077,6 +2125,20 @@ IfcCsgSolid</p>
     <a class="tocxref" href="#fig-de-3d-keten-in-samenhang-bron-vng"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">De 3D keten in samenhang - bron VNG</span></a>
   </li><li class="tofline">
     <a class="tocxref" href="#fig-verschil-tussen-de-ruimtelijke-dimensie-2d-2-5d-en-3d"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Verschil tussen de ruimtelijke dimensie 2D, 2,5D en 3D</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#Binnen-buiten-grens-van-geometrie"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Binnen, buiten en grens van geometrie</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#Intersectie_model_2D"><span class="self-link">Figuur <bdi class="figno">4</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Intersectiemodel van twee 2D vlakken</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#Intersectie_model_3D"><span class="self-link">Figuur <bdi class="figno">5</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Intersectiemodel van 3D volumes</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#Topologische_Relaties_2D_vlakken"><span class="self-link">Figuur <bdi class="figno">6</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Topologische relatie van twee vlakken</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#Topologische_Relaties_3D_volumes"><span class="self-link">Figuur <bdi class="figno">7</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Topologische relatie van twee 3D volumes</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#Topologische_Relatie_3D_grenst_aan"><span class="self-link">Figuur <bdi class="figno">8</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Zes voorbeelden van een zelfde topologische relaties "grenst aan"</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#3D_vs_2D_geometrie_disjoint_vs_overlap"><span class="self-link">Figuur <bdi class="figno">9</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">3D vs 2D project Disjoint vs Overlap"</span></span></a>
   </li>
       </ul></section>
 <section id="index" class="appendix"><div class="header-wrapper"><h2 id="c-index"><bdi class="secno">C. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix C."></a></div><section id="index-defined-here">
