@@ -1368,7 +1368,7 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Algemeen<br>
       Werkversie
-      <time class="dt-published" datetime="2025-11-14">15 januari 2026</time>
+      <time class="dt-published" datetime="2025-11-14">06 februari 2026</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -1545,13 +1545,13 @@ Deze dimensie beschrijft de hoeveelheid onafhankelijke richtingen in de "echte r
 </section><section id="topologische-relaties"><div class="header-wrapper"><h3 id="x2-3-topologische-relaties"><bdi class="secno">2.3 </bdi>Topologische relaties</h3><a class="self-link" href="#topologische-relaties" aria-label="Permalink for Section 2.3"></a></div>
 <p>Een topologische relatie beschrijft hoe objecten ruimtelijk met elkaar verbonden zijn. Ligt iets in, op, naast of over elkaar? Raken objecten elkaar? Of zijn deze gescheiden? </p>
 <p>Om dit geformaliseerd te kunnen duiden en wiskundig te kunnen berekenen zijn standaard topologische modellen beschikbaar. Een belangrijk topologische model dat formeel erkend is door het OGC in de <a href="https://www.ogc.org/standards/sfa/">Simple Feature Access</a> is het Dimensionally Extended 9–Intersection Model (DE-9IM). </p>
-<p>Het DE-9IM splitst geometrie op in binnen (interior), grens (boundary) en buiten (exterior).</p>
+<p>Het DE-9IM splitst geometrie op in binnen (interior), grens (boundary) en buiten (exterior). Het model voorziet naast 2D vlakken ook in andere dimensies zoals 0D punten, 1D lijnen en 3D volumes. </p>
 <figure id="Binnen-buiten-grens-van-geometrie">
       <img src="./media/Grens-Binnen-Buiten-Geometrie.png" alt="Binnen, buiten en grens van geometrie" width="700">
     <figcaption><a class="self-link" href="#Binnen-buiten-grens-van-geometrie">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Binnen-buiten-grens-van-geometrie"></a><span class="fig-title">Binnen, buiten en grens van geometrie</span></span></figcaption>
 </figure>
 
-<p>De topologische relatie tussen twee geometrieën wordt bepaald door te kijken of en hoe grens, binnen en buiten elkaar snijden. Niet of wel, en als wel met welke dimensie. In het DE-9IM-model wordt de topologische relatie bepaald door de 3×3-matrix van intersecties tussen interieur, grens en exterieur.”</p>
+<p>De topologische relatie tussen twee geometrieën wordt bepaald door te kijken of en hoe grens, binnen en buiten elkaar snijden. Niet of wel, en als wel met welke dimensie. In het DE-9IM-model wordt de topologische relatie bepaald door de 3×3-matrix van intersecties tussen interieur, grens en exterieur. Een punt heeft geen grens, een lijn heeft een set van eindpunten als grens, een vlak heeft een gesloten lijn als grens en een volume heeft een vlak als grens. </p>
 <figure id="Intersectie_model_2D">
       <img src="./media/Intersectie_model_2D.png" alt="Intersectie model 2D" width="700">
     <figcaption><a class="self-link" href="#Intersectie_model_2D">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Topologische_Relaties_in_2D"></a><span class="fig-title">Intersectiemodel van twee 2D vlakken</span></span></figcaption>
@@ -1568,30 +1568,375 @@ Deze dimensie beschrijft de hoeveelheid onafhankelijke richtingen in de "echte r
     <figcaption><a class="self-link" href="#Topologische_Relaties_2D_vlakken">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Topologische_Relaties_in_3D"></a><span class="fig-title">Topologische relatie van twee vlakken</span></span></figcaption>
 </figure>
 
-<p>Deze relaties zijn formeel gedefinieerd voor 2D‑geometrieën. De implementaties in software volgen dat ook.</p>
-<p>Wel is het mogelijk om deze intersectie relaties toe te passen in 3D. Dit kan er als volgt uitzien: </p>
+
+<p>De relaties zijn: </p>
+<table>
+<thead>
+<tr>
+<th>Egenhofer (DE-9IM):</th>
+<th>RCC:</th>
+<th>ST</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Disjoint</td>
+<td>DC</td>
+<td>Disjoint</td>
+</tr>
+<tr>
+<td>Meets/Touches</td>
+<td>EC</td>
+<td>Touches</td>
+</tr>
+<tr>
+<td>Overlaps</td>
+<td>PO</td>
+<td>Overlaps/intersect</td>
+</tr>
+<tr>
+<td>Contains</td>
+<td>NTPPi</td>
+<td>contains</td>
+</tr>
+<tr>
+<td>Within</td>
+<td>NTTP</td>
+<td>Within</td>
+</tr>
+<tr>
+<td>Equal</td>
+<td>EQ</td>
+<td>Equals</td>
+</tr>
+</tbody></table>
+<p>De ISO 191007 geeft de volgede relaties in hoofdstuk 6.4.8.8: </p>
+<table>
+  <tbody><tr>
+    <th>2D</th>
+    <th>3D</th>
+  </tr>
+  <tr>
+    <td colspan="2">Omhulling</td>
+  </tr>
+  <tr>
+    <td>boundaryType</td>
+    <td>3DBoundary</td>
+  </tr>
+    <tr>
+    <td colspan="2"><strong>Set</strong></td>
+  </tr>
+  <tr>
+    <td>intersection</td>
+    <td>3Dintersection</td>
+  </tr>
+  <tr>
+    <td>difference</td>
+    <td>3Ddifference</td>
+  </tr>
+  <tr>
+    <td>symDifference</td>
+    <td>3DsymDifference</td>
+  </tr>
+  <tr>
+    <td>union</td>
+    <td>3Dunion</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>query</strong></td>
+  </tr>
+  <tr>
+    <td>contains</td>
+    <td>3Dcontains</td>
+  </tr>
+  <tr>
+  <td>crosses</td>
+    <td>3Dcrosses</td>
+  </tr>
+  <tr>
+  <td>disjoint</td>
+    <td>3Ddisjoint</td>
+  </tr>
+  <tr>
+  <td>equals</td>
+    <td>3Dequals</td>
+  </tr>
+  <tr>
+  <td>intersects</td>
+    <td>3Dintersects</td>
+  </tr>
+  <tr>
+  <td>overlaps</td>
+    <td>3Doverlaps</td>
+  </tr>
+  <tr>
+  <td>touches</td>
+    <td>3Dtouches</td>
+  </tr>
+  <tr>
+  <td>within</td>
+    <td>3Dwithin</td>
+  </tr>
+  <tr>
+  <td>withinDistance</td>
+    <td>3DwithinDistance</td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>Omhulling</strong></td>
+  </tr>
+  <tr>
+  <td>relate</td>
+    <td>3Drelate</td>
+  </tr>
+</tbody></table>
+
+
+<p>De NEN3610 verwijst naar de OGC Simple Features Acces standaard een definieert: </p>
+<ul>
+<li>equals </li>
+<li>disjoint </li>
+<li>intersects </li>
+<li>touches</li>
+<li>crosses</li>
+<li>within</li>
+<li>contains </li>
+<li>overlaps</li>
+</ul>
+<p>Deze relaties zijn in de simple features access formeel gedefinieerd voor 2D‑geometrieën. Het mogelijk om de intersectierelaties toe te passen in 3D. Dit ziet er als volgt uit: </p>
 <figure id="Topologische_Relaties_3D_volumes">
       <img src="./media/Topologische_relaties_3D_volumes.png" alt="Topologische relaties in 3D" width="700">
     <figcaption><a class="self-link" href="#Topologische_Relaties_3D_volumes">Figuur <bdi class="figno">7</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Topologische_Relaties_in_3D"></a><span class="fig-title">Topologische relatie van twee 3D volumes</span></span></figcaption>
 </figure>
 
-<p>De vraag is of er voldoende betekenis te geven is met deze 3D-topologische relaties. </p>
-<p>Onderstaande voorbeelden kennen allen de topologische relatie "Meet (grenst aan)" </p>
-<figure id="Topologische_Relatie_3D_grenst_aan">
-      <img src="./media/3D_Topologische_relatie_grenst_aan.png" alt="Topologische relaties 3D grenst aan" width="700">
-    <figcaption><a class="self-link" href="#Topologische_Relatie_3D_grenst_aan">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Topologische_Relaties_in_3D"></a><span class="fig-title">Zes voorbeelden van een zelfde topologische relaties "grenst aan"</span></span></figcaption>
+
+<p>Het combineren van verschillende dimensies 3D geometrieën bij het analyseren van topologische relaties is een uitdaging. In een beschrijving van een uitbreiding van het RCC-8 en DE 9IM model<a href="https://www.researchgate.net/publication/267213170_RCC-9_and_CBM">RCC-9 and CBM</a>
+en <a href="https://www.mdpi.com/2220-9964/13/1/25#Definition_of_RCC9">extension of RCC*-9 to complex and three-dimensional features and its reasoning system</a> wordt hiervoor een oplossing geschetst. </p>
+<p>De relatie "Overlaps" had als definitie: de twee regio's delen een gemeenschappelijk deel, maar zijn niet elkaars subset. In de RCC*9, omdat daar ook lijnen, punten en volumes in meegenomen kunnen worden, wordt dit ingewikkelder. Twee vlakken die een gemeenschappelijk deel hebben, overlappen sowieso. Maar bij twee lijnen hoeft dit niet persé een overlap te zijn. Dit kan ook een Cross, "kruist", relatie zijn. Ook een punt op een lijn gaf de vraag of dit een Overlap of External Connect relatie moet zijn. Dit is opgelost. </p>
+<p><mark> De simple features volgt dit volgens mij niet! </mark></p>
+<p>Wanneer men werkt met Simple Features  wordt het vaak op 3D-gegevens gebruikt door de geometrie in 2D te projecteren, maar dit betekent dat sommige 3D-topologische nuances (zoals “boven/op elkaar” in de Z-richting) niet worden gemodelleerd.</p>
+<figure id="3D_vs_2D_geometrie_disjoint_vs_overlap">
+      <img src="./media/3D_vs_2D_geometrie_disjoint_vs_overlap.png" alt="3D vs 2D project Disjoint vs Overlap" width="700">
+    <figcaption><a class="self-link" href="#3D_vs_2D_geometrie_disjoint_vs_overlap">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-3D_vs_2D_geometrie_disjoint_vs_overlap"></a><span class="fig-title">3D vs 2D project Disjoint vs Overlap"</span></span></figcaption>
 </figure>
 
+
+<p><mark> Simple Features Part 1 6.1.2.5 frament uit de Simple Features Acces: (Spatial operations work in the "map geometry" of the data and will therefore not reflect z or m values in calculations (e.g., Equals, Length) or in generation of new geometry values (e.g., Buffer, ConvexHull, Intersection). 
+This is done by projecting the geometric objects onto the horizontal plane to obtain a "footprint" or "shadow" of the objects for the purposed of map calculations. In other words, it is possible to store and obtain z (and m) 
+coordinate values but they are ignored in all other operations which are based on map geometries. 
+Implementations are free to include true 3D geometric operations, but should be consistent with ISO 19107.. ) </mark></p>
+<p>En: </p>
+<p>Simple Features Part 1 6.1.15
+The relational operators are Boolean methods that are used to test for the existence of a specified topological 
+spatial relationship between two geometric objects as they would be represented on a map. Topological spatial 
+relationships between two geometric objects have been a topic of extensive study; see References in the 
+Bibliography numbered [4], [5], [6], [7], [8], [9], and [10]. The basic approach to comparing two geometric objects 
+is to project the objects onto the 2D horizontal coordinate reference system representing the Earth's surface, and 
+then to make pair-wise tests of the intersections between the interiors, boundaries and exteriors of the two 
+projections and to classify the map relationship between the two geometric objects based on the entries in the 
+resulting 3 by 3 ‘intersection’ matrix. The concepts of interior, boundary and exterior are well defined as sets of 
+point geometry, and abstracted in general topology; see Reference [4]. 
+It is important to note that the calculation of the following operations will give equivalent results whether the 
+calculations are done using classical geometric representations or these same calculations are done with 
+algebraic techniques in a well-structured and properly defined equivalent topological structure. 
+These concepts are applied in this standard for defining spatial relationships between 2-dimensional objects in 2-
+dimensional space (ℜ2) by the projection of the objects onto the horizontal surface usually represented in a map. 
+This will give a different result than would be obtained if the full 3D geometry (or its corresponding 3D topology) 
+because of the changes induced in the projection of the objects onto the horizontal map projection. It would be 
+possible to define a full 3D set of operations, but the increase in computational complexity can be prohibitive to 
+most implementations, and is generally not supported in many geographic information systems or other 
+applications dealing with significant volumes of "mapping data." Specification of full 3D operators following this 
+same pattern for higher dimensions is reserved for a future version of this standard.
+</p>
+<p><mark>De topologische regel in de BGT is dat de vlakken op eenzelfde relatieve hoogteligging niet overlappend mogen zijn. Het moet vlakdekkend zijn. Wat gaat dit in de 3D geometriën betekenen?</mark> </p>
 <p><mark> In de software is het volgende beschikbaar. Nog onderzoeken </mark></p>
 <p><a href="https://postgis.net/docs/ST_3DIntersects.html">ST_3DIntersects</a>
 Zie <a href="https://postgis.net/workshops/postgis-intro/3d.html">PostGIS 3D Functions</a></p>
-<p>In praktijk wordt het vaak op 3D-gegevens gebruikt door de geometrie in 2D te projecteren, maar dit betekent dat sommige 3D-topologische nuances (zoals “boven/op elkaar” in de Z-richting) niet worden gemodelleerd.</p>
-<figure id="3D_vs_2D_geometrie_disjoint_vs_overlap">
-      <img src="./media/3D_vs_2D_geometrie_disjoint_vs_overlap.png" alt="3D vs 2D project Disjoint vs Overlap" width="700">
-    <figcaption><a class="self-link" href="#3D_vs_2D_geometrie_disjoint_vs_overlap">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-3D_vs_2D_geometrie_disjoint_vs_overlap"></a><span class="fig-title">3D vs 2D project Disjoint vs Overlap"</span></span></figcaption>
+<p>De vraag is of er voldoende betekenis te geven is met deze 3D-topologische relaties. </p>
+<p>Onderstaande voorbeelden kennen allen de topologische relatie "Meet/Touches (grenst aan)"</p>
+<figure id="Topologische_Relatie_3D_grenst_aan">
+      <img src="./media/3D_Topologische_relatie_grenst_aan.png" alt="Topologische relaties 3D grenst aan" width="700">
+    <figcaption><a class="self-link" href="#Topologische_Relatie_3D_grenst_aan">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-Topologische_Relaties_in_3D"></a><span class="fig-title">Zes voorbeelden van een zelfde topologische relaties "grenst aan"</span></span></figcaption>
 </figure>
 
-<p><mark>De topologische regel in de BGT is dat de vlakken op eenzelfde relatieve hoogteligging niet overlappend mogen zijn. Het moet vlakdekkend zijn. Wat gaat dit in de 3D geometriën betekenen?</mark></p>
+
+
+<p>Stel we hebben onderstaande situatie: </p>
+<figure id="3D_Infrastructureel_werk">
+      <img src="./media/Brugmodel_leeg.png" alt="3D_Infrastructureel_werk">
+    <figcaption><a class="self-link" href="#3D_Infrastructureel_werk">Figuur <bdi class="figno">10</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-3D_Infrastructureel_werk"></a><span class="fig-title">Een voorbeeld model van een viaduct over een snelweg"</span></span></figcaption>
+</figure>
+
+<p>Dit kunnnen we zowel uitdrukken in IFC als in CityGML:</p>
+<figure id="3D_Infrastructureel_werk_CityGML">
+      <img src="./media/Brugmodel_CityGML.png" alt="3D Infrastructureel model IFC">
+    <figcaption><a class="self-link" href="#3D_Infrastructureel_werk_CityGML">Figuur <bdi class="figno">11</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-3D_Infrastructureel_werk_CityGML"></a><span class="fig-title">CityGML-concepten waarmee men een model van een viaduct over een snelweg kan modelleren"</span></span></figcaption>
+</figure>
+
+<p>De structuur zou dan zijn: </p>
+<ul>
+<li><p><code>CityGML:Bridge</code>: <strong>Viaduct Cattenbroekerdijk</strong></p>
+<ul>
+<li><code>CityGML:BridgePart</code>: Overspanning<ul>
+<li><code>CityGML:ConstructiveElement</code>: Brugdek A</li>
+<li><code>CityGML:ConstructiveElement</code>: …</li>
+</ul>
+</li>
+<li><code>CityGML:BridgePart</code>: Landhoofd A<ul>
+<li><code>CityGML:ConstructiveElement</code>: Oplegconstructie A</li>
+<li><code>CityGML:ConstructiveElement</code>: …</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>CityGML:Road</code>: <strong>A12</strong></p>
+<ul>
+<li><code>CityGML:TrafficSpace</code>: A<ul>
+<li><code>CityGML:TrafficArea</code>: A</li>
+</ul>
+</li>
+<li><code>CityGML:TrafficSpace</code>: B<ul>
+<li><code>CityGML:TrafficArea</code>: B</li>
+</ul>
+</li>
+<li><code>CityGML:TrafficSpace</code>: C<ul>
+<li><code>CityGML:TrafficArea</code>: B</li>
+</ul>
+</li>
+<li><code>CityGML:ConstructiveElement</code>: Wegdek</li>
+</ul>
+</li>
+<li><p><code>CityGML:Road</code>: <strong>E25</strong></p>
+<ul>
+<li><code>CityGML:TrafficSpace</code>: D<ul>
+<li><code>CityGML:TrafficArea</code>: D</li>
+</ul>
+</li>
+<li><code>CityGML:TrafficSpace</code>: E<ul>
+<li><code>CityGML:TrafficArea</code>: E</li>
+</ul>
+</li>
+<li><code>CityGML:ConstructiveElement</code>: Wegdek B</li>
+</ul>
+</li>
+</ul>
+<p>In IFC is dit heel vergelijkbaar: </p>
+<figure id="3D_Infrastructureel_werk_IFC">
+      <img src="./media/Brugmodel_IFC.png" alt="3D Infrastructureel model IFC">
+    <figcaption><a class="self-link" href="#3D_Infrastructureel_werk_IFC">Figuur <bdi class="figno">12</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-3D_Infrastructureel_werk_IFC"></a><span class="fig-title">IFC-concepten waarmee men een model van een viaduct over een snelweg kan modelleren"</span></span></figcaption>
+</figure>
+
+<ul>
+<li><p><code>IfcBridge</code>: <strong>Viaduct Cattenbroekerdijk</strong></p>
+<ul>
+<li><code>IfcBridgePart</code>: Overspanning<ul>
+<li><code>IfcSlab</code>: Brugdek A</li>
+<li><code>IfcBeam</code>: …</li>
+</ul>
+</li>
+<li><code>IfcBridgePart</code>: Landhoofd<ul>
+<li><code>IfcSlab</code>: Oplegconstructie</li>
+<li><code>IfcPile</code>: …</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>IfcRoad</code>: <strong>A12</strong></p>
+<ul>
+<li><code>IfcRoadPart</code>: Rijrichting A<ul>
+<li><code>IfcSlab</code>: Wegdek A</li>
+<li><code>IfcSpace</code>: Rijbaanruimte A</li>
+<li><code>IfcSpace</code>: Rijbaanruimte B</li>
+<li><code>IfcSpace</code>: Rijbaanruimte C</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>IfcRoad</code>: <strong>E25</strong></p>
+<ul>
+<li><code>IfcRoadPart</code>: Rijrichting B<ul>
+<li><code>IfcSlab</code>: Wegdek B</li>
+<li><code>IfcSpace</code>: Rijbaanruimte D</li>
+<li><code>IfcSpace</code>: Rijbaanruimte E</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Topologie:
+Relaties, onafhankelijk van rotatie, schaal, en translatie.</p>
+<figure id="3D_Infrastructureel_werk_Topologisch_2D">
+      <img src="./media/Brugmodel_Topologisch_2D.png" alt="3D Infrastructureel model Topologisch 2D">
+    <figcaption><a class="self-link" href="#3D_Infrastructureel_werk_Topologisch_2D">Figuur <bdi class="figno">13</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-3D_Infrastructureel_werk_Topologisch_2D"></a><span class="fig-title">Topologisch 2D spatial operators voor een 3D model"</span></span></figcaption>
+</figure>
+
+<figure id="3D_Infrastructureel_werk_Topologisch_3D">
+      <img src="./media/Brugmodel_Topologisch_3D.png" alt="3D Infrastructureel model Topologisch 3D">
+    <figcaption><a class="self-link" href="#3D_Infrastructureel_werk_Topologisch_3D">Figuur <bdi class="figno">14</bdi></a> <span class="fig-title"><a class="self-link" href="#fig-3D_Infrastructureel_werk_Topologisch_3D"></a><span class="fig-title">Topologisch 3D spatial operators voor een 3D model"</span></span></figcaption>
+</figure>
+
+<p>Relatieve locatie: 
+<a href="https://annegoebels.github.io/reloc/">Reloc ontology</a></p>
+<p>Geometrie:</p>
+<figure id="drie_benaderingen_IFC_geometrie">
+      <img src="./media/Drie mogelijke benaderingen voor geometrie van 3D-objecten in IFC.png" alt="Verschillende LOD's van een kolom">
+      <figcaption><a class="self-link" href="#drie_benaderingen_IFC_geometrie">Figuur <bdi class="figno">15</bdi></a> <span class="fig-title">
+        <a class="self-link" href="#fig-drie_benaderingen_IFC_geometrie"></a>
+        <span class="fig-title">
+        Drie verschillende benaderingen soorten geometrie in IFC <br> 
+        bron:
+        <a href="https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d" target="_blank">Automatic generation of CityGML LoD3 building models from IFC models</a> S. Donkers
+        </span>
+      </span></figcaption>
+</figure>
+
+
+
+
+<p>Mapping naar een BREP model: </p>
+<p>Je ziet dat zeker de modellen met procedurale geometrie in bestandformaat een stuk groter worden. Met als toppunt het tabel_chairs model dat 69 maal zo groot is in GeoJSON al in IFC. </p>
+<table>
+<thead>
+<tr>
+<th>model</th>
+<th>Bestandsgrootte IFC (KB)</th>
+<th>Bestandsgrootte GeoJSON 1:1 mapping (KB)*</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A20 Corridor</td>
+<td>7.787</td>
+<td>2.094</td>
+</tr>
+<tr>
+<td>aisc_sculpture_param</td>
+<td>314</td>
+<td>4.206</td>
+</tr>
+<tr>
+<td>ifcbridge-model01</td>
+<td>14.817</td>
+<td>26.049</td>
+</tr>
+<tr>
+<td>ifcbridge-model04</td>
+<td>55</td>
+<td>296</td>
+</tr>
+<tr>
+<td>ifcbridge-model05</td>
+<td>25</td>
+<td>205</td>
+</tr>
+<tr>
+<td>tabel_chairs</td>
+<td>705</td>
+<td>48.641</td>
+</tr>
+<tr>
+<td>kievitsweg_R25</td>
+<td>13.706</td>
+<td>65.386</td>
+</tr>
+</tbody></table>
 </section></section>
 <section id="inventarisatie-3d-standaarden"><div class="header-wrapper"><h2 id="x3-inventarisatie-3d-standaarden"><bdi class="secno">3. </bdi>Inventarisatie 3D standaarden</h2><a class="self-link" href="#inventarisatie-3d-standaarden" aria-label="Permalink for Section 3."></a></div>
 <p>Onderzoeksvraag: <em>Welke internationale en nationale standaarden vormen de basis voor de eisen aan een 3D object in een basisregistratie? Welke aanvullende afspraken moeten we maken op het gebied van semantiek, geometrie en coördinatenstelsel, inclusief randvoorwaarden zoals inwinning, kwaliteit, detailniveau en afbakening van 3D objecten, hierbij rekening houdend met de aansluiting op geldende standaarden.</em></p>
@@ -2136,9 +2481,28 @@ IfcCsgSolid</p>
   </li><li class="tofline">
     <a class="tocxref" href="#Topologische_Relaties_3D_volumes"><span class="self-link">Figuur <bdi class="figno">7</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Topologische relatie van twee 3D volumes</span></span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#Topologische_Relatie_3D_grenst_aan"><span class="self-link">Figuur <bdi class="figno">8</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Zes voorbeelden van een zelfde topologische relaties "grenst aan"</span></span></a>
+    <a class="tocxref" href="#3D_vs_2D_geometrie_disjoint_vs_overlap"><span class="self-link">Figuur <bdi class="figno">8</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">3D vs 2D project Disjoint vs Overlap"</span></span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#3D_vs_2D_geometrie_disjoint_vs_overlap"><span class="self-link">Figuur <bdi class="figno">9</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">3D vs 2D project Disjoint vs Overlap"</span></span></a>
+    <a class="tocxref" href="#Topologische_Relatie_3D_grenst_aan"><span class="self-link">Figuur <bdi class="figno">9</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Zes voorbeelden van een zelfde topologische relaties "grenst aan"</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#3D_Infrastructureel_werk"><span class="self-link">Figuur <bdi class="figno">10</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Een voorbeeld model van een viaduct over een snelweg"</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#3D_Infrastructureel_werk_CityGML"><span class="self-link">Figuur <bdi class="figno">11</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">CityGML-concepten waarmee men een model van een viaduct over een snelweg kan modelleren"</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#3D_Infrastructureel_werk_IFC"><span class="self-link">Figuur <bdi class="figno">12</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">IFC-concepten waarmee men een model van een viaduct over een snelweg kan modelleren"</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#3D_Infrastructureel_werk_Topologisch_2D"><span class="self-link">Figuur <bdi class="figno">13</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Topologisch 2D spatial operators voor een 3D model"</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#3D_Infrastructureel_werk_Topologisch_3D"><span class="self-link">Figuur <bdi class="figno">14</bdi></span> <span class="fig-title"><span class="self-link"></span><span class="fig-title">Topologisch 3D spatial operators voor een 3D model"</span></span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#drie_benaderingen_IFC_geometrie"><span class="self-link">Figuur <bdi class="figno">15</bdi></span> <span class="fig-title">
+        <span class="self-link"></span>
+        <span class="fig-title">
+        Drie verschillende benaderingen soorten geometrie in IFC <br> 
+        bron:
+        <span target="_blank">Automatic generation of CityGML LoD3 building models from IFC models</span> S. Donkers
+        </span>
+      </span></a>
   </li>
       </ul></section>
 <section id="index" class="appendix"><div class="header-wrapper"><h2 id="c-index"><bdi class="secno">C. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix C."></a></div><section id="index-defined-here">
