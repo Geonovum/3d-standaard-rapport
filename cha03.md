@@ -1,4 +1,5 @@
-# Bijlage 3:
+# Bijlage 3: objecttypen
+
 Deze bijlage laat zien welke objecttypen betrokken zijn bij dit onderzoek.
 Uitgaande van NEN3610:2022, zie figuur hieronder. De figuur geeft van deze NEN versie aan welke reele en virtuele objecttypen er gedefinieerd zijn.
 In het geval van dit onderzoek zal de focus liggen op de reele objecttypen, specifiek op die onder hoofdtype Constructie. Daaronder vallen de subobjecttypen Gebouw en Kunstwerk.
