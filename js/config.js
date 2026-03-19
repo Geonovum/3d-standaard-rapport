@@ -115,6 +115,14 @@ let respecConfig = {
       status: "Definitief",
       publisher: "Geonovum",
       date: "2024-06-13"
+    },
+    ww3d: {
+      id: "ww3d",
+      title: "Wegwijzer 3D standaarden",
+      href: "https://docs.geostandaarden.nl/3d/hr-3d-standaarden/",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2025-01-28"
     }
   }
 };

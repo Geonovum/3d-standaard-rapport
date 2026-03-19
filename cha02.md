@@ -483,7 +483,7 @@ https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/I
 https://steptools.com/stds/smrl/data/modules/basic_geometry/sys/4_info_reqs.htm
 https://www.web3d.org/documents/specifications/19775-1/V4.0/index.html
 
-# Annex B: Allignment of Topology
+# Annex B: Alignment of Topology
 
 
 X3D 
