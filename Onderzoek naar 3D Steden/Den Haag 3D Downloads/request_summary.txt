@@ -1,0 +1,42 @@
+﻿##Export summary details##
+
+Job start time: 2026-06-03 11:37:21 (GMT)
+Export version: 5.2.21
+Exort Description: 
+
+##Request Filter##
+
+Feature selection method: Einzelobjekte
+Request area coordinates: 
+Feature GML ID list:  
+
+##Feature Information##
+
+CityGML feature type(s) : 26,5,7
+Selected LOD: haLoD
+Include generic attributes: Yes
+
+##Appearence information##
+
+Use textures: No
+Texture appreance theme: rgbTexture
+
+##Terrain details##
+
+Export terrain: No
+URL to terrain: 
+Terrain level: MAX
+Texture terrain: No
+Terrain texture type:  
+Terrain texture level 
+URL to TMS: 
+URL to WMS: 
+
+##Output details##
+
+Export Format(s) : "CityGML"
+Coordinate System (if not local): EPSG:28992
+Move to local coordinate system : no
+Tile output: 0
+Height mode: absolute
+
