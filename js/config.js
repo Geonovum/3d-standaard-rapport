@@ -123,6 +123,30 @@ let respecConfig = {
       status: "Definitief",
       publisher: "Geonovum",
       date: "2025-01-28"
+    },
+    SFA: {
+      id: "SF",
+      title: "OpenGIS Implementation Specification for Geographic information - Simple feature access - Part 1: Common architecture",
+      href: "https://www.ogc.org/standards/sfa/",
+      status: "Corrigendum",
+      publisher: "OGC",
+      date: "2011-05-28"
+    },
+      AGCITYGMLIFC: {
+      id: "AGCITYGMLIFC",
+      title: "Automatic generation of CityGML LoD3 building models from IFC models",
+      href: "https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d",
+      status: "Definitief",
+      publisher: "TU Delft",
+      date: "2013-12-01"
+    },
+      3DTOPREL: {
+      id: "3DTOPREL",
+      title: "On 3D Topological Relationships",
+      href: "https://resolver.tudelft.nl/uuid:3c1cc332-9751-4802-8c80-03fadde15b31",
+      status: "Definitief",
+      publisher: "TU Delft",
+      date: "2000"
     }
   }
 };
