@@ -104,7 +104,62 @@ Als we deze objecttypen mappen op het IMBGT dan ontstaat het volgende beeld. Het
 
 In tabelvorm:
 
-<img width="800" height="1056" alt="image" src="https://github.com/user-attachments/assets/48176354-3254-4323-9068-a50b7cdd33dd" />
+# IMGeo-objecten en geometrie
+
+| Object | BGT-classificatie | Plus-classificatie | Geometrie |
+|--------|--------------------|--------------------|-----------|
+| Pand | Grondvlaksituatie van BAG-pand | | Multivlak |
+| Overig bouwwerk | *type* | | Multivlak |
+|  | overkapping | | Multivlak |
+|  | open loods | | Vlak |
+|  | opslagtank | | Vlak |
+|  | bezinkbak | | Vlak |
+|  | windturbine | | Vlak |
+|  | lage trafo | | Vlak |
+|  | bassin | | Vlak |
+|  | niet-bgt | bunker | Vlak |
+|  | niet-bgt | voedersilo | Vlak |
+|  | niet-bgt | schuur | Vlak |
+| Overbruggingsdeel | overbruggingIsBeweegbaar: ja/nee | *Hoort bij type overbrugging* | Vlak |
+|  |  |brug | Vlak |
+|  |  |aquaduct | Vlak |
+|  |  | viaduct| Vlak |
+|  |  | ecoduct| Vlak |
+|  |  |fly-over | Vlak |
+|  |  | *Type Overbruggingsdeel* |  |
+|  |  | dek | Vlak |
+|  |  | landhoofd | Vlak |
+|  |  | pijler | Vlak |
+|  |  | sloof | Vlak |
+|  |  | pyloon | Vlak |
+| Tunneldeel | Tunneldeel | | Vlak |
+| Kunstwerkdeel | *Type* | |  |
+|  | hoogspanningsmast | | Multivlak of Multipunt |
+|  | gemaal | | Vlak |
+|  | perron | | Vlak |
+|  | sluis | | Vlak |
+|  | strekdam | | Vlak |
+|  | steiger | | Vlak |
+|  | stuw | | Lijn of Vlak |
+|  | niet-bgt | keermuur | Vlak |
+|  | niet-bgt | overkluizing | Vlak |
+|  | niet-bgt | duiker | Lijn of Vlak |
+|  | niet-bgt | faunavoorziening | Vlak |
+|  | niet-bgt | vispassage | Vlak |
+|  | niet-bgt | bodemval | Vlak |
+|  | niet-bgt | coupure | Vlak |
+|  | niet-bgt | ponton | Vlak |
+|  | niet-bgt | voorde | Vlak |
+| Scheiding | *Type* | |  |
+|  | muur | | Lijn of Vlak |
+|  | kademuur | | Lijn of Vlak |
+|  | damwand | | Lijn |
+|  | geluidsscherm | | Lijn |
+|  | walbescherming | | Lijn |
+|  | hek | | Lijn |
+|  | niet-bgt | draadraster | Lijn |
+|  | niet-bgt | faunaraster | Lijn |
+
 
 Figuur...: overzicht van objecttypen uit IMBGT
 
