@@ -1356,6 +1356,30 @@ ul.index code{color:inherit}
       "status": "Definitief",
       "publisher": "Geonovum",
       "date": "2025-01-28"
+    },
+    "SFA": {
+      "id": "SF",
+      "title": "OpenGIS Implementation Specification for Geographic information - Simple feature access - Part 1: Common architecture",
+      "href": "https://www.ogc.org/standards/sfa/",
+      "status": "Corrigendum",
+      "publisher": "OGC",
+      "date": "2011-05-28"
+    },
+    "AGCITYGMLIFC": {
+      "id": "AGCITYGMLIFC",
+      "title": "Automatic generation of CityGML LoD3 building models from IFC models",
+      "href": "https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d",
+      "status": "Definitief",
+      "publisher": "TU Delft",
+      "date": "2013-12-01"
+    },
+    "3DTOPREL": {
+      "id": "3DTOPREL",
+      "title": "On 3D Topological Relationships",
+      "href": "https://resolver.tudelft.nl/uuid:3c1cc332-9751-4802-8c80-03fadde15b31",
+      "status": "Definitief",
+      "publisher": "TU Delft",
+      "date": "2000"
     }
   },
   "title": "Rapport 3D standaard basisregistraties",
@@ -1405,7 +1429,7 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Algemeen<br>
       Werkversie
-      <time class="dt-published" datetime="2025-11-14">16 juni 2026</time>
+      <time class="dt-published" datetime="2025-11-14">26 juni 2026</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -1457,7 +1481,7 @@ ul.index code{color:inherit}
   </div>
 <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit rapport beschrijft een vervolgonderzoek naar de optimale 3D geostandaarden voor Nederland, voortbouwend op de Wegwijzer 3D standaarden van Geonovum. Het onderzoek richt zich op het bepalen van standaarden die nodig zijn voor de volledige keten van 3D data-inwinning, opslag, integratie van BIM-modellen, en uitwisseling van 3D geografische informatie met gerichte toepassingen in visualisatie en analyse. Met een focus op twee objecttypen – gebouwen en kunstwerken – onderzoekt het rapport welke nationale en internationale standaarden het best aansluiten bij verschillende onderdelen van deze keten, waardoor interoperabiliteit van landelijke 3D bestanden kan worden bereikt.</p>
 </section>
-<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1. </bdi>Introductie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#werkdoel"><bdi class="secno">1.1 </bdi>Werkdoel</a></li><li class="tocline"><a class="tocxref" href="#scope"><bdi class="secno">1.2 </bdi>Scope</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-objecten"><bdi class="secno">2. </bdi>3D objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-3d"><bdi class="secno">2.1 </bdi>Wat is 3D</a></li><li class="tocline"><a class="tocxref" href="#geometrie-in-2d-2d-met-hoogte-attribuut-2-5d-en-3d"><bdi class="secno">2.2 </bdi>Geometrie in 2D, 2D met hoogte attribuut, 2,5D en 3D</a></li><li class="tocline"><a class="tocxref" href="#geometrie-in-3d"><bdi class="secno">2.3 </bdi>Geometrie in 3D</a></li><li class="tocline"><a class="tocxref" href="#topologie-in-3d"><bdi class="secno">2.4 </bdi>Topologie in 3D</a></li></ol></li><li class="tocline"><a class="tocxref" href="#inventarisatie-3d-standaarden"><bdi class="secno">3. </bdi>Inventarisatie 3D standaarden</a></li><li class="tocline"><a class="tocxref" href="#afspraken-voor-geo-bim"><bdi class="secno">4. </bdi>Afspraken voor Geo-BIM</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#geo-bim-bouwblokken"><bdi class="secno">4.1 </bdi>Geo-BIM Bouwblokken</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#identificeren-van-geobim-uitdagingen-in-proces-van-plan-tot-realisatie-en-borging-in-praktijkcases"><bdi class="secno">4.1.1 </bdi>Identificeren van GeoBIM uitdagingen in proces van Plan tot Realisatie en borging in praktijkcases</a></li><li class="tocline"><a class="tocxref" href="#het-brengen-van-bim-informatie-naar-geo"><bdi class="secno">4.1.2 </bdi>Het brengen van BIM-informatie naar Geo</a></li><li class="tocline"><a class="tocxref" href="#het-brengen-van-geo-informatie-naar-bim"><bdi class="secno">4.1.3 </bdi>Het brengen van geo-informatie naar BIM</a></li><li class="tocline"><a class="tocxref" href="#standaardiseren-van-georefereren-bim-modellen"><bdi class="secno">4.1.4 </bdi>Standaardiseren van georefereren BIM-modellen</a></li><li class="tocline"><a class="tocxref" href="#geo-based-bim-en-bim-based-geo-standaarden"><bdi class="secno">4.1.5 </bdi>Geo-based BIM en BIM-based Geo standaarden</a></li><li class="tocline"><a class="tocxref" href="#afsprakenstelsel-voor-geo-bim-data-integratie"><bdi class="secno">4.1.6 </bdi>Afsprakenstelsel voor Geo-BIM data integratie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">A. </bdi>Objecttypen</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">B. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">C. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">C.1 </bdi>Termen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">C.2 </bdi>Termen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">D. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">D.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
+<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1. </bdi>Introductie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#werkdoel"><bdi class="secno">1.1 </bdi>Werkdoel</a></li><li class="tocline"><a class="tocxref" href="#scope"><bdi class="secno">1.2 </bdi>Scope</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-objecten"><bdi class="secno">2. </bdi>3D objecten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-3d"><bdi class="secno">2.1 </bdi>Wat is 3D</a></li><li class="tocline"><a class="tocxref" href="#geometrie-in-2d-2d-met-hoogte-attribuut-2-5d-en-3d"><bdi class="secno">2.2 </bdi>Geometrie in 2D, 2D met hoogte attribuut, 2,5D en 3D</a></li><li class="tocline"><a class="tocxref" href="#geometrie-in-3d"><bdi class="secno">2.3 </bdi>Geometrie in 3D</a></li><li class="tocline"><a class="tocxref" href="#topologie-in-3d"><bdi class="secno">2.4 </bdi>Topologie in 3D</a></li><li class="tocline"><a class="tocxref" href="#topologie-in-3d-0"><bdi class="secno">2.5 </bdi>Topologie in 3D</a></li></ol></li><li class="tocline"><a class="tocxref" href="#inventarisatie-3d-standaarden"><bdi class="secno">3. </bdi>Inventarisatie 3D standaarden</a></li><li class="tocline"><a class="tocxref" href="#afspraken-voor-geo-bim"><bdi class="secno">4. </bdi>Afspraken voor Geo-BIM</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#geo-bim-bouwblokken"><bdi class="secno">4.1 </bdi>Geo-BIM Bouwblokken</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#identificeren-van-geobim-uitdagingen-in-proces-van-plan-tot-realisatie-en-borging-in-praktijkcases"><bdi class="secno">4.1.1 </bdi>Identificeren van GeoBIM uitdagingen in proces van Plan tot Realisatie en borging in praktijkcases</a></li><li class="tocline"><a class="tocxref" href="#het-brengen-van-bim-informatie-naar-geo"><bdi class="secno">4.1.2 </bdi>Het brengen van BIM-informatie naar Geo</a></li><li class="tocline"><a class="tocxref" href="#het-brengen-van-geo-informatie-naar-bim"><bdi class="secno">4.1.3 </bdi>Het brengen van geo-informatie naar BIM</a></li><li class="tocline"><a class="tocxref" href="#standaardiseren-van-georefereren-bim-modellen"><bdi class="secno">4.1.4 </bdi>Standaardiseren van georefereren BIM-modellen</a></li><li class="tocline"><a class="tocxref" href="#geo-based-bim-en-bim-based-geo-standaarden"><bdi class="secno">4.1.5 </bdi>Geo-based BIM en BIM-based Geo standaarden</a></li><li class="tocline"><a class="tocxref" href="#afsprakenstelsel-voor-geo-bim-data-integratie"><bdi class="secno">4.1.6 </bdi>Afsprakenstelsel voor Geo-BIM data integratie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">A. </bdi>Objecttypen</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">B. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">C. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">C.1 </bdi>Termen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">C.2 </bdi>Termen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">D. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">D.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
 
 
 <section id="introductie"><div class="header-wrapper"><h2 id="x1-introductie"><bdi class="secno">1. </bdi>Introductie</h2><a class="self-link" href="#introductie" aria-label="Permalink for Section 1."></a></div>
@@ -1524,14 +1548,14 @@ ul.index code{color:inherit}
 <p>Dit rapport beschrijft 3D-objecten. In de praktijk zijn er verschillende interpretaties van het concept <em>3D</em>. Om in dit rapport eenduidig hiermee om te gaan hanteert dit rapport voor 3D onderstaande begrippen. Deze zijn in lijn met de internationale standaard voor geometrie [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso19107" title="ISO 19107:2019 Geographic information — Spatial schema">ISO19107</a></cite>]. </p>
 <p><br>Geometrische dimensie:<br>
 Dit is een nummer dat de orthogonale richtingen beschrijft waar een geometrie zich naar uitstrekt. De geometrische dimensie kijkt lokaal naar het object, het beschrijft de hoeveelheid onafhankelijke richtingen die er zijn zonder het object te verlaten. Een punt heeft een geometrische dimensie van 0. Een rechte lijn een lengte, maar geen breedte of hoogte. De geometrische dimensie van een lijn is 1. Een vlak heeft een geometrische dimensie van 2. Een kubus heeft een geometrische dimensie van 3.   </p>
-<p><br>Coördinaat dimensie:<br> Dit is het aantal onafhankelijke numerieke componenten dat nodig is om een positie in een GIS-representatie te beschrijven.Deze dimensie beschrijft de hoeveelheid onafhankelijke richtingen die de coördinaten hebben waarmee geometrie is opgebouwd. De Simple Feature Access <mark>[biblio ref opnemen]</mark> definieert coördinaat dimensie als de hoeveelheid metingen of assen die nodig zijn om een positie in een coördinaatsysteem te duiden. Veel gebruikt zijn de dimensies x, y en z. Maar ook de tijdsdimensie (t) en maat (m) dimensie worden vaak gebruikt. Andere parametrische dimensies als Kosten, Temperatuur, Druk, Windsnelheid kunnen use-case afhankelijk worden toegevoegd. In theorie kan men, door coördinaten uit te breiden, oneindig veel dimensies bereiken.</p>
+<p><br>Coördinaat dimensie:<br> Dit is het aantal onafhankelijke numerieke componenten dat nodig is om een positie in een GIS-representatie te beschrijven.Deze dimensie beschrijft de hoeveelheid onafhankelijke richtingen die de coördinaten hebben waarmee geometrie is opgebouwd. De Simple Feature Access [<cite><a class="bibref" data-link-type="biblio" href="#bib-sfa" title="OpenGIS Implementation Specification for Geographic information - Simple feature access - Part 1: Common architecture">SFA</a></cite>] definieert coördinaat dimensie als de hoeveelheid metingen of assen die nodig zijn om een positie in een coördinaatsysteem te duiden. Veel gebruikt zijn de dimensies x, y en z. Maar ook de tijdsdimensie (t) en maat (m) dimensie worden vaak gebruikt. Andere parametrische dimensies als Kosten, Temperatuur, Druk, Windsnelheid kunnen use-case afhankelijk worden toegevoegd. In theorie kan men, door coördinaten uit te breiden, oneindig veel dimensies bereiken.</p>
 <p>coördinaten beschrijven verschillende dimensies. De x,y en z coördinaat beschrijven de ruimtelijke dimensie, terwijl een temporele coördinaat een aparte temporele dimensie beschrijft die geen onderdeel is van de ruimtelijke dimensie. Parametrische coördinaten beschrijven weer een andere dimensie. </p>
 <p><br>Ruimtelijke dimensie:<br>
-Deze dimensie beschrijft de hoeveelheid onafhankelijke richtingen in de "echte ruimte", die we visueel of fysiek kunnen voorstellen. Dit gaat om de x, y en z dimensie. Dimensies als tijd, maat, druk, temperatuur etc. tellen niet mee. Ruimtelijke coördinaten bestaan niet los. Ze zijn altijd gedefinieerd binnen een coordinate reference system (CRS). Ruimtelijke coördinaten dienen consistent te zijn met een CRS beschreven door ISO 19111.</p>
+Deze dimensie beschrijft de hoeveelheid onafhankelijke richtingen in de "echte ruimte", die we visueel of fysiek kunnen voorstellen. Dit gaat om de x, y en z dimensie. Dimensies als tijd, maat, druk, temperatuur etc. tellen niet mee. Ruimtelijke coördinaten bestaan niet los. Ze zijn altijd gedefinieerd binnen een coordinate reference system (CRS). Ruimtelijke coördinaten dienen consistent te zijn met een CRS beschreven door [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso19111" title="ISO 19111:2019 Geographic information — Referencing by coordinates">ISO19111</a></cite>].</p>
 <p><br>Temporele dimensie<br> 
-Temporele coördinaten beschrijven een fenomeen in de tijdsruimte. Dit maakt het mogelijk om bijvoorbeeld geldigheid, volgorde en duur te definiëren. Temporele coördinaten moeten horen bij een Time Reference System (TRS) volgens ISO 19108.</p>
+Temporele coördinaten beschrijven een fenomeen in de tijdsruimte. Dit maakt het mogelijk om bijvoorbeeld geldigheid, volgorde en duur te definiëren. Temporele coördinaten moeten horen bij een Time Reference System (TRS) volgens[<cite><a class="bibref" data-link-type="biblio" href="#bib-iso19108" title="ISO 19108:2002 Geographic information — Temporal schema">ISO19108</a></cite>].</p>
 <p><br>Parametrische dimensie<br>
-Parametrische coördinaten beschrijven de positionering van een fenomeen in een aanvullende dimensie die niet ruimtelijk en niet temporeel van aard is. Parametrische coördinaten zijn geen attributen, maar worden ondersteund door extra assen, naast de ruimtelijke en temporele assen. Parametrische coördinaten dienen consistent te zijn met het uitbreidingsmechanisme beschreven door ISO 19111-2.</p>
+Parametrische coördinaten beschrijven de positionering van een fenomeen in een aanvullende dimensie die niet ruimtelijk en niet temporeel van aard is. Parametrische coördinaten zijn geen attributen, maar worden ondersteund door extra assen, naast de ruimtelijke en temporele assen. Parametrische coördinaten dienen consistent te zijn met het uitbreidingsmechanisme beschreven door [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-iso-19111" title="Reference &quot;[ISO 19111]&quot; not found." id="respec-offender-reference-iso-19111-not-found">ISO 19111</a></cite>].</p>
 <p>Een combinatie van 3D ruimtelijke dimensie met 1D temporele dimensie wordt ook wel 4D of ruimtelijk-temporeel (spatio-temporal) genoemd.   </p>
 <table>
   <caption> Tabel met <strong>voorbeelden</strong> die het verschil tussen geometrische, coördinaat- en ruimtelijke, temporele en parametrische dimensies illustreren</caption>
@@ -1602,7 +1626,7 @@ Parametrische coördinaten beschrijven de positionering van een fenomeen in een 
       <td>Dit punt strekt zich in 0 richtingen, is beschreven door 4 coördinaten. Het punt ligt in een 3D ruimte en heeft een meting</td>
     </tr>
   </tbody>
-</table><p>In dit document focussen wij ons op 3D-objecten waarbij 3D staat voor de ruimtelijke dimensie waarin objecten met een 0D, 1D, 2D, en 3D geometrische dimensie kunnen bestaan. De ruimtelijke coördinaten dienen consistent te zijn met een CRS beschreven door ISO 19111. De CRS'en waar in deze standaard naar gekeken wordt zijn: </p>
+</table><p>In dit document focussen wij ons op 3D-objecten waarbij 3D staat voor de ruimtelijke dimensie waarin objecten met een 0D, 1D, 2D, en 3D geometrische dimensie kunnen bestaan. De ruimtelijke coördinaten dienen consistent te zijn met een CRS beschreven door [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso19111" title="ISO 19111:2019 Geographic information — Referencing by coordinates">ISO19111</a></cite>]. De CRS'en waar in deze standaard naar gekeken wordt zijn: </p>
 <ul>
 <li>RDNAP (EPSG:7415) </li>
 <li>ETRS89 </li>
@@ -1610,7 +1634,7 @@ Parametrische coördinaten beschrijven de positionering van een fenomeen in een 
 <li>Engineered CRS</li>
 </ul>
 <p>Deze zijn beschreven in de Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie [<cite><a class="bibref" data-link-type="biblio" href="#bib-hrcrs" title="Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie">HRCRS</a></cite>].</p>
-<p>Voor het temporele coördinatenstelsel wordt gebruik gemaakt van de wereldwijd afgesproken UTC (Coordinated Universal Time). ISO 8601 voorziet in regels voor de notatie van het tijdscoördinaat.   </p>
+<p>Voor het temporele coördinatenstelsel wordt gebruik gemaakt van de wereldwijd afgesproken UTC (Coordinated Universal Time). [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso8601" title="Representation of dates and times. ISO 8601:2004.">ISO8601</a></cite>] voorziet in regels voor de notatie van het tijdscoördinaat.   </p>
 </section><section id="geometrie-in-2d-2d-met-hoogte-attribuut-2-5d-en-3d"><div class="header-wrapper"><h3 id="x2-2-geometrie-in-2d-2d-met-hoogte-attribuut-2-5d-en-3d"><bdi class="secno">2.2 </bdi>Geometrie in 2D, 2D met hoogte attribuut, 2,5D en 3D</h3><a class="self-link" href="#geometrie-in-2d-2d-met-hoogte-attribuut-2-5d-en-3d" aria-label="Permalink for Section 2.2"></a></div>
 <p>Geo-objecten worden in registraties meestal door middel van een geometrie gerepresenteerd. Dit kan, zoals hierboven uitgelegd, in een 2D of een 3D ruimtelijke dimensie gebeuren. In de praktijk zien we ook enkele vormen die tussen 2D en 3D in zitten.</p>
 <p>0D, 1D en 2D-geometrieën in 2D ruimtelijke dimensie kennen geen hoogte. Naast het definieren van geometrie in een 3D-ruimtelijke dimensie bestaan er andere mogelijkheden om 3D-informatie toe te voegen. Men kan hoogte duiden door één of meerdere attributen als "hoogte" aan een feature in een 2D ruimtelijke dimensie te binden. Met deze informatie is het mogelijk om 3D-geometrie in een 3D-ruimtelijke dimensie te construeren. </p>
@@ -1629,14 +1653,16 @@ Parametrische coördinaten beschrijven de positionering van een fenomeen in een 
       <img src="./media/Drie_mogelijke_benaderingen_voor_geometrie_van_3D-objecten_in_IFC_expliciet_impliciet.png" alt="Verschillende LOD's van een kolom">
       <figcaption><a class="self-link" href="#drie_benaderingen_IFC_geometrie">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">
         Drie verschillende benaderingen soorten geometrie in IFC <br> 
-        bron:
-        <a href="https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d">Automatic generation of CityGML LoD3 building models from IFC models</a> S. Donkers
+        (bron: [<cite><a class="bibref" data-link-type="biblio" href="#bib-agcitygmlifc" title="Automatic generation of CityGML LoD3 building models from IFC models">AGCITYGMLIFC</a></cite>])
       </span></figcaption>
 </figure><p>GIS ondersteunt meestal alleen expliciete geometrie, zoals meshes en boundary representations (BRep). IFC ondersteunt zowel expliciete als impliciete geometrie. Naast expliciete meshes en BReps ondersteunt IFC ook geometrie zoals sweeps en constructive solid geometry (CSG). Deze impliciete geometrie maakt het mogelijk om zeer complexe vormen op te slaan in een relatief licht formaat met behulp van wiskundige vergelijkingen. <mark> verwijzing naar onderzoek naar geometrie </mark></p>
 </section><section id="topologie-in-3d"><div class="header-wrapper"><h3 id="x2-4-topologie-in-3d"><bdi class="secno">2.4 </bdi>Topologie in 3D</h3><a class="self-link" href="#topologie-in-3d" aria-label="Permalink for Section 2.4"></a></div>
 <p>Het definieren van geometrieën in een 3D ruimtelijke dimensie introduceert nieuwe topologische mogelijkheden die in een 2D ruimtelijke dimensie niet bestaan (zie <a href="https://gdmc.nl/publications/2000/3D_topological_relationships.pdf">On 3D Topological Relationships</a>). De betekenis van een topologische relatie verandert niet tussen 2D en 3D: je kunt van bijvoorbeeld lijnen, vlakken of volumes stellen, dat ze elkaar "raken", "overlappen" of "disjoint" zijn. </p>
 <p>Het resultaat van een topologische bevraging hangt echter wel af van de dimensie van de ruimte waarin de relatie wordt geëvalueerd. Dat wil zeggen, het <em>antwoord</em> op de vraag of twee volumes elkaar raken, of wat de afstand tussen beide is, kan <em>verschillen afhankelijk van de ruimtelijke dimensie waarin de vraag beantwoord wordt</em>. </p>
-<p>Binnen de Simple Features Access standaard worden relaties van geometrieën in een 3D-ruimtelijke dimensie standaard geëvalueerd in een 2D-projectie. Voor echte 3D-geometrieën in een 3D-ruimtelijke dimensie zijn Query2D en Query3D verschillende operaties. Bij menging van 2D- en 3D-geometrieën moet inbedding of projectie expliciet gebeuren. <mark> verwijzing naar onderzoek naar topologie </mark></p>
+</section><section id="topologie-in-3d-0"><div class="header-wrapper"><h3 id="x2-5-topologie-in-3d"><bdi class="secno">2.5 </bdi>Topologie in 3D</h3><a class="self-link" href="#topologie-in-3d-0" aria-label="Permalink for Section 2.5"></a></div>
+<p>Het definieren van geometrieën in een 3D ruimtelijke dimensie introduceert nieuwe topologische mogelijkheden die in een 2D ruimtelijke dimensie niet bestaan (zie [<cite><a class="bibref" data-link-type="biblio" href="#bib-3dtoprel" title="On 3D Topological Relationships">3DTOPREL</a></cite>]). De betekenis van een topologische relatie verandert niet tussen 2D en 3D: je kunt van bijvoorbeeld lijnen, vlakken of volumes stellen, dat ze elkaar "raken", "overlappen" of "disjoint" zijn. </p>
+<p>Het resultaat van een topologische bevraging hangt echter wel af van de dimensie van de ruimte waarin de relatie wordt geëvalueerd. Dat wil zeggen, het <em>antwoord</em> op de vraag of twee volumes elkaar raken, of wat de afstand tussen beide is, kan <em>verschillen afhankelijk van de ruimtelijke dimensie waarin de vraag beantwoord wordt</em>. </p>
+<p>Binnen de Simple Features Access standaard worden relaties van geometrieën in een 3D-ruimtelijke dimensie standaard geëvalueerd in een 2D-projectie. Voor echte 3D-geometrieën in een 3D-ruimtelijke dimensie zijn Query2D en Query3D verschillende operaties. Bij menging van 2D- en 3D-geometrieën moet inbedding of projectie expliciet gebeuren. Zie het document <a href="https://geonovum.github.io/3d-standaard-onderzoek/">Zie bureauonderzoek naar geometrie en topologie in 3D</a>.</p>
 <p>Hieruit volgt dat het nodig is, om een set topologische regels voor specifieke 3D-situaties te definieren. Hiervoor is een issue aangemaakt in de NEN3610 GitHub repository <mark>[ref toevoegen]</mark>.</p>
 </section></section>
 <section id="inventarisatie-3d-standaarden"><div class="header-wrapper"><h2 id="x3-inventarisatie-3d-standaarden"><bdi class="secno">3. </bdi>Inventarisatie 3D standaarden</h2><a class="self-link" href="#inventarisatie-3d-standaarden" aria-label="Permalink for Section 3."></a></div>
@@ -1685,11 +1711,15 @@ Parametrische coördinaten beschrijven de positionering van een fenomeen in een 
 <td>JSON-FG is een in mei 2026 gepubliceerde, nieuwe OGC standaard. Het definieert een JSON‑gebaseerde indeling voor het uitwisselen van ruimtelijke features en geometrieën, inclusief een gemeenschappelijk model, datatype‑definities en de basis‑JSON‑structuur die  GIS‑applicaties interoperabel kunnen gebruiken. Het is een meer lichtgewichte vervanging voor GML. Het bevat ondersteuning voor 3D geometrie.</td>
 <td>In 2024, toen de Wegwijzer werd gepubliceerd, was dit nog geen goedgekeurde standaard. Het advies is om JSON-FG toe te voegen aan de Wegwijzer. Dit formaat is een goede optie om objecten met 3D vectorgeometrie uit te wisselen in APIs. Wel moet in de Wegwijzer goed duidelijk worden gemaakt wanneer je CityJSON gebruikt, en wanneer JSON-FG.</td>
 </tr>
+<tr>
+<td><a href="https://openusd.org/">OpenUSD</a></td>
+<td>OpenUSD (Universal Scene Description) is een raamwerk dat fungeert als een universele taal voor het opbouwen van en samenwerken in complexe 3D-werelden. Binnen OpenUSD wordt 3D-geometrie via de UsdGeom-bibliotheek opgeslagen als meshes. Naast geometrie bevat de standaard functies voor materialen, belichting, fysica-simulaties en een lagensysteem voor gelijktijdige samenwerking. OpenUSD kan een verbindende factor zijn om openBIM-data (IFC) en geografische data (OGC) samen te brengen in een Digital Twin. OpenUSD is belangrijk in de transitie naar IFC 5/ IFC X, waarbij buildingSMART USD-concepten omarmt om de nieuwe BIM-standaard fundamenteel lichter, sneller te renderen en beter compatibel met moderne software te maken.</td>
+<td>OpenUSD is ontstaan bij Pixar en is inmiddels open en breed industrieel gedragen. Het wordt actief ontwikkeld en gecoördineerd via de <a href="https://aousd.org/">Alliance for OpenUSD</a>. Partijen als NVIDIA, Apple, Autodesk en Adobe gebruiken het. In BIM en GEO is het opkomend, als visualisatie- en integratielaag naast IFC en OGC-standaarden.</td>
+</tr>
 </tbody></table>
 <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: Overweeg toevoeging JSON-FG aan de Wegwijzer</span></div><aside class="">
   <p><strong>AANBEVELING:</strong> Overweeg om JSON-FG toe te voegen aan de Wegwijzer 3D standaarden. Onderzoek de overlap met CityJSON en beschrijf de toepassingsdomeinen van beide standaarden zodat goed duidelijk wordt gemaakt wanneer JSON-FG, en wanneer CityJSON de betere keuze is.</p>
-</aside></div><p><mark> Lezing gehad over IFCx. Deze maken gebruik van USD</mark><br><mark> Ik zie Collada en DXF vanuit de Netherlands3d ontwikkeling komen. Hier iets over schrijven &gt; Rolf </mark></p>
-</section>
+</aside></div></section>
 <section id="afspraken-voor-geo-bim"><div class="header-wrapper"><h2 id="x4-afspraken-voor-geo-bim"><bdi class="secno">4. </bdi>Afspraken voor Geo-BIM</h2><a class="self-link" href="#afspraken-voor-geo-bim" aria-label="Permalink for Section 4."></a></div>
 <p>Onderzoeksvraag: <em>Welke afspraken zijn nodig specifiek voor GeoBIM? Onderzoek het grensvlak tussen geo-informatie en BIM en de mate van overlap daarin. Wat zijn de benodigde afspraken om geo-informatie naar BIM, en BIM informatie naar geo te kunnen krijgen? (richtlijn geo-referentie in BIM, IFC-profiel, etc.)</em> </p>
 <p>De behoefte aan data delen tussen de 3D-Geo- en 3D-BIM-wereld lijkt vanzelfsprekend, omdat beide werelden op het niveau van een bouwwerk dezelfde objecten lijken te definiëren. Maar voor zinvolle integratie is het goed om te beseffen dat beide werelden een andere modelleer-benadering hebben. </p>
@@ -1733,10 +1763,89 @@ Parametrische coördinaten beschrijven de positionering van een fenomeen in een 
 <section class="appendix" id="objecttypen"><div class="header-wrapper"><h2 id="a-objecttypen"><bdi class="secno">A. </bdi>Objecttypen</h2><a class="self-link" href="#objecttypen" aria-label="Permalink for Appendix A."></a></div>
 <p>Deze bijlage laat zien welke objecttypen betrokken zijn bij dit onderzoek.
 Uitgaande van NEN3610:2022, zie figuur hieronder. De figuur geeft van deze NEN versie aan welke reele en virtuele objecttypen er gedefinieerd zijn.
-In het geval van dit onderzoek zal de focus liggen op de reele objecttypen, specifiek op die onder hoofdtype Constructie. Daaronder vallen de subobjecttypen Gebouw en Kunstwerk.</p>
-<img width="1264" height="764" alt="image" src="https://github.com/user-attachments/assets/1ec931b5-4f88-4e3f-b380-25ee75c57c5d"><p>Figuur....: overzicht van objecttypen uit NEN3610:2022</p>
+In het geval van dit onderzoek zal de focus liggen op de <strong>reele</strong> objecttypen, specifiek op die onder hoofdtype <strong>Constructie</strong>. Daaronder vallen de subobjecttypen <strong>Gebouw</strong> en <strong>Kunstwerk</strong>.</p>
+<img width="1808" height="1099" alt="image" src="https://github.com/user-attachments/assets/268e76e4-31b3-4f14-94ed-2c7c45d127f0"><p> &nbsp;
+Figuur....: overzicht van objecttypen uit NEN3610:2022</p>
 <p>In tabelvorm:</p>
-<img width="680" height="419" alt="image" src="https://github.com/user-attachments/assets/4e26da42-7497-4114-8756-54a7d0d396ff"><p>Als we deze objecttypen mappen op het IMBGT dan ontstaat het volgende beeld. Het hoofdobjecttype Constructie in NEN:22 komt grotendeels overeen met het abstracte hoofdobjecttype Bouwwerk in BGT. Hieronder vallen ook de kunstwerken zoals tunnels en overbruggingen.</p>
+<table>
+  <caption> Tabel met <strong>reele objecttypen uit NEN3610:22</strong> die betrokken zijn bij dit onderzoek</caption>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Geo­Object</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Virtuele­Ruimte</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><strong>Reeel­Object</strong></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>Bodem</td>
+      <td> </td>
+    </tr>
+      <tr>
+      <td> </td>
+      <td> </td>
+      <td>Oppervlaktewater</td>
+      <td> </td>
+    </tr>
+      <tr>
+      <td> </td>
+      <td> </td>
+      <td>Begroeiing</td>
+      <td> </td>
+    </tr>
+      <tr>
+      <td> </td>
+      <td> </td>
+      <td><strong>Constructie</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><strong>Gebouw</strong></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Verharding</td>
+    </tr>
+      <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><strong>Kunstwerk</strong></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Leiding</td>
+    </tr>
+  </tbody>
+</table><p>Als we deze objecttypen mappen op het IMBGT dan ontstaat het volgende beeld. Het hoofdobjecttype <strong>Constructie</strong> in NEN:22 komt grotendeels overeen met het abstracte hoofdobjecttype Bouwwerk in BGT. Hieronder vallen ook de kunstwerken zoals tunnels en overbruggingen.</p>
 <img width="742" height="504" alt="image" src="https://github.com/user-attachments/assets/bf2cf476-cf83-453c-864d-8a381d2c4218"><p>In tabelvorm:</p>
 <img width="800" height="1056" alt="image" src="https://github.com/user-attachments/assets/48176354-3254-4323-9068-a50b7cdd33dd"><p>Figuur...: overzicht van objecttypen uit IMBGT</p>
 </section>
@@ -1757,8 +1866,7 @@ In het geval van dit onderzoek zal de focus liggen op de reele objecttypen, spec
   </li><li class="tofline">
     <a class="tocxref" href="#drie_benaderingen_IFC_geometrie"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title">
         Drie verschillende benaderingen soorten geometrie in IFC <br> 
-        bron:
-        <span>Automatic generation of CityGML LoD3 building models from IFC models</span> S. Donkers
+        (bron: [<cite><span class="bibref" data-link-type="biblio">AGCITYGMLIFC</span></cite>])
       </span></a>
   </li>
       </ul></section>
@@ -1778,10 +1886,24 @@ In het geval van dit onderzoek zal de focus liggen op de reele objecttypen, spec
 
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="d-referenties"><bdi class="secno">D. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix D."></a></div><section id="informatieve-referenties">
     <div class="header-wrapper"><h3 id="d-1-informatieve-referenties"><bdi class="secno">D.1 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix D.1"></a></div>
-    <dl class="bibliography"><dt id="bib-hrcrs">[HRCRS]</dt><dd>
+    <dl class="bibliography"><dt id="bib-3dtoprel">[3DTOPREL]</dt><dd>
+      <a href="https://resolver.tudelft.nl/uuid:3c1cc332-9751-4802-8c80-03fadde15b31"><cite>On 3D Topological Relationships</cite></a>.  TU Delft. 2000. Definitief. URL: <a href="https://resolver.tudelft.nl/uuid:3c1cc332-9751-4802-8c80-03fadde15b31">https://resolver.tudelft.nl/uuid:3c1cc332-9751-4802-8c80-03fadde15b31</a>
+    </dd><dt id="bib-agcitygmlifc">[AGCITYGMLIFC]</dt><dd>
+      <a href="https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d"><cite>Automatic generation of CityGML LoD3 building models from IFC models</cite></a>.  TU Delft. 2013-12-01. Definitief. URL: <a href="https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d">https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d</a>
+    </dd><dt id="bib-hrcrs">[HRCRS]</dt><dd>
       <a href="https://docs.geostandaarden.nl/crs/crs/"><cite>Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie</cite></a>.  Geonovum. 2022-03-14. Definitief. URL: <a href="https://docs.geostandaarden.nl/crs/crs/">https://docs.geostandaarden.nl/crs/crs/</a>
+    </dd><dt id="bib-iso-19111">[ISO 19111]</dt><dd>
+      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-iso19107">[ISO19107]</dt><dd>
       <a href="https://www.iso.org/standard/66175.html"><cite>ISO 19107:2019 Geographic information — Spatial schema</cite></a>.  ISO. 2019-12-01. Published. URL: <a href="https://www.iso.org/standard/66175.html">https://www.iso.org/standard/66175.html</a>
+    </dd><dt id="bib-iso19108">[ISO19108]</dt><dd>
+      <a href="https://www.iso.org/standard/26013.html"><cite>ISO 19108:2002 Geographic information — Temporal schema</cite></a>.  ISO. 2012-12-08. Published. URL: <a href="https://www.iso.org/standard/26013.html">https://www.iso.org/standard/26013.html</a>
+    </dd><dt id="bib-iso19111">[ISO19111]</dt><dd>
+      <a href="https://www.iso.org/standard/74039.html"><cite>ISO 19111:2019 Geographic information — Referencing by coordinates</cite></a>.  ISO. 2019-01-01. Published. URL: <a href="https://www.iso.org/standard/74039.html">https://www.iso.org/standard/74039.html</a>
+    </dd><dt id="bib-iso8601">[ISO8601]</dt><dd>
+      <a href="http://www.iso.org/iso/catalogue_detail?csnumber=40874"><cite>Representation of dates and times. ISO 8601:2004.</cite></a>.  International Organization for Standardization (ISO). 2004. ISO 8601:2004. URL: <a href="http://www.iso.org/iso/catalogue_detail?csnumber=40874">http://www.iso.org/iso/catalogue_detail?csnumber=40874</a>
+    </dd><dt id="bib-sfa">[SFA]</dt><dd>
+      <a href="https://www.ogc.org/standards/sfa/"><cite>OpenGIS Implementation Specification for Geographic information - Simple feature access - Part 1: Common architecture</cite></a>.  OGC. 2011-05-28. Corrigendum. URL: <a href="https://www.ogc.org/standards/sfa/">https://www.ogc.org/standards/sfa/</a>
     </dd><dt id="bib-ww3d">[ww3d]</dt><dd>
       <a href="https://docs.geostandaarden.nl/3d/hr-3d-standaarden/"><cite>Wegwijzer 3D standaarden</cite></a>.  Geonovum. 2025-01-28. Definitief. URL: <a href="https://docs.geostandaarden.nl/3d/hr-3d-standaarden/">https://docs.geostandaarden.nl/3d/hr-3d-standaarden/</a>
     </dd></dl>
