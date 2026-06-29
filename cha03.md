@@ -1,6 +1,15 @@
 # Objecttypen
 
-Deze bijlage laat zien welke objecttypen betrokken zijn bij dit onderzoek.
+Onderzoeksvraag: *Voor welke soorten objecten en daarmee samenhangende datasets zou deze standaard moeten gelden?*
+
+We kijken naar twee use cases die vooral focussen op de SOLL situatie en antwoord geven op de vraag wat is er nodig aan standaarden om naar die SOLL situatie te komen.
+
+De use cases zijn:
+
+- DTaaS: Digital Twin as a Service. In DTaaS komen diverse use cases aan de orde zoals hittestress en overstroming van steden, waarbij een 3D stadsmodel nodig is om simulaties te kunnen doen. DTaaS maakt gebruik van 3D geo-objecten maar schrijft geen standaard voor. Voor een vergroot gebruik van Digital Twins is een 3D standaard aan te bevelen. Door Digital Twin als usecase te gebruiken versterken we ook de relatie tussen het ZoN Datafundament en het ZoN Digital Twin programma.
+- Informatiemodel Geluid. Geluid is bij uitstek een fenomeen dat beïnvloed wordt door de 3D ruimte en men heeft 3D objecten nodig om binnen de geluidsmodellen te kunnen bepalen welk geluid hoe hard ergens aankomt, gegeven de locatie van de geluidsbron en de fysieke objecten die het geluid onderweg tegenkomt.
+
+Dit hoofdstuk laat zien welke objecttypen betrokken zijn bij dit onderzoek.
 Uitgaande van NEN3610:2022, zie figuur hieronder. De figuur geeft van deze NEN versie aan welke reele en virtuele objecttypen er gedefinieerd zijn.
 In het geval van dit onderzoek zal de focus liggen op de <strong>reele</strong> objecttypen, specifiek op die onder hoofdtype <strong>Constructie</strong>. Daaronder vallen de subobjecttypen <strong>Gebouw</strong> en <strong>Kunstwerk</strong>.
 
