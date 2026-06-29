@@ -1429,7 +1429,7 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Algemeen<br>
       Werkversie
-      <time class="dt-published" datetime="2025-11-14">26 juni 2026</time>
+      <time class="dt-published" datetime="2025-11-14">29 juni 2026</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -1491,7 +1491,7 @@ ul.index code{color:inherit}
 <ol>
 <li>Voor welke soorten objecten en daarmee samenhangende datasets zou deze 3D standaard moeten gelden?;</li>
 <li>Welke nationale en internationale standaarden vormen de basis voor de eisen aan een 3D object in een basisregistratie en welke aanvullende afspraken maken we op het gebied van semantiek, geometrie, CRS, maar met name inwinning, kwaliteit, detailniveau en afbakening van 3D objecten, rekening houdend met de aansluiting op BIM standaarden?;</li>
-<li>Welke afspraken zijn nodig om geo-informatie naar BIM, en BIM informatie naar GEO te kunnen krijgen? (richtlijn geo-referentie in BIM, IFC-profiel, etc.);</li>
+<li>Welke afspraken zijn nodig om geo-informatie naar BIM, en BIM informatie naar GEO te kunnen krijgen?;</li>
 <li>In welke vorm(en) is implementatieondersteuning nodig voor succesvolle implementatie van de 3D standaard? (handreikingen, software, etc.);</li>
 <li>Wordt de 3D standaard wettelijk verplicht of komt deze op de pas-toe-leg-uit lijst?</li>
 </ol>
@@ -1503,34 +1503,30 @@ ul.index code{color:inherit}
 </blockquote>
 <p>Om het vervolgonderzoek goed te kunnen uitvoeren, was het nodig het doel van de nieuwe 3D standaard (of set standaarden) gedetailleerder te beschrijven. Dit noemen we ons werkdoel. Als werkdoel hanteerden we: </p>
 <p><strong>Het doel van de 3D standaard is om te zorgen voor interoperabiliteit van landelijke 3D bestanden, zodat 3D viewers en digitale tweelingen hieruit op gestandaardiseerde wijze kunnen putten voor zowel visualisaties van 3D modellen als het gebruik van 3D modellen voor analyses en berekeningen.</strong></p>
-<p>De volgende illustratie van de VNG helpt ons het werk in beeld te krijgen: </p>
+<p>De volgende illustratie van de VNG heeft ons geholpen het werk in beeld te krijgen: </p>
 <figure id="fig-de-3d-keten-in-samenhang-bron-vng">
     <img src="./media/3d-keten.png" alt="de 3D keten in samenhang">
     <figcaption><a class="self-link" href="#fig-de-3d-keten-in-samenhang-bron-vng">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">De 3D keten in samenhang - bron VNG</span></figcaption>
-</figure><p>In deze keten spelen op de volgende plekken standaarden een rol: </p>
+</figure><p>In deze illustratie zien we een weergave van de 3D keten, lopend van huidige 2D registraties tot aan gebruik van 3D data in viewers en digitale tweelingen. </p>
+<p>In deze keten spelen op meerdere plekken standaarden een rol en hebben wij dus een taak om deze standaarden te definiëren: </p>
+<p>Bij <strong>inwinnen 3D brondata</strong>. Het gaat dan om ruwe data die als basis van 3D modellen dienen, zoals LiDAR data, luchtfoto's, oblieke foto's, maar ook BIM modellen (geen ruwe data maar wel brondata). De Wegwijzer 3D Standaarden geeft voor de ruwe data al handvaten. Aan GeoBIM standaarden wordt momenteel gewerkt in parallele trajecten. </p>
 <ul>
-<li>Bij <strong>inwinnen</strong>. Het gaat dan om ruwe data die als basis van 3D modellen dienen, zoals LiDAR data, luchtfoto's, oblieke foto's, maar ook BIM modellen (geen ruwe data maar wel brondata).<ul>
-<li>de Keuzehulp geeft voor de ruwe data al handvaten. Aan GeoBIM standaarden wordt momenteel gewerkt in parallele trajecten. </li>
-<li>Onze eerste taak: afspreken welke standaard(en) we in Nederland gebruiken voor ruwe data, zodat bv gemeenten deze standaarden in hun bestek kunnen opnemen voor inwinopdrachten. </li>
-<li>Onze tweede taak: de afspraken voor BIM + Geo vastleggen.</li>
+<li><strong>Taak</strong>: afspreken welke standaard(en) we in Nederland gebruiken voor ruwe data, zodat inwinnende bronhouders deze standaarden in hun bestek kunnen opnemen voor opdrachten. </li>
+<li><strong>Taak</strong>: de afspraken voor BIM + Geo vastleggen.</li>
 </ul>
-</li>
-<li>Bij <strong>registreren</strong>. Het gaat dan om <em>uitwisseling en opslag</em> van 3D vectordata. <ul>
-<li>Uit de Keuzehulp 3D standaarden blijkt dat CityGML hier de beste kandidaat is. </li>
-<li>Onze taak: deze keuze verder uitwerken met afspraken voor Nederland.</li>
+<p>Bij <strong>aanbieden / registreren</strong>. Het gaat dan om <em>uitwisseling en opslag</em> van 3D vectordata. Uit de Keuzehulp 3D standaarden blijkt dat CityGML hier de beste kandidaat is. </p>
+<ul>
+<li><strong>Taak</strong>: deze keuze verder uitwerken met afspraken voor Nederland.</li>
 </ul>
-</li>
-<li>Bij <strong>gebruik</strong>, <strong>ontsluiten</strong>. Het gaat dan om 3D <em>visualisatie</em> en om <em>exporteren</em>.<ul>
-<li>Voor 3D <em>visualisatie</em> hebben we twee goedgekeurde internationale standaarden, 3D Tiles en i3s. </li>
-<li>Onze taak: hier een beargumenteerde keuze in maken zodat we voor Nederland één standaard afspreken.</li>
-<li>De standaard voor <em>exporteren</em> kan dezelfde zijn als voor uitwisseling en opslag (het vorige punt)</li>
+<p>Bij <strong>gebruiken / ontsluiten</strong>. Het gaat dan om 3D <em>visualisatie</em> en om <em>exporteren</em>. Voor 3D <em>visualisatie</em> hebben we twee goedgekeurde internationale standaarden, 3D Tiles en i3s.</p>
+<ul>
+<li><strong>Taak</strong>: hier een beargumenteerde keuze in maken zodat we voor Nederland één standaard afspreken.</li>
 </ul>
-</li>
-</ul>
+<p>De standaard voor <em>exporteren</em> kan dezelfde zijn als voor uitwisseling en opslag (het vorige punt).</p>
 </section><section id="scope"><div class="header-wrapper"><h3 id="x1-2-scope"><bdi class="secno">1.2 </bdi>Scope</h3><a class="self-link" href="#scope" aria-label="Permalink for Section 1.2"></a></div>
 <p>Onze opdracht had een brede focus:</p>
 <blockquote>
-<p>"de 3D geometrie van fysieke en virtuele objecten conform NEN 3610"</p>
+<p>"De 3D geometrie van fysieke en virtuele objecten conform NEN 3610"</p>
 </blockquote>
 <p>Onze eerste stap is geweest om na te denken over de soorten objecten waarvoor de overstap naar volledige 3D registratie de meeste meerwaarde zou hebben. Al snel besloten we om eerst te focussen op reële (fysieke) objecten. Deze beperkte focus is nodig om in beperkte tijd de eerste stappen naar een 3D standaard te kunnen zetten.</p>
 <p>Wat betreft <strong>soorten objecten</strong> en datasets waar de 3D standaard voor gaat gelden, richten we onze focus in eerste instantie op twee objecttypen: gebouwen en kunstwerken. Deze objecttypen zijn het vaakst relevant om als 3D object te modelleren.  </p>
@@ -1555,7 +1551,7 @@ Deze dimensie beschrijft de hoeveelheid onafhankelijke richtingen in de "echte r
 <p><br>Temporele dimensie<br> 
 Temporele coördinaten beschrijven een fenomeen in de tijdsruimte. Dit maakt het mogelijk om bijvoorbeeld geldigheid, volgorde en duur te definiëren. Temporele coördinaten moeten horen bij een Time Reference System (TRS) volgens[<cite><a class="bibref" data-link-type="biblio" href="#bib-iso19108" title="ISO 19108:2002 Geographic information — Temporal schema">ISO19108</a></cite>].</p>
 <p><br>Parametrische dimensie<br>
-Parametrische coördinaten beschrijven de positionering van een fenomeen in een aanvullende dimensie die niet ruimtelijk en niet temporeel van aard is. Parametrische coördinaten zijn geen attributen, maar worden ondersteund door extra assen, naast de ruimtelijke en temporele assen. Parametrische coördinaten dienen consistent te zijn met het uitbreidingsmechanisme beschreven door [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-iso-19111" title="Reference &quot;[ISO 19111]&quot; not found." id="respec-offender-reference-iso-19111-not-found">ISO 19111</a></cite>].</p>
+Parametrische coördinaten beschrijven de positionering van een fenomeen in een aanvullende dimensie die niet ruimtelijk en niet temporeel van aard is. Parametrische coördinaten zijn geen attributen, maar worden ondersteund door extra assen, naast de ruimtelijke en temporele assen. Parametrische coördinaten dienen consistent te zijn met het uitbreidingsmechanisme beschreven door [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso19111" title="ISO 19111:2019 Geographic information — Referencing by coordinates">ISO19111</a></cite>].</p>
 <p>Een combinatie van 3D ruimtelijke dimensie met 1D temporele dimensie wordt ook wel 4D of ruimtelijk-temporeel (spatio-temporal) genoemd.   </p>
 <table>
   <caption> Tabel met <strong>voorbeelden</strong> die het verschil tussen geometrische, coördinaat- en ruimtelijke, temporele en parametrische dimensies illustreren</caption>
@@ -2209,8 +2205,6 @@ Figuur....: overzicht van objecttypen uit NEN3610:2022</p>
       <a href="https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d"><cite>Automatic generation of CityGML LoD3 building models from IFC models</cite></a>.  TU Delft. 2013-12-01. Definitief. URL: <a href="https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d">https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d</a>
     </dd><dt id="bib-hrcrs">[HRCRS]</dt><dd>
       <a href="https://docs.geostandaarden.nl/crs/crs/"><cite>Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie</cite></a>.  Geonovum. 2022-03-14. Definitief. URL: <a href="https://docs.geostandaarden.nl/crs/crs/">https://docs.geostandaarden.nl/crs/crs/</a>
-    </dd><dt id="bib-iso-19111">[ISO 19111]</dt><dd>
-      <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-iso19107">[ISO19107]</dt><dd>
       <a href="https://www.iso.org/standard/66175.html"><cite>ISO 19107:2019 Geographic information — Spatial schema</cite></a>.  ISO. 2019-12-01. Published. URL: <a href="https://www.iso.org/standard/66175.html">https://www.iso.org/standard/66175.html</a>
     </dd><dt id="bib-iso19108">[ISO19108]</dt><dd>
