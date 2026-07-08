@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 37.0.0">
+<meta name="generator" content="ReSpec 37.2.0">
 <style>
 .issue-label{text-transform:initial}
 .warning>p:first-child{margin-top:0}
@@ -1429,7 +1429,7 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Algemeen<br>
       Werkversie
-      <time class="dt-published" datetime="2025-11-14">03 juli 2026</time>
+      <time class="dt-published" datetime="2025-11-14">08 juli 2026</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -4217,7 +4217,14 @@ In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder 
 <p> Het gebruik van dezelfde 3D-representatie binnen de basisregistraties zorgt ervoor dat men egevens onderling kan vergelijken en combineren. Het bevordert de interoperabiliteit en voorkomt verschillen in interpretatie van geometrieën. </p>
 <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Noot</span><span class="issue-label">: Ontwikkel een 3D representatiestandaard</span></div><aside class="">
   <p><strong>AANBEVELING:</strong> OOntwikkel een 3D-representatiestandaard die aansluit bij nu al aanwezige 2D-representatie van de basisregistraties. Door een gezamenlijke standaard te hanteren, kunnen 3D-gegevens in de toekomst eenvoudiger worden gecombineerd, vergeleken en uitgewisseld. Dit bevordert de interoperabiliteit tussen datasets en voorkomt verschillen in de interpretatie en modellering van objecten.</p>
-</aside></div></section></section>
+</aside></div><p>Rioleringsobjecten en kabels en leidingen (KLIC) objecten zijn geen onderdeel van de BGT/IMGeo. Deze onderdelen zijn wel onderdeel van IMKL. Het verplichte geometrieprofiel van IMKL is 2D. Primair bestaat de geometrie uit punten en lijnen die het netwerk representeren. 2D vlakken zijn additioneel waarbij ook multivlakken zijn toegestaan. 2,5 D en 3D zijn een additionele extensie. 
+3D geometrie.</p>
+<p>In IMKL is de mogelijkheid opgenomen om objecten in 3 dimensies (3D) te modelleren. Deze mogelijkheid is optioneel en is naast, niet in plaats van, 2D aanwezig. Dat betekent dat de basis uitgaat van een (volledige) 2D data set. Daarnaast kan, in dezelfde data set, 3D geometrie voor een of meerdere van de objecten aanwezig zijn. </p>
+<p>Deze 3D geometrie kan beschikbaar zijn in twee verschillende ‘Levels of Detail’ (LOD). Allereerst kunnen 2.5D punten, vlakken en lijnen worden opgenomen. Dit kan beschouwd worden als Level of Detail 0 (LOD0). Elk IMKL vlak, lijn- of puntobject krijgt voor elk coördinatenpaar een z waarde. Om de ligging in 3D te beschrijven krijgt de lijn extra coördinatenparen ten opzichte van de 2D representatie. De objecten kunnen dan in een Digitaal Terrein Model (3D terreinmodel) worden geïntegreerd en op de juiste hoogte onder of boven maaiveldniveau worden gerepresenteerd.</p>
+<p>Daarnaast is het mogelijk om volledige 3D geometrie op te nemen. Dit is te beschouwen als Level of Detail 1 (LOD1) en maakt het mogelijk om IMKL objecten als volledige 3D objecten (volumes) te representeren. </p>
+<p><img src="image.png" alt="wa"></p>
+<p><img src="image-1.png" alt="alt text"></p>
+</section></section>
 <section id="inventarisatie-3d-standaarden"><div class="header-wrapper"><h2 id="x4-inventarisatie-3d-standaarden"><bdi class="secno">4. </bdi>Inventarisatie 3D standaarden</h2><a class="self-link" href="#inventarisatie-3d-standaarden" aria-label="Permalink for Section 4."></a></div>
 <p>Onderzoeksvraag: <em>Welke internationale en nationale standaarden vormen de basis voor de eisen aan een 3D object in een basisregistratie? Welke aanvullende afspraken moeten we maken op het gebied van semantiek, geometrie en coördinatenstelsel, inclusief randvoorwaarden zoals inwinning, kwaliteit, detailniveau en afbakening van 3D objecten, hierbij rekening houdend met de aansluiting op geldende standaarden.</em></p>
 <p>In 2024 heeft Geonovum een inventarisatie gedaan van 3D standaarden. Dit heeft de <a href="https://docs.geostandaarden.nl/3d/hr-3d-standaarden/">Wegwijzer 3D standaarden</a> opgeleverd. </p>
