@@ -147,6 +147,21 @@ let respecConfig = {
       status: "Definitief",
       publisher: "TU Delft",
       date: "2000"
+    },
+    BGT12: {
+      id: "BGT12",
+      title: "Basisregistratie Grootschalige Topografie Gegegevenscatalogus BGT 1.2",
+      href: "https://docs.geostandaarden.nl/imgeo/def-im-BGT-20200701/",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2020-07-01"
+    },
+    IMGEO22: {
+      id: "IMGEO22",
+      title: "Basisregistratie Grootschalige Topografie Gegevenscatalogus IMGeo 2.2",
+      href: "https://docs.geostandaarden.nl/imgeo/def-im-IMGeo-20200701/",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2020-07-01"
     }
-  }
 };
