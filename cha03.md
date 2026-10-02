@@ -9,6 +9,15 @@ De use cases zijn:
 - DTaaS: Digital Twin as a Service. In DTaaS komen diverse use cases aan de orde zoals hittestress en overstroming van steden, waarbij een 3D stadsmodel nodig is om simulaties te kunnen doen. DTaaS maakt gebruik van 3D geo-objecten maar schrijft geen standaard voor. Voor een vergroot gebruik van Digital Twins is een 3D standaard aan te bevelen. Door Digital Twin als usecase te gebruiken versterken we ook de relatie tussen het ZoN Datafundament en het ZoN Digital Twin programma.
 - Informatiemodel Geluid. Geluid is bij uitstek een fenomeen dat beïnvloed wordt door de 3D ruimte en men heeft 3D objecten nodig om binnen de geluidsmodellen te kunnen bepalen welk geluid hoe hard ergens aankomt, gegeven de locatie van de geluidsbron en de fysieke objecten die het geluid onderweg tegenkomt.
 
+In een Digitale Stad waarin men wil analyseren, meten en beleven is het van belang dat alle alle objecten integraal in 3D beschikbaar zijn. Wanneer slechts een deel van de objecten in 3D is weergegeven, ontstaan er gaten in het 3D-model en ontstaat een onvolledig en onsamenhangend beeld. Er zitten dan veel gaten in de 3D kaart. Daarnaast kunnen objecten in de 2D ruimte  en objecten in de 3D ruimte niet met elkaar worden gecombineerd zonder deze objecten in de 2D ruimte expliciet 3D te maken. Om een consistente en volwaardige 3D-weergave van de Digitale Stad mogelijk te maken, zou de 3D-standaard daarom voor alle objecten binnen de BGT moeten gelden.
+
+Een Digitale Stad gaat niet alleen om wat bovengronds zichtbaar is, maar ook om de wereld die zich onder het maaiveld bevindt. De wereld van onder andere kabels, leidingen, bodem, sensoren en grondwater. Deze objecttypen zijn geen onderdeel van de BGT, maar wel van IMKL en IMBRO. Door de objecten uit de IMKL en IMBRO ook conform de 3D-standaard beschikbaar te maken kan een samenhangend beeld van de boven- én ondergrondse leefomgeving ontstaan in een Digital Stad. 
+
+<aside class="note" title="Objecttypen en samenhangende datasets waar de 3D standaard voor gaat gelden">
+  <p><strong>AANBEVELING:</strong> De 3D standaard geldt voor alle objecttypen van de BGT/IMGEO, alle objecten uit de IMKL en in de toekomst te maken selectie van de IMBRO </p>
+</aside>
+
+## NEN3610 
 De NEN 3610 is een top-ontologie waarin verschillende ruimtelijke en reeële concepten samenkomen tot één gedeeld model van de fysieke leefomgeving. Onderstaande figuur toont de nen3610:2011, BGT en IMGEO. De figuur toont van deze NEN-versie en BGT|IMGEO welke objecttypen er gedefinieerd zijn.
 In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder concreet object als de objecten onder de verschillende gebieden. Dit is nodig voor de concrete objecten, maar ook de ruimten die in de BGT en BAG voorkomen.  
 
@@ -44,12 +53,11 @@ Men moet een keuze maken bij de ontwikkeling van een 3D standaard:
 2) Ontwikkeling van een 3D standaard op basis van een toekomstige BGT in samenhang met de NEN3610:2022.
 
 <aside class="note" title="Keuze tussen NEN3610 en BGT versies voor een 3D standaard">
-  <p><strong>AANBEVELING:</strong> Maak een keuze tussen een 3D standaard voor of de huidige BGT in samenhang met de eerdere versie NEN3610:2011 of voor een toekomstig BGT in samenhang met de huidige versie NEN3610:2022.</p>
+  <p><strong>AANBEVELING:</strong> Ontwikkel een 3D standaard voor een toekomstig BGT in samenhang met de huidige versie NEN3610:2022 en niet voor de huidige BGT in samenhang met de eerdere versie NEN3610:2011 ten behoeve van de toekomstbestendigheid van de 3D standaard. </p>
 </aside>
 
-
-# IMGeo-objecten en geometrie
-De BGT objecten zijn, zoals beschreven in paragraaf 2.6 van de [BGT Specificatie](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#modellering), specifiek tweedimensionaal. Wel wordt de stap naar 3D al beschreven. Deze stap wordt verder toegelicht in paragraaf 2.5 van de [IMGEO specificatie](https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#x3d-in-imgeo).
+## IMGeo-objecten en geometrie
+De BGT objecten zijn zoals beschreven in paragraaf 2.6 van de BGT 1.2 specificatie [[BGT12]] specifiek tweedimensionaal. Wel wordt de stap naar 3D al beschreven. Deze stap wordt verder toegelicht in pargaraaf 2.5 van de  IMGEO 2.2 specificatie [[IMGEO22]].
 
 BAG objecten zijn zoals beschreven in [Catalogus BAG 2018](https://www.geobasisregistraties.nl/documenten/2018/03/12/catalogus-2018) specifiek tweedimensionaal. Het is mogelijk om deze objecten in een 3D ruimte weer te geven. De 3D BAG en 3D Basisvoorziening, ontwikkeld door de TUDelft en het Kadaster, zijn niet gestandaardiseerd. 
 
@@ -61,7 +69,7 @@ Momenteel bevinden BGT objecten zich in een 2D ruimte. De BAG kent ook objecten 
 
 Een overzicht van de objecten van de BGT, BAG, het IMKL en de BRO zijn in de bijlagen 1 tot 4 weergegeven. 
 
-# Level of Detail en inwinningsregels
+## Level of Detail en inwinningsregels
 
 Het is mogelijk om in 3D op verschillend detailniveau de werkelijkheid weer te geven. In 2D is dit niet anders. Voor de BGT en IMGEO bestaan er inmeetregels voor elk object. Zie bijvoorbeeld de [inmeetregels voor een gebouw in de BGT](https://geonovum.github.io/IMGeo-objectenhandboek/pand#inwinningsregels).
 
@@ -82,7 +90,6 @@ Door de TU-Delft is hier een aanvulling op gemaakt. In 2016 heeft [Biljecki et a
 </figure>
 
 De LOD's zijn het meest uitgebreid uitgewerkt voor gebouwen. Voor andere objecten moet dit gecreëerd worden. Wanneer beschikbaar kan er gebruik gemaakt worden van wetenschappelijk onderzoek of al aanwezige specificaties zoals hieronder getoond vanuit Ortega Córdova voor solitaire vegetatieobjecten of de LOD beschrijving uit het IMKL. 
-
 
 <figure id="Voorbeeld-van-de-LoDs-voor-vegetatie" style="display: block; text-align: center; margin: 0 auto;">
       <img src="./media/Vegetation LOD definitions.png" alt="Urban Vegetation Modeling 3D Levels of Detail" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;"/>
@@ -107,6 +114,6 @@ Daarnaast is het mogelijk om volledige 3D geometrie op te nemen. Dit is te besch
   <p><strong>AANBEVELING:</strong> Ontwikkel een 3D-representatiestandaard die aansluit bij nu al aanwezige 2D-representatie van de basisregistraties. Door een gezamenlijke standaard te hanteren, kunnen 3D-gegevens in de toekomst eenvoudiger worden gecombineerd, vergeleken en uitgewisseld. Dit bevordert de interoperabiliteit tussen datasets en voorkomt verschillen in de interpretatie en modellering van objecten.</p>
 </aside>
 
+## Ontwikkeling van een 3D representatiestandaard
 
-
-
+Het ontwikkelen van een 3D-representatiestandaard omvat het uitwerking van zowel de technische, semantische als kwalitatieve aspecten van de 3D-Geo-informatie. Dit omvat ontwerpprincipes zoals schaalbereik, dekking, Level of Detail, semantische decompositie en 3D-coördinaten als ook algemene principes voor bronhouders, inwinning, geometrie en coördinatenreferentiesystemen. Daarnaast moeten eisen worden gesteld aan 3D-datakwaliteit, zoals actualiteit, nauwkeurigheid en tijdsgeldigheid, en aan de 3D-representatie van teksten, namen en nummeraanduidingen. Een semantische gegevensmodel moet geschikt worden gemaakt voor 3D, inclusief objecttypen onder de NEN3610:2022 en CityGML 3.0, attributen, domeinwaarden en de afbakening van 3D-objecten en 3D-objectdelen. 
