@@ -164,6 +164,7 @@ ul.index code{color:inherit}
     }
   ],
   "postProcess": [
+    null,
     null
   ],
   "latestVersion": [
@@ -1380,6 +1381,22 @@ ul.index code{color:inherit}
       "status": "Definitief",
       "publisher": "TU Delft",
       "date": "2000"
+    },
+    "BGT12": {
+      "id": "BGT12",
+      "title": "Basisregistratie Grootschalige Topografie Gegegevenscatalogus BGT 1.2",
+      "href": "https://docs.geostandaarden.nl/imgeo/def-im-BGT-20200701/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2020-07-01"
+    },
+    "IMGEO22": {
+      "id": "IMGEO22",
+      "title": "Basisregistratie Grootschalige Topografie Gegevenscatalogus IMGeo 2.2",
+      "href": "https://docs.geostandaarden.nl/imgeo/def-im-IMGeo-20200701/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2020-07-01"
     }
   },
   "title": "Rapport 3D standaard basisregistraties",
@@ -1429,11 +1446,7 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Algemeen<br>
       Werkversie
-<<<<<<< HEAD
-      <time class="dt-published" datetime="2025-11-14">08 juli 2026</time>
-=======
-      <time class="dt-published" datetime="2025-11-14">29 juli 2026</time>
->>>>>>> main
+      <time class="dt-published" datetime="2025-11-14">02 oktober 2026</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -1465,7 +1478,7 @@ ul.index code{color:inherit}
       <dt>Doe mee:</dt><dd>
     <a href="https://github.com/Geonovum/3d-standaard-rapport/">GitHub Geonovum/3d-standaard-rapport</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/3d-standaard-rapport/issues/">All issues</a>
+    <a href="https://github.com/Geonovum/3d-standaard-rapport/issues/">Alle issues</a>
   </dd><dd>
     <a href="https://github.com/Geonovum/3d-standaard-rapport/issues/new/choose">Dien een melding in</a>
   </dd><dd>
@@ -1485,7 +1498,7 @@ ul.index code{color:inherit}
   </div>
 <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit rapport beschrijft een vervolgonderzoek naar de optimale 3D geostandaarden voor Nederland, voortbouwend op de Wegwijzer 3D standaarden van Geonovum. Het onderzoek richt zich op het bepalen van standaarden die nodig zijn voor de volledige keten van 3D data-inwinning, opslag, integratie van BIM-modellen, en uitwisseling van 3D geografische informatie met gerichte toepassingen in visualisatie en analyse. Met een focus op de objecttypen die nodig zijn binnen een Digital Twin onderzoekt het rapport welke nationale en internationale standaarden het best aansluiten bij verschillende onderdelen van deze keten, waardoor interoperabiliteit van landelijke 3D bestanden kan worden bereikt.</p>
 </section>
-<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1. </bdi>Introductie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#werkdoel"><bdi class="secno">1.1 </bdi>Werkdoel</a></li><li class="tocline"><a class="tocxref" href="#scope"><bdi class="secno">1.2 </bdi>Scope</a></li></ol></li><li class="tocline"><a class="tocxref" href="#wat-is-3d"><bdi class="secno">2. </bdi>Wat is 3D</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verschillende-interpretaties-van-3d"><bdi class="secno">2.1 </bdi>Verschillende interpretaties van 3D</a></li><li class="tocline"><a class="tocxref" href="#geometrie-in-2d-2d-met-hoogte-attribuut-2-5d-en-3d"><bdi class="secno">2.2 </bdi>Geometrie in 2D, 2D met hoogte attribuut, 2,5D en 3D</a></li><li class="tocline"><a class="tocxref" href="#geometrie-in-3d"><bdi class="secno">2.3 </bdi>Geometrie in 3D</a></li><li class="tocline"><a class="tocxref" href="#topologie-in-3d"><bdi class="secno">2.4 </bdi>Topologie in 3D</a></li></ol></li><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">3. </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#imgeo-objecten-en-geometrie"><bdi class="secno">3.1 </bdi>IMGeo-objecten en geometrie</a></li><li class="tocline"><a class="tocxref" href="#level-of-detail-en-inwinningsregels"><bdi class="secno">3.2 </bdi>Level of Detail en inwinningsregels</a></li></ol></li><li class="tocline"><a class="tocxref" href="#inventarisatie-3d-standaarden"><bdi class="secno">4. </bdi>Inventarisatie 3D standaarden</a></li><li class="tocline"><a class="tocxref" href="#afspraken-voor-geo-bim"><bdi class="secno">5. </bdi>Afspraken voor Geo-BIM</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#geo-bim-bouwblokken"><bdi class="secno">5.1 </bdi>Geo-BIM Bouwblokken</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#identificeren-van-geobim-uitdagingen-in-proces-van-plan-tot-realisatie-en-borging-in-praktijkcases"><bdi class="secno">5.1.1 </bdi>Identificeren van GeoBIM uitdagingen in proces van Plan tot Realisatie en borging in praktijkcases</a></li><li class="tocline"><a class="tocxref" href="#het-brengen-van-bim-informatie-naar-geo"><bdi class="secno">5.1.2 </bdi>Het brengen van BIM-informatie naar Geo</a></li><li class="tocline"><a class="tocxref" href="#het-brengen-van-geo-informatie-naar-bim"><bdi class="secno">5.1.3 </bdi>Het brengen van geo-informatie naar BIM</a></li><li class="tocline"><a class="tocxref" href="#standaardiseren-van-georefereren-bim-modellen"><bdi class="secno">5.1.4 </bdi>Standaardiseren van georefereren BIM-modellen</a></li><li class="tocline"><a class="tocxref" href="#geo-based-bim-en-bim-based-geo-standaarden"><bdi class="secno">5.1.5 </bdi>Geo-based BIM en BIM-based Geo standaarden</a></li><li class="tocline"><a class="tocxref" href="#afsprakenstelsel-voor-geo-bim-data-integratie"><bdi class="secno">5.1.6 </bdi>Afsprakenstelsel voor Geo-BIM data integratie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#imbgt-imgeo-objecten"><bdi class="secno">A. </bdi>IMBGT|IMGEO Objecten</a></li><li class="tocline"><a class="tocxref" href="#imbag-objecten"><bdi class="secno">B. </bdi>IMBAG Objecten</a></li><li class="tocline"><a class="tocxref" href="#imkl-objecten"><bdi class="secno">C. </bdi>IMKL Objecten</a></li><li class="tocline"><a class="tocxref" href="#imbro-objecten"><bdi class="secno">D. </bdi>IMBRO Objecten</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">E. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">F. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">F.1 </bdi>Termen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">F.2 </bdi>Termen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">G. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">G.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
+<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1. </bdi>Introductie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#werkdoel"><bdi class="secno">1.1 </bdi>Werkdoel</a></li><li class="tocline"><a class="tocxref" href="#scope"><bdi class="secno">1.2 </bdi>Scope</a></li></ol></li><li class="tocline"><a class="tocxref" href="#wat-is-3d"><bdi class="secno">2. </bdi>Wat is 3D</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verschillende-interpretaties-van-3d"><bdi class="secno">2.1 </bdi>Verschillende interpretaties van 3D</a></li><li class="tocline"><a class="tocxref" href="#geometrie-in-2d-2d-met-hoogte-attribuut-2-5d-en-3d"><bdi class="secno">2.2 </bdi>Geometrie in 2D, 2D met hoogte attribuut, 2,5D en 3D</a></li><li class="tocline"><a class="tocxref" href="#geometrie-in-3d"><bdi class="secno">2.3 </bdi>Geometrie in 3D</a></li><li class="tocline"><a class="tocxref" href="#topologie-in-3d"><bdi class="secno">2.4 </bdi>Topologie in 3D</a></li></ol></li><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">3. </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#nen3610"><bdi class="secno">3.1 </bdi>NEN3610</a></li><li class="tocline"><a class="tocxref" href="#imgeo-objecten-en-geometrie"><bdi class="secno">3.2 </bdi>IMGeo-objecten en geometrie</a></li><li class="tocline"><a class="tocxref" href="#level-of-detail-en-inwinningsregels"><bdi class="secno">3.3 </bdi>Level of Detail en inwinningsregels</a></li><li class="tocline"><a class="tocxref" href="#ontwikkeling-van-een-3d-representatiestandaard"><bdi class="secno">3.4 </bdi>Ontwikkeling van een 3D representatiestandaard</a></li></ol></li><li class="tocline"><a class="tocxref" href="#inventarisatie-3d-standaarden"><bdi class="secno">4. </bdi>Inventarisatie 3D standaarden</a></li><li class="tocline"><a class="tocxref" href="#afspraken-voor-geo-bim"><bdi class="secno">5. </bdi>Afspraken voor Geo-BIM</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#geo-bim-bouwblokken"><bdi class="secno">5.1 </bdi>Geo-BIM Bouwblokken</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#identificeren-van-geobim-uitdagingen-in-proces-van-plan-tot-realisatie-en-borging-in-praktijkcases"><bdi class="secno">5.1.1 </bdi>Identificeren van GeoBIM uitdagingen in proces van Plan tot Realisatie en borging in praktijkcases</a></li><li class="tocline"><a class="tocxref" href="#het-brengen-van-bim-informatie-naar-geo"><bdi class="secno">5.1.2 </bdi>Het brengen van BIM-informatie naar Geo</a></li><li class="tocline"><a class="tocxref" href="#het-brengen-van-geo-informatie-naar-bim"><bdi class="secno">5.1.3 </bdi>Het brengen van geo-informatie naar BIM</a></li><li class="tocline"><a class="tocxref" href="#standaardiseren-van-georefereren-bim-modellen"><bdi class="secno">5.1.4 </bdi>Standaardiseren van georefereren BIM-modellen</a></li><li class="tocline"><a class="tocxref" href="#geo-based-bim-en-bim-based-geo-standaarden"><bdi class="secno">5.1.5 </bdi>Geo-based BIM en BIM-based Geo standaarden</a></li><li class="tocline"><a class="tocxref" href="#afsprakenstelsel-voor-geo-bim-data-integratie"><bdi class="secno">5.1.6 </bdi>Afsprakenstelsel voor Geo-BIM data integratie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#imbgt-imgeo-objecten"><bdi class="secno">A. </bdi>IMBGT|IMGEO Objecten</a></li><li class="tocline"><a class="tocxref" href="#imbag-objecten"><bdi class="secno">B. </bdi>IMBAG Objecten</a></li><li class="tocline"><a class="tocxref" href="#imkl-objecten"><bdi class="secno">C. </bdi>IMKL Objecten</a></li><li class="tocline"><a class="tocxref" href="#imbro-objecten"><bdi class="secno">D. </bdi>IMBRO Objecten</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">E. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">F. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">F.1 </bdi>Termen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">F.2 </bdi>Termen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">G. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">G.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav>
 
 
 <section id="introductie"><div class="header-wrapper"><h2 id="x1-introductie"><bdi class="secno">1. </bdi>Introductie</h2><a class="self-link" href="#introductie" aria-label="Permalink for Section 1."></a></div>
@@ -1516,11 +1529,11 @@ ul.index code{color:inherit}
 <p>Bij <strong>inwinnen 3D brondata</strong>. Het gaat dan om ruwe data die als basis van 3D modellen dienen, zoals LiDAR data, luchtfoto's, oblieke foto's, maar ook BIM modellen (geen ruwe data maar wel brondata). De Wegwijzer 3D Standaarden geeft voor de ruwe data al handvaten. Aan GeoBIM standaarden wordt momenteel gewerkt in parallele trajecten. </p>
 <ul>
 <li><strong>Taak</strong>: afspreken welke standaard(en) we in Nederland gebruiken voor ruwe data, zodat inwinnende bronhouders deze standaarden in hun bestek kunnen opnemen voor opdrachten. </li>
-<li><strong>Taak</strong>: de afspraken voor BIM + Geo vastleggen.</li>
+<li><strong>Taak</strong>: de afspraken voor BIM + Geo vastleggen. Zie (hoofdstuk <a href="#afspraken-voor-geo-bim" data-matched-text="[[[#afspraken-voor-geo-bim]]]" class="sec-ref"><bdi class="secno">5. </bdi>Afspraken voor Geo-BIM</a>).</li>
 </ul>
 <p>Bij <strong>aanbieden / registreren</strong>. Het gaat dan om <em>uitwisseling en opslag</em> van 3D vectordata. Uit de Keuzehulp 3D standaarden blijkt dat CityGML hier de beste kandidaat is. </p>
 <ul>
-<li><strong>Taak</strong>: deze keuze verder uitwerken met afspraken voor Nederland.</li>
+<li><strong>Taak</strong>: deze keuze verder uitwerken met afspraken voor Nederland. Zie paragraaf 3.4 in (hoofdstuk <a href="#objecttypen" data-matched-text="[[[#objecttypen]]]" class="sec-ref"><bdi class="secno">3. </bdi>Objecttypen</a>).</li>
 </ul>
 <p>Bij <strong>gebruiken / ontsluiten</strong>. Het gaat dan om 3D <em>visualisatie</em> en om <em>exporteren</em>. Voor 3D <em>visualisatie</em> hebben we twee goedgekeurde internationale standaarden, 3D Tiles en i3s.</p>
 <ul>
@@ -1673,6 +1686,11 @@ Parametrische coördinaten beschrijven de positionering van een fenomeen in een 
 <li>DTaaS: Digital Twin as a Service. In DTaaS komen diverse use cases aan de orde zoals hittestress en overstroming van steden, waarbij een 3D stadsmodel nodig is om simulaties te kunnen doen. DTaaS maakt gebruik van 3D geo-objecten maar schrijft geen standaard voor. Voor een vergroot gebruik van Digital Twins is een 3D standaard aan te bevelen. Door Digital Twin als usecase te gebruiken versterken we ook de relatie tussen het ZoN Datafundament en het ZoN Digital Twin programma.</li>
 <li>Informatiemodel Geluid. Geluid is bij uitstek een fenomeen dat beïnvloed wordt door de 3D ruimte en men heeft 3D objecten nodig om binnen de geluidsmodellen te kunnen bepalen welk geluid hoe hard ergens aankomt, gegeven de locatie van de geluidsbron en de fysieke objecten die het geluid onderweg tegenkomt.</li>
 </ul>
+<p>In een Digitale Stad waarin men wil analyseren, meten en beleven is het van belang dat alle alle objecten integraal in 3D beschikbaar zijn. Wanneer slechts een deel van de objecten in 3D is weergegeven, ontstaan er gaten in het 3D-model en ontstaat een onvolledig en onsamenhangend beeld. Er zitten dan veel gaten in de 3D kaart. Daarnaast kunnen objecten in de 2D ruimte  en objecten in de 3D ruimte niet met elkaar worden gecombineerd zonder deze objecten in de 2D ruimte expliciet 3D te maken. Om een consistente en volwaardige 3D-weergave van de Digitale Stad mogelijk te maken, zou de 3D-standaard daarom voor alle objecten binnen de BGT moeten gelden.</p>
+<p>Een Digitale Stad gaat niet alleen om wat bovengronds zichtbaar is, maar ook om de wereld die zich onder het maaiveld bevindt. De wereld van onder andere kabels, leidingen, bodem, sensoren en grondwater. Deze objecttypen zijn geen onderdeel van de BGT, maar wel van IMKL en IMBRO. Door de objecten uit de IMKL en IMBRO ook conform de 3D-standaard beschikbaar te maken kan een samenhangend beeld van de boven- én ondergrondse leefomgeving ontstaan in een Digital Stad. </p>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: Objecttypen en samenhangende datasets waar de 3D standaard voor gaat gelden</span></div><aside class="">
+  <p><strong>AANBEVELING:</strong> De 3D standaard geldt voor alle objecttypen van de BGT/IMGEO, alle objecten uit de IMKL en in de toekomst te maken selectie van de IMBRO </p>
+</aside></div><section id="nen3610"><div class="header-wrapper"><h3 id="x3-1-nen3610"><bdi class="secno">3.1 </bdi>NEN3610</h3><a class="self-link" href="#nen3610" aria-label="Permalink for Section 3.1"></a></div>
 <p>De NEN 3610 is een top-ontologie waarin verschillende ruimtelijke en reeële concepten samenkomen tot één gedeeld model van de fysieke leefomgeving. Onderstaande figuur toont de nen3610:2011, BGT en IMGEO. De figuur toont van deze NEN-versie en BGT|IMGEO welke objecttypen er gedefinieerd zijn.
 In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder concreet object als de objecten onder de verschillende gebieden. Dit is nodig voor de concrete objecten, maar ook de ruimten die in de BGT en BAG voorkomen.  </p>
 <p>In de beschreven eerste iteratie zal de focus liggen op BGT:Pand met het bovenliggende NEN3610:Gebouw en op het BGT:Overbruggingsdeel met het bovenliggende NEN3610:Kunstwerk en onderliggende IMGEO type overbrugging: brug, aquaduct, viaduct, ecoduct, flyover en IMGEO type: dek, landhoof, pijler, sloof en pyloon.   </p>
@@ -1695,35 +1713,34 @@ In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder 
 <li>Ontwikkeling van een 3D standaard op basis van de huidige BGT in samenhang met de NEN3610:2011. </li>
 <li>Ontwikkeling van een 3D standaard op basis van een toekomstige BGT in samenhang met de NEN3610:2022.</li>
 </ol>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: Keuze tussen NEN3610 en BGT versies voor een 3D standaard</span></div><aside class="">
-  <p><strong>AANBEVELING:</strong> Maak een keuze tussen een 3D standaard voor of de huidige BGT in samenhang met de eerdere versie NEN3610:2011 of voor een toekomstig BGT in samenhang met de huidige versie NEN3610:2022.</p>
-</aside></div><section id="imgeo-objecten-en-geometrie"><div class="header-wrapper"><h3 id="x3-1-imgeo-objecten-en-geometrie"><bdi class="secno">3.1 </bdi>IMGeo-objecten en geometrie</h3><a class="self-link" href="#imgeo-objecten-en-geometrie" aria-label="Permalink for Section 3.1"></a></div>
-<p>De BGT objecten zijn, zoals beschreven in paragraaf 2.6 van de <a href="https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#modellering">BGT Specificatie</a>, specifiek tweedimensionaal. Wel wordt de stap naar 3D al beschreven. Deze stap wordt verder toegelicht in paragraaf 2.5 van de <a href="https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#x3d-in-imgeo">IMGEO specificatie</a>.</p>
+<div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="4"><span>Noot</span><span class="issue-label">: Keuze tussen NEN3610 en BGT versies voor een 3D standaard</span></div><aside class="">
+  <p><strong>AANBEVELING:</strong> Ontwikkel een 3D standaard voor een toekomstig BGT in samenhang met de huidige versie NEN3610:2022 en niet voor de huidige BGT in samenhang met de eerdere versie NEN3610:2011 ten behoeve van de toekomstbestendigheid van de 3D standaard. </p>
+</aside></div></section><section id="imgeo-objecten-en-geometrie"><div class="header-wrapper"><h3 id="x3-2-imgeo-objecten-en-geometrie"><bdi class="secno">3.2 </bdi>IMGeo-objecten en geometrie</h3><a class="self-link" href="#imgeo-objecten-en-geometrie" aria-label="Permalink for Section 3.2"></a></div>
+<p>De BGT objecten zijn zoals beschreven in paragraaf 2.6 van de BGT 1.2 specificatie [<cite><a class="bibref" data-link-type="biblio" href="#bib-bgt12" title="Basisregistratie Grootschalige Topografie Gegegevenscatalogus BGT 1.2">BGT12</a></cite>] specifiek tweedimensionaal. Wel wordt de stap naar 3D al beschreven. Deze stap wordt verder toegelicht in pargaraaf 2.5 van de  IMGEO 2.2 specificatie [<cite><a class="bibref" data-link-type="biblio" href="#bib-imgeo22" title="Basisregistratie Grootschalige Topografie Gegevenscatalogus IMGeo 2.2">IMGEO22</a></cite>].</p>
 <p>BAG objecten zijn zoals beschreven in <a href="https://www.geobasisregistraties.nl/documenten/2018/03/12/catalogus-2018">Catalogus BAG 2018</a> specifiek tweedimensionaal. Het is mogelijk om deze objecten in een 3D ruimte weer te geven. De 3D BAG en 3D Basisvoorziening, ontwikkeld door de TUDelft en het Kadaster, zijn niet gestandaardiseerd. </p>
 <p>Objecten conform het IMKL zijn verplicht 2D met een mogelijkheid om 3D extra geometrie toe te voegen zoals beschreven in de <a href="https://docs.geostandaarden.nl/kl/imkl/#geometrie-en-topologie">IMKL-specificatie</a>. </p>
 <p>Ook veel <a href="https://docs.geostandaarden.nl/bro/">BRO-objecten</a> kennen een 2D geometrie. </p>
 <p>Momenteel bevinden BGT objecten zich in een 2D ruimte. De BAG kent ook objecten in de 3D ruimte. Het IMKL en de BRO kennen ook objecten in de 3D ruimte. In een 3D standaard voor objecten wordt of blijft de ruimte waarin deze objecten zich bevinden 3D. De geometrie van deze objecten kan daarmee toenemen in dimensie, maar dit is niet altijd noodzakelijk of wenselijk. Wellicht is een 2D vlakgeometrie (LOD 0) voor onbegroeide terreindelen in 3D voldoende. Dit is onderwerp voor vervolgonderzoek.</p>
 <p>Een overzicht van de objecten van de BGT, BAG, het IMKL en de BRO zijn in de bijlagen 1 tot 4 weergegeven. </p>
-</section><section id="level-of-detail-en-inwinningsregels"><div class="header-wrapper"><h3 id="x3-2-level-of-detail-en-inwinningsregels"><bdi class="secno">3.2 </bdi>Level of Detail en inwinningsregels</h3><a class="self-link" href="#level-of-detail-en-inwinningsregels" aria-label="Permalink for Section 3.2"></a></div>
+</section><section id="level-of-detail-en-inwinningsregels"><div class="header-wrapper"><h3 id="x3-3-level-of-detail-en-inwinningsregels"><bdi class="secno">3.3 </bdi>Level of Detail en inwinningsregels</h3><a class="self-link" href="#level-of-detail-en-inwinningsregels" aria-label="Permalink for Section 3.3"></a></div>
 <p>Het is mogelijk om in 3D op verschillend detailniveau de werkelijkheid weer te geven. In 2D is dit niet anders. Voor de BGT en IMGEO bestaan er inmeetregels voor elk object. Zie bijvoorbeeld de <a href="https://geonovum.github.io/IMGeo-objectenhandboek/pand#inwinningsregels">inmeetregels voor een gebouw in de BGT</a>.</p>
 <p>In het 3D-GEO domein bestaan er verschillende gestandaardiseerde Levels Of Details. Deze zijn gespecificeerd in de [<cite><a class="bibref" data-link-type="biblio" href="#bib-citygml3" title="OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0">CityGML3</a></cite>] standaard die 3 levels onderscheid.</p>
 <p>Door de TU-Delft is hier een aanvulling op gemaakt. In 2016 heeft <a href="https://pure.tudelft.nl/ws/portalfiles/portal/4377508/Biljecki2016to.pdf">Biljecki et al.</a> daarom een verfijning geschreven die voortbouwt op het CityGML LoD framework.</p>
-<p><img src="./media/image.png" alt="alt text"></p>
 <figure id="Voorbeeld-van-de-16-LoDs-beschreven-door-de-TUDelft" style="display: block; text-align: center; margin: 0 auto;">
       <img src="./media/LoDTUD.png" alt="Voorbeeld van de 16 LoD's beschreven door de TU Delft" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;">
       <figcaption><a class="self-link" href="#Voorbeeld-van-de-16-LoDs-beschreven-door-de-TUDelft">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title">
-        <a class="self-link" href="#fig-Voorbeeld-van-de-16-LoDs-beschreven-door-de-TUDelft"></a>
+        <a class="self-link" href="#Voorbeeld-van-de-16-LoDs-beschreven-door-de-TUDelft"></a>
         <span class="fig-title">
-        Voorbeeld van de 16 LoD's beschreven door de  <a href="https://3d.bk.tudelft.nl/lod/" target="_blank">TU Delft</a> in 2016.
+        Voorbeeld van de 16 LoD's beschreven door de  <a href="https://3d.bk.tudelft.nl/lod/">TU Delft</a> in 2016.
         </span>
       </span></figcaption>
 </figure><p>De LOD's zijn het meest uitgebreid uitgewerkt voor gebouwen. Voor andere objecten moet dit gecreëerd worden. Wanneer beschikbaar kan er gebruik gemaakt worden van wetenschappelijk onderzoek of al aanwezige specificaties zoals hieronder getoond vanuit Ortega Córdova voor solitaire vegetatieobjecten of de LOD beschrijving uit het IMKL. </p>
 <figure id="Voorbeeld-van-de-LoDs-voor-vegetatie" style="display: block; text-align: center; margin: 0 auto;">
-      <img src="./media/Vegetation LOD definitions.png" alt="Urban Vegetation Modeling 3D Levels of Detail" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;">
+      <img src="./media/Vegetation_LOD_definitions.png" alt="Urban Vegetation Modeling 3D Levels of Detail" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;">
       <figcaption><a class="self-link" href="#Voorbeeld-van-de-LoDs-voor-vegetatie">Figuur <bdi class="figno">7</bdi></a> <span class="fig-title">
-        <a class="self-link" href="#fig-Voorbeeld-van-de-16-LoDs-beschreven-door-de-TUDelft"></a>
+        <a class="self-link" href="#Voorbeeld-van-de-LoDs-voor-vegetatie"></a>
         <span class="fig-title">
-        Urban Vegetation Modeling 3D Levels of Detail  <a href="https://www.researchgate.net/publication/378353206_Recommendation_for_Vegetation_Information_in_Semantic_3D_City_Models_Used_in_Urban_Planning_Applications" target="_blank">Ortega-Córdova</a> in 2018.
+        Urban Vegetation Modeling 3D Levels of Detail  <a href="https://www.researchgate.net/publication/378353206_Recommendation_for_Vegetation_Information_in_Semantic_3D_City_Models_Used_in_Urban_Planning_Applications">Ortega-Córdova</a> in 2018.
         </span>
       </span></figcaption>
 </figure><p>Deze 3D geometrie van IMKL kan beschikbaar zijn in twee verschillende ‘Levels of Details’ (LOD). Allereerst kunnen 2.5D punten, vlakken en lijnen worden opgenomen. Dit kan beschouwd worden als Level of Detail 0 (LOD0). Elk IMKL vlak, lijn- of puntobject krijgt voor elk coördinatenpaar een z waarde. Om de ligging in 3D te beschrijven krijgt de lijn extra coördinatenparen ten opzichte van de 2D representatie. De objecten kunnen dan in een Digitaal Terrein Model (3D terreinmodel) worden geïntegreerd en op de juiste hoogte onder of boven maaiveldniveau worden gerepresenteerd.</p>
@@ -1731,9 +1748,11 @@ In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder 
 <p><img src="./media/IMKL_LOD_1.png" alt="IMKL LOD">
 <img src="./media/IMKL_LOD_2.png" alt="IMKL LOD vormen"></p>
 <p> Het gebruik van dezelfde 3D-representatie binnen de basisregistraties zorgt ervoor dat men gegevens onderling kan vergelijken en combineren. Het bevordert de interoperabiliteit en voorkomt verschillen in interpretatie van geometrieën. </p>
-<div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="4"><span>Noot</span><span class="issue-label">: Ontwikkel een 3D representatiestandaard</span></div><aside class="">
+<div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="4"><span>Noot</span><span class="issue-label">: Ontwikkel een 3D representatiestandaard</span></div><aside class="">
   <p><strong>AANBEVELING:</strong> Ontwikkel een 3D-representatiestandaard die aansluit bij nu al aanwezige 2D-representatie van de basisregistraties. Door een gezamenlijke standaard te hanteren, kunnen 3D-gegevens in de toekomst eenvoudiger worden gecombineerd, vergeleken en uitgewisseld. Dit bevordert de interoperabiliteit tussen datasets en voorkomt verschillen in de interpretatie en modellering van objecten.</p>
-</aside></div></section></section>
+</aside></div></section><section id="ontwikkeling-van-een-3d-representatiestandaard"><div class="header-wrapper"><h3 id="x3-4-ontwikkeling-van-een-3d-representatiestandaard"><bdi class="secno">3.4 </bdi>Ontwikkeling van een 3D representatiestandaard</h3><a class="self-link" href="#ontwikkeling-van-een-3d-representatiestandaard" aria-label="Permalink for Section 3.4"></a></div>
+<p>Het ontwikkelen van een 3D-representatiestandaard omvat het uitwerking van zowel de technische, semantische als kwalitatieve aspecten van de 3D-Geo-informatie. Dit omvat ontwerpprincipes zoals schaalbereik, dekking, Level of Detail, semantische decompositie en 3D-coördinaten als ook algemene principes voor bronhouders, inwinning, geometrie en coördinatenreferentiesystemen. Daarnaast moeten eisen worden gesteld aan 3D-datakwaliteit, zoals actualiteit, nauwkeurigheid en tijdsgeldigheid, en aan de 3D-representatie van teksten, namen en nummeraanduidingen. Een semantische gegevensmodel moet geschikt worden gemaakt voor 3D, inclusief objecttypen onder de NEN3610:2022 en CityGML 3.0, attributen, domeinwaarden en de afbakening van 3D-objecten en 3D-objectdelen.</p>
+</section></section>
 <section id="inventarisatie-3d-standaarden"><div class="header-wrapper"><h2 id="x4-inventarisatie-3d-standaarden"><bdi class="secno">4. </bdi>Inventarisatie 3D standaarden</h2><a class="self-link" href="#inventarisatie-3d-standaarden" aria-label="Permalink for Section 4."></a></div>
 <p>Onderzoeksvraag: <em>Welke internationale en nationale standaarden vormen de basis voor de eisen aan een 3D object in een basisregistratie? Welke aanvullende afspraken moeten we maken op het gebied van semantiek, geometrie en coördinatenstelsel, inclusief randvoorwaarden zoals inwinning, kwaliteit, detailniveau en afbakening van 3D objecten, hierbij rekening houdend met de aansluiting op geldende standaarden.</em></p>
 <p>In 2024 heeft Geonovum een inventarisatie gedaan van 3D standaarden. Dit heeft de <a href="https://docs.geostandaarden.nl/3d/hr-3d-standaarden/">Wegwijzer 3D standaarden</a> opgeleverd. </p>
@@ -1786,7 +1805,7 @@ In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder 
 <td>OpenUSD is ontstaan bij Pixar en is inmiddels open en breed industrieel gedragen. Het wordt actief ontwikkeld en gecoördineerd via de <a href="https://aousd.org/">Alliance for OpenUSD</a>. Partijen als NVIDIA, Apple, Autodesk en Adobe gebruiken het. In BIM en GEO is het opkomend, als visualisatie- en integratielaag naast IFC en OGC-standaarden.</td>
 </tr>
 </tbody></table>
-<div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="3"><span>Noot</span><span class="issue-label">: Overweeg toevoeging JSON-FG aan de Wegwijzer</span></div><aside class="">
+<div class="note" role="note" id="issue-container-generatedID-2"><div role="heading" class="note-title marker" id="h-note-2" aria-level="3"><span>Noot</span><span class="issue-label">: Overweeg toevoeging JSON-FG aan de Wegwijzer</span></div><aside class="">
   <p><strong>AANBEVELING:</strong> Overweeg om JSON-FG toe te voegen aan de Wegwijzer 3D standaarden. Onderzoek de overlap met CityJSON en beschrijf de toepassingsdomeinen van beide standaarden zodat goed duidelijk wordt gemaakt wanneer JSON-FG, en wanneer CityJSON de betere keuze is.</p>
 </aside></div></section>
 <section id="afspraken-voor-geo-bim"><div class="header-wrapper"><h2 id="x5-afspraken-voor-geo-bim"><bdi class="secno">5. </bdi>Afspraken voor Geo-BIM</h2><a class="self-link" href="#afspraken-voor-geo-bim" aria-label="Permalink for Section 5."></a></div>
@@ -1805,20 +1824,24 @@ In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder 
 <li>Geo-based BIM en BIM-based Geo standaarden </li>
 <li>Afsprakenstelsel voor Geo-BIM data integratie</li>
 </ul>
-<section id="identificeren-van-geobim-uitdagingen-in-proces-van-plan-tot-realisatie-en-borging-in-praktijkcases"><div class="header-wrapper"><h4 id="x5-1-1-identificeren-van-geobim-uitdagingen-in-proces-van-plan-tot-realisatie-en-borging-in-praktijkcases"><bdi class="secno">5.1.1 </bdi>Identificeren van GeoBIM uitdagingen in proces van Plan tot Realisatie en borging in praktijkcases</h4><a class="self-link" href="#identificeren-van-geobim-uitdagingen-in-proces-van-plan-tot-realisatie-en-borging-in-praktijkcases" aria-label="Permalink for Section 5.1.1"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-3"><div role="heading" class="note-title marker" id="h-note-3" aria-level="4"><span>Noot</span><span class="issue-label">: Ontwikkel de Geo-BIM Bouwblokken</span></div><aside class="">
+  <p><strong>AANBEVELING:</strong> Ontwikkel de Geo-BIM Bouwblokken als verbindende bouwstenen om 3D-Geo- en -BIM-informatie integraal te kunnen modelleren, verbinden, uitwisselen en gebruiken.</p>
+</aside></div><section id="identificeren-van-geobim-uitdagingen-in-proces-van-plan-tot-realisatie-en-borging-in-praktijkcases"><div class="header-wrapper"><h4 id="x5-1-1-identificeren-van-geobim-uitdagingen-in-proces-van-plan-tot-realisatie-en-borging-in-praktijkcases"><bdi class="secno">5.1.1 </bdi>Identificeren van GeoBIM uitdagingen in proces van Plan tot Realisatie en borging in praktijkcases</h4><a class="self-link" href="#identificeren-van-geobim-uitdagingen-in-proces-van-plan-tot-realisatie-en-borging-in-praktijkcases" aria-label="Permalink for Section 5.1.1"></a></div>
 <p>Een belangrijke stap in de Geo-BIM oplossingen is te verkennen hoe een ontwikkelproces van plan tot realisatie aanzienlijk versneld kan worden door slim gebruik te maken van de integratie tussen Geo- en BIM: Wat zijn de processtappen waarbij Geo- en BIM-integratie een rol speelt? Wat zijn de databehoeftes in deze stappen? Wat zijn de huidige belemmeringen? Waar bevinden zich de potenties om met betere integratie het proces van plan tot realisatie te versnellen?  </p>
 <p>Er zijn beslissingen die in het ontwikkelproces moeten worden gemaak. Het afwegen van een aantal cruciale omgevingscriteria met betrokkenheid van bepaalde stakeholders staat hierbij vanaf het begin (schets) tot eind (realisatie) centraal: zijn er voldoende bossen; is er voldoende water; hoe zit het met de kwaliteit van de bodem. Het kunnen gebruiken van 2D en 3D geometrie van BIM met 2D en 3D geometrie van geodata is randvoorwaardelijk voor het digitaal ondersteund beantwoorden van deze vragen. </p>
 <p>Een aantal user stories voor Geo-BIM is opgesteld, zie <a href="https://github.com/Geonovum/GeoBIM/issues">GeoBIM User stories</a>.</p>
 </section><section id="het-brengen-van-bim-informatie-naar-geo"><div class="header-wrapper"><h4 id="x5-1-2-het-brengen-van-bim-informatie-naar-geo"><bdi class="secno">5.1.2 </bdi>Het brengen van BIM-informatie naar Geo</h4><a class="self-link" href="#het-brengen-van-bim-informatie-naar-geo" aria-label="Permalink for Section 5.1.2"></a></div>
 <p>Voor zinvol gebruik van 3D data, die gecreëerd zijn in een BIM-omgeving, in geo-applicaties moeten relevante Geo-concepten worden gegeneraliseerd uit de BIM-data. Het gaat dan bijvoorbeeld om de buitenkant van een gebouw, verdiepingen, kamers, footprint van een brug etc. Meestal gaat het met name om nieuwe BIM ontwerpen waar men in Geo gebruik van wil maken. Tegelijkertijd zal worden gekeken naar scans van bestaande bouwwerken die worden omgezet naar een BIM-representatie. </p>
 <p>Door afrondingsfouten, modelleerfouten of bouwkundige principes (ventilatie, dilatatie) bevinden zich vaak smalle ruimten tussen de elementen van een bouwwerk waardoor het samenvoegen van de elementen alleen niet altijd het meest bruikbare resultaat geeft. Er zijn al verschillende open source initiatieven om BIM (in open-BIM-formaat IFC) automatisch om te zetten naar geo-concepten gedefinieerd in CityGML/CityJSON die hiermee om weten te gaan. Hierbij worden individuele volumes op een slimme manier samengevoegd en versneden om tot een gesloten buitenkant te komen. De kwaliteit van de input BIM is daarbij bepalend voor de output. Een uitdaging is ook om goed om te gaan met het hierboven genoemde verschil van parametrisch beschreven geometrieën versus expliciete geometrieën. Tenslotte is een randvoorwaarde voor het ontwikkelen van succesvolle transformaties het oplossen van de bestaande variëteit in IFC modellen. </p>
-<p>Een werkgroep onder leiding van Geonovum werkt aan kennis voor deze GeoBIM uitdaging. Deze kennis is verzameld in een <a href="https://github.com/Geonovum/GeoBIM_BIM_naar_Geo">praktijkrichtlijn BIM naar Geo brengen</a> . </p>
+<p>Een werkgroep onder leiding van Geonovum werkt aan kennis voor deze GeoBIM uitdaging. Deze kennis is verzameld in een <a href="https://github.com/nl-digigo/GeoBIM_BIM_naar_Geo">praktijkrichtlijn BIM naar Geo brengen</a>. </p>
+<p>De bovengenoemde praktijkrichtlijn bevat de afspraken die nodig zijn voor de integratie van Geo en BIM. Deze afspraken worden in dit rapport niet herhaald. Voor de volledige uitwerking en toelichting wordt verwezen naar de praktijkrichtlijn.</p>
 </section><section id="het-brengen-van-geo-informatie-naar-bim"><div class="header-wrapper"><h4 id="x5-1-3-het-brengen-van-geo-informatie-naar-bim"><bdi class="secno">5.1.3 </bdi>Het brengen van geo-informatie naar BIM</h4><a class="self-link" href="#het-brengen-van-geo-informatie-naar-bim" aria-label="Permalink for Section 5.1.3"></a></div>
 <p>Voor zinvol gebruik van 3D data, geometrie en attributen gecreërd in een geo-omgeving in BIM-applicaties moeten relevante BIM-concepten worden gegeneraliseerd uit geo-data, zoals de binnenkant van een gebouw, muren, ramen, daken, etc. Het gaat hier met name om bestaande bouwwerken. </p>
 <p>Een toekomstige werkgroep kan onderzoeken hoe geodata beter toegankelijk kan worden voor de BIM-community en zal hiervoor tools ontwikkelen. Deze werkgroep is nog niet gestart.</p>
 </section><section id="standaardiseren-van-georefereren-bim-modellen"><div class="header-wrapper"><h4 id="x5-1-4-standaardiseren-van-georefereren-bim-modellen"><bdi class="secno">5.1.4 </bdi>Standaardiseren van georefereren BIM-modellen</h4><a class="self-link" href="#standaardiseren-van-georefereren-bim-modellen" aria-label="Permalink for Section 5.1.4"></a></div>
 <p>In BIM werkt men vaak in een lokaal coördinatenstelsel. In open BIM, IFC, kun je geografische coördinaten van een referentiepunt (met beperkte precisie) opslaan bij het object IfcSite in WGS84 (EPSG: 4326) of meer specifiek via het toevoegen van een IfcCartesianPoint aan IfcSite. Op deze manier kan het model in de werkelijkheid worden gelokaliseerd, wat nodig is voor de GeoBIM integratie. In IFC4 is het ook mogelijk meer complexe referentie-informatie op te slaan, zoals CRS, projectie en parameters. Deze versie wordt steeds meer ondersteund. In de praktijk bevatten veel IFC-modellen slechts globale referentie-informatie of alleen een lokaal coördinatensysteem. </p>
-<p>Een werkgroep heeft methodes en tools ontwikkeld en beschreven waarmee men kan werken om het georefereren van BIM-modellen te standaardiseren. Zo zijn BIM-beoefenaars die de benodigde achtergrond missen ontzorgd van deze specialistische taak. De kennis en handreikingen zijn verzameld in de <a href="https://geonovum.github.io/GeoBIM_Georefereren/">praktijkrichtlijn georefereren</a> <mark>[dit is een werkversie, uiteindelijk moet verwezen worden naar een versie op docs]</mark>.</p>
+<p>Een werkgroep heeft methodes en tools ontwikkeld en beschreven waarmee men kan werken om het georefereren van BIM-modellen te standaardiseren. Zo zijn BIM-beoefenaars die de benodigde achtergrond missen ontzorgd van deze specialistische taak. De kennis en handreikingen zijn verzameld in de <a href="https://nl-digigo.github.io/GeoBIM_Georefereren/">praktijkrichtlijn georefereren</a>.</p>
+<p>De bovengenoemde praktijkrichtlijn bevat de afspraken die nodig zijn voor de integratie van Geo en BIM. Deze afspraken worden in dit rapport niet herhaald. Voor de volledige uitwerking en toelichting wordt verwezen naar de praktijkrichtlijn.</p>
 </section><section id="geo-based-bim-en-bim-based-geo-standaarden"><div class="header-wrapper"><h4 id="x5-1-5-geo-based-bim-en-bim-based-geo-standaarden"><bdi class="secno">5.1.5 </bdi>Geo-based BIM en BIM-based Geo standaarden</h4><a class="self-link" href="#geo-based-bim-en-bim-based-geo-standaarden" aria-label="Permalink for Section 5.1.5"></a></div>
 <p>BIM-modellen kunnen beter worden verwerkt in geo-omgevingen als bij de opbouw van BIM-modellen rekening wordt gehouden met bepaalde wensen, en hetzelfde geldt andersom (zoals data eisen die de wederzijdse transformaties beter mogelijk maken). </p>
 <p>Een voorbeeld van een geo-wens voor BIM is het gebruik van de niet procedurele expliciete 3D geometrie. Deze kan gemakkelijker vertaald worden naar de geo-toepassing. In de openBIM wereld zijn Model View Definitions gemaakt. Dit zijn subsets van het IFC-schema, speciaal bedoeld voor specifieke use-cases die dit af kunnen dwingen.  </p>
@@ -4368,35 +4391,8 @@ In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder 
 <td>2D</td>
 </tr>
 </tbody></table>
-<<<<<<< HEAD
-<p>Moenteel bevinden alle BGT objecten zich in een 2D ruimte. In een 3D standaard voor bovenstaande objecten wordt de ruimte waarin deze objecten zich bevinden 3D. De geometrie van deze objecten kan daarmee toenemen in dimensie, maar dit is niet altijd noodzakelijk of wenselijk. Wellicht is een 2D vlakgeometrie (LOD 0) voor onbegroeide terreindelen in 3D voldoende. Dit is onderwerp voor vervolgonderzoek.</p>
-<p><img src="./media/image.png" alt="alt text"></p>
-<p>Vegetation LOD definitions by Ortega-Córdova [p. 29 in Ortega-Córdova (2018)] (CC-BY license; some images are based on ESRI library models) and by Zhang et al. (p. 204 in Zhang et al. (2022))!</p>
-<p><img src="./media/image-1.png" alt="alt text">
-<mark>Urban Vegetation Modeling 3D Levels of Detail</mark></p>
-<p> Het gebruik van dezelfde 3D-representatie binnen de basisregistraties zorgt ervoor dat men egevens onderling kan vergelijken en combineren. Het bevordert de interoperabiliteit en voorkomt verschillen in interpretatie van geometrieën. </p>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Noot</span><span class="issue-label">: Ontwikkel een 3D representatiestandaard</span></div><aside class="">
-  <p><strong>AANBEVELING:</strong> OOntwikkel een 3D-representatiestandaard die aansluit bij nu al aanwezige 2D-representatie van de basisregistraties. Door een gezamenlijke standaard te hanteren, kunnen 3D-gegevens in de toekomst eenvoudiger worden gecombineerd, vergeleken en uitgewisseld. Dit bevordert de interoperabiliteit tussen datasets en voorkomt verschillen in de interpretatie en modellering van objecten.</p>
-</aside></div><p>Rioleringsobjecten en kabels en leidingen (KLIC) objecten zijn geen onderdeel van de BGT/IMGeo. Deze onderdelen zijn wel onderdeel van IMKL. Het verplichte geometrieprofiel van IMKL is 2D. Primair bestaat de geometrie uit punten en lijnen die het netwerk representeren. 2D vlakken zijn additioneel waarbij ook multivlakken zijn toegestaan. 2,5 D en 3D zijn een additionele extensie. 
-3D geometrie.</p>
-<p>In IMKL is de mogelijkheid opgenomen om objecten in 3 dimensies (3D) te modelleren. Deze mogelijkheid is optioneel en is naast, niet in plaats van, 2D aanwezig. Dat betekent dat de basis uitgaat van een (volledige) 2D data set. Daarnaast kan, in dezelfde data set, 3D geometrie voor een of meerdere van de objecten aanwezig zijn. </p>
-<p>Deze 3D geometrie kan beschikbaar zijn in twee verschillende ‘Levels of Detail’ (LOD). Allereerst kunnen 2.5D punten, vlakken en lijnen worden opgenomen. Dit kan beschouwd worden als Level of Detail 0 (LOD0). Elk IMKL vlak, lijn- of puntobject krijgt voor elk coördinatenpaar een z waarde. Om de ligging in 3D te beschrijven krijgt de lijn extra coördinatenparen ten opzichte van de 2D representatie. De objecten kunnen dan in een Digitaal Terrein Model (3D terreinmodel) worden geïntegreerd en op de juiste hoogte onder of boven maaiveldniveau worden gerepresenteerd.</p>
-<p>Daarnaast is het mogelijk om volledige 3D geometrie op te nemen. Dit is te beschouwen als Level of Detail 1 (LOD1) en maakt het mogelijk om IMKL objecten als volledige 3D objecten (volumes) te representeren. </p>
-<p><img src="image.png" alt="wa"></p>
-<p><img src="image-1.png" alt="alt text"></p>
-</section></section>
-<section id="inventarisatie-3d-standaarden"><div class="header-wrapper"><h2 id="x4-inventarisatie-3d-standaarden"><bdi class="secno">4. </bdi>Inventarisatie 3D standaarden</h2><a class="self-link" href="#inventarisatie-3d-standaarden" aria-label="Permalink for Section 4."></a></div>
-<p>Onderzoeksvraag: <em>Welke internationale en nationale standaarden vormen de basis voor de eisen aan een 3D object in een basisregistratie? Welke aanvullende afspraken moeten we maken op het gebied van semantiek, geometrie en coördinatenstelsel, inclusief randvoorwaarden zoals inwinning, kwaliteit, detailniveau en afbakening van 3D objecten, hierbij rekening houdend met de aansluiting op geldende standaarden.</em></p>
-<p>In 2024 heeft Geonovum een inventarisatie gedaan van 3D standaarden. Dit heeft de <a href="https://docs.geostandaarden.nl/3d/hr-3d-standaarden/">Wegwijzer 3D standaarden</a> opgeleverd. </p>
-<p>In onderstaande tabel beschrijven we:</p>
-<ul>
-<li>welke nieuwe inzichten er zijn ten opzichte van de inventarisatie van 2024</li>
-<li>welke wijzigingen aanbevolen worden voor de Wegwijzer 3D standaarden</li>
-</ul>
-=======
 </section>
 <section class="appendix" id="imbag-objecten"><div class="header-wrapper"><h2 id="b-imbag-objecten"><bdi class="secno">B. </bdi>IMBAG Objecten</h2><a class="self-link" href="#imbag-objecten" aria-label="Permalink for Appendix B."></a></div>
->>>>>>> main
 <table>
 <thead>
 <tr>
@@ -4895,14 +4891,14 @@ In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder 
     <a class="tocxref" href="#Voorbeeld-van-de-16-LoDs-beschreven-door-de-TUDelft"><span class="self-link">Figuur <bdi class="figno">6</bdi></span> <span class="fig-title">
         <span class="self-link"></span>
         <span class="fig-title">
-        Voorbeeld van de 16 LoD's beschreven door de  <span target="_blank">TU Delft</span> in 2016.
+        Voorbeeld van de 16 LoD's beschreven door de  <span>TU Delft</span> in 2016.
         </span>
       </span></a>
   </li><li class="tofline">
     <a class="tocxref" href="#Voorbeeld-van-de-LoDs-voor-vegetatie"><span class="self-link">Figuur <bdi class="figno">7</bdi></span> <span class="fig-title">
         <span class="self-link"></span>
         <span class="fig-title">
-        Urban Vegetation Modeling 3D Levels of Detail  <span target="_blank">Ortega-Córdova</span> in 2018.
+        Urban Vegetation Modeling 3D Levels of Detail  <span>Ortega-Córdova</span> in 2018.
         </span>
       </span></a>
   </li>
@@ -4927,10 +4923,14 @@ In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder 
       <a href="https://resolver.tudelft.nl/uuid:3c1cc332-9751-4802-8c80-03fadde15b31"><cite>On 3D Topological Relationships</cite></a>.  TU Delft. 2000. Definitief. URL: <a href="https://resolver.tudelft.nl/uuid:3c1cc332-9751-4802-8c80-03fadde15b31">https://resolver.tudelft.nl/uuid:3c1cc332-9751-4802-8c80-03fadde15b31</a>
     </dd><dt id="bib-agcitygmlifc">[AGCITYGMLIFC]</dt><dd>
       <a href="https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d"><cite>Automatic generation of CityGML LoD3 building models from IFC models</cite></a>.  TU Delft. 2013-12-01. Definitief. URL: <a href="https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d">https://resolver.tudelft.nl/uuid:31380219-f8e8-4c66-a2dc-548c3680bb8d</a>
+    </dd><dt id="bib-bgt12">[BGT12]</dt><dd>
+      <a href="https://docs.geostandaarden.nl/imgeo/def-im-BGT-20200701/"><cite>Basisregistratie Grootschalige Topografie Gegegevenscatalogus BGT 1.2</cite></a>.  Geonovum. 2020-07-01. Definitief. URL: <a href="https://docs.geostandaarden.nl/imgeo/def-im-BGT-20200701/">https://docs.geostandaarden.nl/imgeo/def-im-BGT-20200701/</a>
     </dd><dt id="bib-citygml3">[CityGML3]</dt><dd>
       <a href="https://docs.ogc.org/is/20-010/20-010.html"><cite>OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0</cite></a>.  Open Geospatial Consortium. 2021-09-13. Published. URL: <a href="https://docs.ogc.org/is/20-010/20-010.html">https://docs.ogc.org/is/20-010/20-010.html</a>
     </dd><dt id="bib-hrcrs">[HRCRS]</dt><dd>
       <a href="https://docs.geostandaarden.nl/crs/crs/"><cite>Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie</cite></a>.  Geonovum. 2022-03-14. Definitief. URL: <a href="https://docs.geostandaarden.nl/crs/crs/">https://docs.geostandaarden.nl/crs/crs/</a>
+    </dd><dt id="bib-imgeo22">[IMGEO22]</dt><dd>
+      <a href="https://docs.geostandaarden.nl/imgeo/def-im-IMGeo-20200701/"><cite>Basisregistratie Grootschalige Topografie Gegevenscatalogus IMGeo 2.2</cite></a>.  Geonovum. 2020-07-01. Definitief. URL: <a href="https://docs.geostandaarden.nl/imgeo/def-im-IMGeo-20200701/">https://docs.geostandaarden.nl/imgeo/def-im-IMGeo-20200701/</a>
     </dd><dt id="bib-iso19107">[ISO19107]</dt><dd>
       <a href="https://www.iso.org/standard/66175.html"><cite>ISO 19107:2019 Geographic information — Spatial schema</cite></a>.  ISO. 2019-12-01. Published. URL: <a href="https://www.iso.org/standard/66175.html">https://www.iso.org/standard/66175.html</a>
     </dd><dt id="bib-iso19108">[ISO19108]</dt><dd>

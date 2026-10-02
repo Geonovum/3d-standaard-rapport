@@ -77,14 +77,12 @@ In het 3D-GEO domein bestaan er verschillende gestandaardiseerde Levels Of Detai
 
 Door de TU-Delft is hier een aanvulling op gemaakt. In 2016 heeft [Biljecki et al.](https://pure.tudelft.nl/ws/portalfiles/portal/4377508/Biljecki2016to.pdf) daarom een verfijning geschreven die voortbouwt op het CityGML LoD framework.
 
-![alt text](./media/image.png)
-
 <figure id="Voorbeeld-van-de-16-LoDs-beschreven-door-de-TUDelft" style="display: block; text-align: center; margin: 0 auto;">
       <img src="./media/LoDTUD.png" alt="Voorbeeld van de 16 LoD's beschreven door de TU Delft" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;"/>
       <figcaption>
-        <a class="self-link" href="#fig-Voorbeeld-van-de-16-LoDs-beschreven-door-de-TUDelft"></bdi></a>
+        <a class="self-link" href="#Voorbeeld-van-de-16-LoDs-beschreven-door-de-TUDelft"></bdi></a>
         <span class="fig-title">
-        Voorbeeld van de 16 LoD's beschreven door de  <a href="https://3d.bk.tudelft.nl/lod/" target="_blank">TU Delft</a> in 2016.
+        Voorbeeld van de 16 LoD's beschreven door de  <a href="https://3d.bk.tudelft.nl/lod/">TU Delft</a> in 2016.
         </span>
       </figcaption>
 </figure>
@@ -92,11 +90,11 @@ Door de TU-Delft is hier een aanvulling op gemaakt. In 2016 heeft [Biljecki et a
 De LOD's zijn het meest uitgebreid uitgewerkt voor gebouwen. Voor andere objecten moet dit gecreëerd worden. Wanneer beschikbaar kan er gebruik gemaakt worden van wetenschappelijk onderzoek of al aanwezige specificaties zoals hieronder getoond vanuit Ortega Córdova voor solitaire vegetatieobjecten of de LOD beschrijving uit het IMKL. 
 
 <figure id="Voorbeeld-van-de-LoDs-voor-vegetatie" style="display: block; text-align: center; margin: 0 auto;">
-      <img src="./media/Vegetation LOD definitions.png" alt="Urban Vegetation Modeling 3D Levels of Detail" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;"/>
+      <img src="./media/Vegetation_LOD_definitions.png" alt="Urban Vegetation Modeling 3D Levels of Detail" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;"/>
       <figcaption>
-        <a class="self-link" href="#fig-Voorbeeld-van-de-16-LoDs-beschreven-door-de-TUDelft"></bdi></a>
+        <a class="self-link" href="#Voorbeeld-van-de-LoDs-voor-vegetatie"></bdi></a>
         <span class="fig-title">
-        Urban Vegetation Modeling 3D Levels of Detail  <a href="https://www.researchgate.net/publication/378353206_Recommendation_for_Vegetation_Information_in_Semantic_3D_City_Models_Used_in_Urban_Planning_Applications" target="_blank">Ortega-Córdova</a> in 2018.
+        Urban Vegetation Modeling 3D Levels of Detail  <a href="https://www.researchgate.net/publication/378353206_Recommendation_for_Vegetation_Information_in_Semantic_3D_City_Models_Used_in_Urban_Planning_Applications">Ortega-Córdova</a> in 2018.
         </span>
       </figcaption>
 </figure>
