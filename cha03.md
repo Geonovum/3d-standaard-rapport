@@ -9,14 +9,6 @@ De use cases zijn:
 - DTaaS: Digital Twin as a Service. In DTaaS komen diverse use cases aan de orde zoals hittestress en overstroming van steden, waarbij een 3D stadsmodel nodig is om simulaties te kunnen doen. DTaaS maakt gebruik van 3D geo-objecten maar schrijft geen standaard voor. Voor een vergroot gebruik van Digital Twins is een 3D standaard aan te bevelen. Door Digital Twin als usecase te gebruiken versterken we ook de relatie tussen het ZoN Datafundament en het ZoN Digital Twin programma.
 - Informatiemodel Geluid. Geluid is bij uitstek een fenomeen dat beïnvloed wordt door de 3D ruimte en men heeft 3D objecten nodig om binnen de geluidsmodellen te kunnen bepalen welk geluid hoe hard ergens aankomt, gegeven de locatie van de geluidsbron en de fysieke objecten die het geluid onderweg tegenkomt.
 
-In een Digitale Stad waarin men wil analyseren, meten en beleven is het van belang dat alle alle objecten integraal in 3D beschikbaar zijn. Wanneer slechts een deel van de objecten in 3D is weergegeven, ontstaan er gaten in het 3D-model en ontstaat een onvolledig en onsamenhangend beeld. Er zitten dan veel gaten in de 3D kaart. Daarnaast kunnen objecten in de 2D ruimte  en objecten in de 3D ruimte niet met elkaar worden gecombineerd zonder deze objecten in de 2D ruimte expliciet 3D te maken. Om een consistente en volwaardige 3D-weergave van de Digitale Stad mogelijk te maken, zou de 3D-standaard daarom voor alle objecten binnen de BGT moeten gelden.
-
-Een Digitale Stad gaat niet alleen om wat bovengronds zichtbaar is, maar ook om de wereld die zich onder het maaiveld bevindt. De wereld van onder andere kabels, leidingen, bodem, sensoren en grondwater. Deze objecttypen zijn geen onderdeel van de BGT, maar wel van IMKL en IMBRO. Door de objecten uit de IMKL en IMBRO ook conform de 3D-standaard beschikbaar te maken kan een samenhangend beeld van de boven- én ondergrondse leefomgeving ontstaan in een Digital Stad. 
-
-<aside class="note" title="Objecttypen en samenhangende datasets waar de 3D standaard voor gaat gelden">
-  <p><strong>AANBEVELING:</strong> De 3D standaard geldt voor alle objecttypen van de BGT/IMGEO, alle objecten uit de IMKL en in de toekomst te maken selectie van de IMBRO </p>
-</aside>
-
 De NEN 3610 is een top-ontologie waarin verschillende ruimtelijke en reeële concepten samenkomen tot één gedeeld model van de fysieke leefomgeving. Onderstaande figuur toont de nen3610:2011, BGT en IMGEO. De figuur toont van deze NEN-versie en BGT|IMGEO welke objecttypen er gedefinieerd zijn.
 In het geval van dit onderzoek zal de focus liggen op zowel alle objecten onder concreet object als de objecten onder de verschillende gebieden. Dit is nodig voor de concrete objecten, maar ook de ruimten die in de BGT en BAG voorkomen.  
 
