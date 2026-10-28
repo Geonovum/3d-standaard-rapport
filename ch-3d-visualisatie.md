@@ -40,4 +40,4 @@ De conclusies zijn gebaseerd op de stand van zaken in juli 2026. Omdat zowel de 
 
 ## Details
 
-Voor verdere details en een uitwerking van de 3D visualisatie sessie, zie LINK.
+Voor verdere details en een uitwerking van de 3D visualisatie sessie, zie [3D visualisatie standaard compleet overzicht](./3dvis/3D-visualisatie-standaard-compleet-verslag.pdf).
