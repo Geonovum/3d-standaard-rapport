@@ -30,13 +30,11 @@ Een aandachtspunt bij 3D Tiles is dat de standaard ruimte laat voor verschillend
 
 ## Aanbeveling
 
-Op basis van de inventarisatie, de vergelijking van beide standaarden en de reviewronde wordt aanbevolen om 3D Tiles als Nederlandse standaard voor het streamen en visualiseren van 3D-data op het web te hanteren. Er is onvoldoende aanleiding om specifieke functionele uitzonderingen voor i3S op te nemen.
+Op basis van de inventarisatie, de vergelijking van beide standaarden en de reviewronde wordt aanbevolen om **3D Tiles als Nederlandse standaard** voor het streamen en visualiseren van 3D-data op het web te hanteren. Er is onvoldoende aanleiding om specifieke functionele uitzonderingen voor i3S op te nemen. De conclusies zijn gebaseerd op de stand van zaken in juli 2026. Omdat zowel de standaarden als de bijbehorende software-implementaties zich in hoog tempo ontwikkelen, is periodieke herbeoordeling noodzakelijk.
 
 De aanbevolen afspraak luidt:
 
 De standaard in Nederland voor het streamen en visualiseren van 3D data op het web is 3D Tiles. Omdat de 3D visualisatie standaarden nog significant worden doorontwikkeld, wordt deze afspraak elk jaar herijkt.
-
-De conclusies zijn gebaseerd op de stand van zaken in juli 2026. Omdat zowel de standaarden als de bijbehorende software-implementaties zich in hoog tempo ontwikkelen, is periodieke herbeoordeling noodzakelijk.
 
 ## Details
 
