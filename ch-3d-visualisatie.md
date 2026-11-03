@@ -38,4 +38,4 @@ De standaard in Nederland voor het streamen en visualiseren van 3D data op het w
 
 ## Details
 
-Voor verdere details en een uitwerking van de 3D visualisatie sessie, zie [3D visualisatie standaard compleet overzicht](./3dvis/3D-visualisatie-standaard-compleet-verslag.pdf).
+Voor verdere details en een uitwerking van de 3D visualisatie sessie, zie [3D visualisatie standaard compleet overzicht](3dvis/3D-visualisatie-standaard-compleet-verslag.pdf).
