@@ -36,9 +36,11 @@ In deze iteratie kan daarmee worden onderzocht hoe deze objecten en hun onderlin
   </a>
 
   <figcaption>
-    Overzicht van objecttypen uit NEN3610:2011 BGT en IMGEO. <a href="./media/BGT_NEN3610_2011_overzicht.png" target="_blank">[open afbeelding in nieuw venster]</a>
+    Overzicht van objecttypen uit NEN3610:2011 BGT en IMGEO. 
   </figcaption>
 </figure>
+
+<a href="./media/BGT_NEN3610_2011_overzicht.png" target="_blank">[open afbeelding in nieuw venster]</a></p>
 
 Een nieuwe versie van de NEN3610 is uitgebracht in 2022. De huidige BGT is echter nog uitgelijnd op de vorige versie, NEN3610:2011. Als we de objecttypen van het IMBGT als verkenning mappen op het NEN3610:2022 [[NEN3610]] model dan ontstaat onderstaand beeld. Het hoofdobjecttype <strong>Constructie</strong> in NEN:3610 komt grotendeels overeen met het abstracte hoofdobjecttype Bouwwerk in BGT. Hieronder vallen ook de kunstwerken zoals tunnels en overbruggingen. In de nieuwe versie van de NEN3610 bestaat er een duidelijker onderscheid tussen *Reeel object* en *Virtuele ruimte*. Dit is een belangrijk verschil in de uitwerking van een 3D standaard. 
 
@@ -49,10 +51,11 @@ Een nieuwe versie van de NEN3610 is uitgebracht in 2022. De huidige BGT is echte
       alt="Voorstelling van objecttypen uit NEN3610:2022 en hoe een mapping naar BGT en IMGEO zou kunnen zijn">
   </a>
   <figcaption>
-    Voorstelling van objecttypen uit NEN3610:2022 en hoe een mapping naar BGT en IMGEO zou kunnen zijn. <br/>
-    <a href="./media/BGT_NEN3610_2022_overzicht.png" target="_blank">[open afbeelding in nieuw venster]</a>
+    Voorstelling van objecttypen uit NEN3610:2022 en hoe een mapping naar BGT en IMGEO zou kunnen zijn. 
   </figcaption>
 </figure>
+
+<a href="./media/BGT_NEN3610_2022_overzicht.png" target="_blank">[open afbeelding in nieuw venster]</a>
 
 Men moet een keuze maken bij de ontwikkeling van een 3D standaard: 
 - Ontwikkeling van een 3D standaard op basis van de huidige BGT in samenhang met de NEN3610:2011. 
