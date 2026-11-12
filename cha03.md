@@ -105,7 +105,7 @@ De LOD's zijn het meest uitgebreid uitgewerkt voor gebouwen. Voor andere objectt
       <figcaption>
         <a class="self-link" href="#Voorbeeld-van-de-LoDs-voor-vegetatie"></bdi></a>
         <span class="fig-title">
-        Urban Vegetation Modeling 3D Levels of Detail  <a href="https://www.researchgate.net/publication/378353206_Recommendation_for_Vegetation_Information_in_Semantic_3D_City_Models_Used_in_Urban_Planning_Applications">Ortega-Córdova</a> in 2018.
+        Urban Vegetation Modeling 3D Levels of Detail (Ortega-Córdova 2018).
         </span>
       </figcaption>
 </figure>
